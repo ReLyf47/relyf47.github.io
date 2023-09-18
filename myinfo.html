@@ -17,6 +17,13 @@ img {
         width:100%;
     }
 }
+
+.audio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center 
+}
+
 </style>
 <head>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -35,7 +42,11 @@ My Info! </h1>
 </h2>
 <h1 style="text-align:center">
 oh btw before you leave listen to my favourite studying song </h1>
-<audio style="align:center" src="https://relyf47.github.io/main.ogg" controls="controls" autostart="true" loop="true"> </audio>
+  <div class="audio-container">
+    <audio controls>
+      <source src="https://relyf47.github.io/main.ogg" type="audio/mpeg"/>
+    </audio>
+  </div>
 <div style="text-align:center">    
   <a href="https://relyf47.github.io/index.html">Take me back</a>
 </div>
