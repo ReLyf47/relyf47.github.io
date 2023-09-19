@@ -2,19 +2,19 @@
 <head>
 <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 </head>
-<div class="header">
-  <h2>Re'sBlog</h2>
+<div class="card2">
+  <h2><img src=https://media.discordapp.net/attachments/1148825138876383234/1153584127887560744/d98d55ba796b26ef112fafe3585a2ac16532e55eda39a3ee5e6b4b0d3255bfef95601890afd80709da39a3ee5e6b4b0d3255bfef95601890afd807091bdeacf769f8831326bcbe2cbb21971d.png></h2>
 </div>
 
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
       <h2>Kemacetan di indonesia</h2>
-      <h5>Sebuah ide untuk mengatasi kemacetan di indonesia, 18 September 2023</h5>
+      <h5 style="font-align:center">Sebuah ide untuk mengatasi kemacetan di indonesia, 18 September 2023</h5>
       <div class="box">
   <img src="https://cdn.discordapp.com/attachments/1148825138876383234/1153574935302778910/iu.png">
 </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis molestie a iaculis at erat pellentesque adipiscing commodo. Interdum posuere lorem ipsum dolor sit amet. Aenean sed adipiscing diam donec adipiscing tristique. Id leo in vitae turpis massa sed elementum tempus egestas. Aliquam faucibus purus in massa tempor nec feugiat nisl. Sit amet cursus sit amet dictum sit. Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi. Nullam non nisi est sit. Tellus molestie nunc non blandit massa enim nec dui nunc. Erat nam at lectus urna. Egestas congue quisque egestas diam in.
+      <div class="card3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis molestie a iaculis at erat pellentesque adipiscing commodo. Interdum posuere lorem ipsum dolor sit amet. Aenean sed adipiscing diam donec adipiscing tristique. Id leo in vitae turpis massa sed elementum tempus egestas. Aliquam faucibus purus in massa tempor nec feugiat nisl. Sit amet cursus sit amet dictum sit. Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi. Nullam non nisi est sit. Tellus molestie nunc non blandit massa enim nec dui nunc. Erat nam at lectus urna. Egestas congue quisque egestas diam in.
 
 Dignissim sodales ut eu sem integer vitae justo eget. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada. Egestas quis ipsum suspendisse ultrices gravida dictum. Felis eget velit aliquet sagittis id consectetur purus ut faucibus. Varius morbi enim nunc faucibus. Nulla facilisi cras fermentum odio eu feugiat. Sit amet aliquam id diam maecenas ultricies mi eget. Volutpat blandit aliquam etiam erat velit scelerisque in dictum non. Fames ac turpis egestas maecenas pharetra convallis posuere morbi.
 
@@ -54,22 +54,24 @@ Elementum eu facilisis sed odio morbi quis commodo. Ipsum a arcu cursus vitae co
   width:100%;
   text-align:center;
 }
-* {
-  box-sizing: border-box;
+img {
+  display:inline-block;
+  width:768px;
+  margin:0 auto;
+}
+
+@media only screen and (max-width: 767px) {
+    img {
+        width:100%;
+    }
 }
 
 body {
   font-family: Arial;
+  font-align: center;
+  font-size: 1vw
   padding: 20px;
   background: #f1f1f1;
-}
-
-/* Header/Blog Title */
-.header {
-  padding: 30px;
-  font-size: 40px;
-  text-align: center;
-  background: white;
 }
 
 /* Create two unequal columns that floats next to each other */
@@ -99,6 +101,20 @@ body {
   background-color: white;
   padding: 20px;
   margin-top: 20px;
+  font-size: 2vw;
+  text-align: center;
+}
+
+.card2 {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card3 {
+  text-align: center;
+  font-size: 100%;
 }
 
 /* Clear floats after the columns */
