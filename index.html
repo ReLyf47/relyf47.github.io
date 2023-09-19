@@ -55,6 +55,53 @@ img {
     }
 }
 
+.marquee {
+  height: 75px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+
+/* would need to be adjusted depending on time */
+.marquee .marqueeone{
+  animation: marquee 25s linear infinite
+}
+
+.marquee .marqueetwo{
+  animation: marquee 25s linear 6.25s infinite 
+}
+
+.marquee .marqueethree{
+  animation: marquee 25s linear 12.55s infinite
+}
+
+.marquee .marqueefour{
+  animation: marquee 25s linear 18.75s infinite
+}
+
+/* even out the elements */
+.marquee div {
+  position: absolute;
+  width: 100%;
+  left: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.marquee:hover div {
+  animation-play-state: paused;
+}
+
+/* add delay at the end of animation so you dont start while another div is going */
+@keyframes marquee {
+  0% { left: 100%; }
+  50% { left: -100%; }
+  100% {left: -100%}
+}
+.marquee img { float: left; }
+
 </style>
 </head>
 <body>
@@ -71,11 +118,11 @@ img {
 <meta property="og:locale:alternate" content="es_ES" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<marquee class="box" width="100%" direction="right" height="265px" scrollamount="25">
+<h1 class="box">
 <img src="https://media.discordapp.net/attachments/1148825138876383234/1153715120875262022/cooltext443471749442843.gif"> <br>
 <img src="https://media.discordapp.net/attachments/1148825138876383234/1153715456075640943/cooltext443471841872118.png"> <br>
 <img src="https://media.discordapp.net/attachments/1148825138876383234/1153715861388005497/cooltext443471923879971.png"> <br>
-</marquee>
+</h1>
 <div style="text-align:center">    
   <a href="https://relyf47.github.io/subindex.html">More stuff that i do or something maybe idk probably </a>
 </div>
@@ -83,12 +130,73 @@ img {
 <div class="box">
   <img src="http://pa1.narvii.com/6492/c6b758f49214240cbe25dbd4563a68ccfbc7a3d0_hq.gif">
 </div>
-<p class="alignleft">   
-	<a href="https://relyf47.github.io/myinfo.html">
+<div class="marquee">
+<a href="https://relyf47.github.io/myinfo.html">	
+	<div class="marqueeone"
 			<img src="https://cdn.discordapp.com/attachments/1148825138876383234/1153332182543253635/Get-to-know-me-9-18-2023.gif"
-            width="350px"/>
-	</a>
-</p>
+            width="220px"/>
+			<img src="https://cdn.discordapp.com/attachments/1148825138876383234/1153332182543253635/Get-to-know-me-9-18-2023.gif"
+            width="220px"/>
+			<img src="https://cdn.discordapp.com/attachments/1148825138876383234/1153332182543253635/Get-to-know-me-9-18-2023.gif"
+            width="220px"/>
+			<img src="https://cdn.discordapp.com/attachments/1148825138876383234/1153332182543253635/Get-to-know-me-9-18-2023.gif"
+            width="220px"/>
+			<img src="https://cdn.discordapp.com/attachments/1148825138876383234/1153332182543253635/Get-to-know-me-9-18-2023.gif"
+            width="220px"/>
+			<img src="https://cdn.discordapp.com/attachments/1148825138876383234/1153332182543253635/Get-to-know-me-9-18-2023.gif"
+            width="220px"/>
+			<img src="https://cdn.discordapp.com/attachments/1148825138876383234/1153332182543253635/Get-to-know-me-9-18-2023.gif"
+            width="220px"/>
+			</div>
+			<div class="marqueetwo"
+			<img src="https://cdn.discordapp.com/attachments/1148825138876383234/1153332182543253635/Get-to-know-me-9-18-2023.gif"
+            width="220px"/>
+			<img src="https://cdn.discordapp.com/attachments/1148825138876383234/1153332182543253635/Get-to-know-me-9-18-2023.gif"
+            width="220px"/>
+			<img src="https://cdn.discordapp.com/attachments/1148825138876383234/1153332182543253635/Get-to-know-me-9-18-2023.gif"
+            width="220px"/>
+			<img src="https://cdn.discordapp.com/attachments/1148825138876383234/1153332182543253635/Get-to-know-me-9-18-2023.gif"
+            width="220px"/>
+			<img src="https://cdn.discordapp.com/attachments/1148825138876383234/1153332182543253635/Get-to-know-me-9-18-2023.gif"
+            width="220px"/>
+			<img src="https://cdn.discordapp.com/attachments/1148825138876383234/1153332182543253635/Get-to-know-me-9-18-2023.gif"
+            width="220px"/>
+			<img src="https://cdn.discordapp.com/attachments/1148825138876383234/1153332182543253635/Get-to-know-me-9-18-2023.gif"
+            width="220px"/>
+			</div>
+			<div class="marqueethree"
+			<img src="https://cdn.discordapp.com/attachments/1148825138876383234/1153332182543253635/Get-to-know-me-9-18-2023.gif"
+            width="220px"/>
+			<img src="https://cdn.discordapp.com/attachments/1148825138876383234/1153332182543253635/Get-to-know-me-9-18-2023.gif"
+            width="220px"/>
+			<img src="https://cdn.discordapp.com/attachments/1148825138876383234/1153332182543253635/Get-to-know-me-9-18-2023.gif"
+            width="220px"/>
+			<img src="https://cdn.discordapp.com/attachments/1148825138876383234/1153332182543253635/Get-to-know-me-9-18-2023.gif"
+            width="220px"/>
+			<img src="https://cdn.discordapp.com/attachments/1148825138876383234/1153332182543253635/Get-to-know-me-9-18-2023.gif"
+            width="220px"/>
+			<img src="https://cdn.discordapp.com/attachments/1148825138876383234/1153332182543253635/Get-to-know-me-9-18-2023.gif"
+            width="220px"/>
+			<img src="https://cdn.discordapp.com/attachments/1148825138876383234/1153332182543253635/Get-to-know-me-9-18-2023.gif"
+            width="220px"/>
+			</div>
+			<div class="marqueefour"
+			<img src="https://cdn.discordapp.com/attachments/1148825138876383234/1153332182543253635/Get-to-know-me-9-18-2023.gif"
+            width="220px"/>
+			<img src="https://cdn.discordapp.com/attachments/1148825138876383234/1153332182543253635/Get-to-know-me-9-18-2023.gif"
+            width="220px"/>
+			<img src="https://cdn.discordapp.com/attachments/1148825138876383234/1153332182543253635/Get-to-know-me-9-18-2023.gif"
+            width="220px"/>
+			<img src="https://cdn.discordapp.com/attachments/1148825138876383234/1153332182543253635/Get-to-know-me-9-18-2023.gif"
+            width="220px"/>
+			<img src="https://cdn.discordapp.com/attachments/1148825138876383234/1153332182543253635/Get-to-know-me-9-18-2023.gif"
+            width="220px"/>
+			<img src="https://cdn.discordapp.com/attachments/1148825138876383234/1153332182543253635/Get-to-know-me-9-18-2023.gif"
+            width="220px"/>
+			<img src="https://cdn.discordapp.com/attachments/1148825138876383234/1153332182543253635/Get-to-know-me-9-18-2023.gif"
+            width="220px"/>
+			</div>
+</div>
 
 </body>
 </html>
