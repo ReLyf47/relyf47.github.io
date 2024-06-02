@@ -1,0 +1,76 @@
+/* General Styles */
+body {
+    background-color: #000000;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+h1, p, div {
+    text-align: center;
+}
+
+h1 {
+    display: inline-block;
+    width: 100%;
+}
+
+/* Text Stroke and Fill */
+@supports (-webkit-text-stroke: 1px white) {
+    h1, p, div {
+        -webkit-text-stroke: 1px black;
+        -webkit-text-fill-color: white;
+    }
+}
+
+/* Image Styles */
+img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 767px) {
+    img {
+        width: 100%;
+    }
+}
+
+/* Box and Centering */
+.box {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Marquee Styles */
+.marquee {
+    height: 75px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee-content {
+    display: flex;
+    justify-content: space-between;
+    animation: marquee 25s linear infinite;
+}
+
+.marquee:hover .marquee-content {
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+    0%, 100% {
+        transform: translateX(100%);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+}
