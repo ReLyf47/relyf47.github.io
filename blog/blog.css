@@ -1,0 +1,80 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 1vw;
+    padding: 20px;
+    background: #f1f1f1;
+    margin: 0;
+}
+
+h1, h2, h5 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: inline-block;
+    width: 768px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 767px) {
+    img {
+        width: 100%;
+    }
+}
+
+/* Specific Styles */
+.box {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+/* Columns for Blog Page */
+.leftcolumn {
+    display: inline-block;
+    float: left;
+    width: 100%;
+}
+
+/* Add a card effect for articles */
+.card, .card2 {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.card3 {
+    text-align: left;
+    font-size: 1vw;
+    font-family: 'Times New Roman', serif;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+/* Custom Font */
+@font-face {
+    font-family: havelock;
+    src: url('havelock.otf');
+}
