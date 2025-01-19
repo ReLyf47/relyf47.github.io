@@ -1,3 +1,6 @@
+/* General Styles */
+
+/* Font Imports */
 @font-face {
     font-family: 'Speed';
     src: url('speed.ttf') format('truetype');
@@ -13,38 +16,79 @@ body {
     margin: 0;
     font-family: 'ComicSauce', Arial, sans-serif;
     color: white;
-    text-align: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    height: 200vh; /* Longer content to enable scrolling */
+    overflow-x: hidden;
 }
 
-h1 {
+/* Main Title (Soon) */
+#main-title {
     color: #07F468;
     font-family: 'Speed', Arial, sans-serif;
     font-size: 50vh;
     margin: 0;
-    line-height: 1;
     text-align: center;
-}
-
-.center {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
 }
 
-.bottom-right-icon {
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1C1A1B;
+    color: #07F468;
+    font-family: 'Speed', Arial, sans-serif;
+    font-size: 0; /* Initially hidden */
+    height: 0;
+    overflow: hidden;
+    text-align: left;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.header-title {
+    margin: 0;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Content Text (Biography) */
+.content {
     position: absolute;
+    top: 120vh; /* Start offscreen */
+    width: 100%;
+    text-align: center;
+}
+
+#fade-in-text {
+    font-family: 'ComicSauce', Arial, sans-serif;
+    font-size: 2rem;
+    color: white;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+/* Bottom-right Icon */
+.bottom-right-icon {
+    position: fixed;
     bottom: 10px;
     right: 10px;
-    display: inline-block;
     width: 32px;
     height: 32px;
     cursor: pointer;
+    z-index: 1000;
 }
 
 .bottom-right-icon img {
