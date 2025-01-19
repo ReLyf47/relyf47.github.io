@@ -1,8 +1,17 @@
 /* General Styles */
+@font-face {
+    font-family: 'Speed';
+    src: url('speed.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ComicSauce';
+    src: url('/secretsauce/COMIC.TTF') format('truetype');
+}
 body {
     background-color: #1C1A1B;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'ComicSauce', sans-serif;
     color: white;
     text-align: center;
     overflow-x: hidden; /* Prevent horizontal scroll issues */
