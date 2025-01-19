@@ -19,22 +19,19 @@ body {
 
 /* Main Title */
 h1 {
-    font-size: 50vmin;
+    font-size: 25vmin;
     color: #07F468;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    transition: all 0.3s ease-in-out;
     font-family: 'speed', sans-serif;
     z-index: 1000; /* Ensure it stays on top */
 }
-
+ 
 /* Biography Text */
 h2 {
     font-size: 2rem;
     color: white;
-    opacity: 0;
     transition: opacity 0.5s ease-in-out;
     margin-top: 50px;
 }
