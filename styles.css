@@ -1,3 +1,13 @@
+/* General Styles */
+body {
+    background-color: #1C1A1B;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    overflow-x: hidden; /* Prevent horizontal scroll issues */
+}
+
 /* Main Title */
 h1 {
     font-size: 50vmin;
@@ -8,7 +18,7 @@ h1 {
     transform: translate(-50%, -50%);
     transition: all 0.3s ease-in-out;
     font-family: 'speed', sans-serif;
-    z-index: 10; /* Ensure it stays above content */
+    z-index: 1000; /* Ensure it stays on top */
 }
 
 /* Biography Text */
@@ -25,11 +35,37 @@ h2 {
     display: block;
 }
 
-/* Adjusted Posts Section */
+/* Posts Section */
 .posts {
     margin-top: 120vh; /* Push posts below the title */
     padding: 20px;
     z-index: 1;
+}
+
+/* Post */
+.post {
+    margin: 40px auto;
+    max-width: 800px;
+    background: #2C2A2B;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.post img {
+    width: 100%;
+    display: block;
+}
+
+.post h3 {
+    margin: 16px;
+    color: #07F468;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+.post p {
+    margin: 16px;
+    color: #d3d3d3;
 }
 
 /* Bottom-right Icon */
@@ -37,5 +73,10 @@ h2 {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 20;
+    z-index: 10; /* Ensure it stays visible */
+}
+
+.bottom-right-icon img {
+    width: 32px;
+    height: 32px;
 }
