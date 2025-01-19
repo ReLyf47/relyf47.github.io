@@ -30,6 +30,15 @@ h2 {
     margin-top: 50px;
 }
 
+#main-title {
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+#fade-in-text {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0; /* Initial hidden state */
+}
+
 /* Hide biography initially */
 .hidden {
     display: block;
