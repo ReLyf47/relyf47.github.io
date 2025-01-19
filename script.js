@@ -10,6 +10,7 @@ document.addEventListener('scroll', () => {
         mainTitle.style.top = '10px';
         mainTitle.style.left = '20px';
         mainTitle.style.textAlign = 'left';
+        mainTitle.textContent = 'ReLyf'; // Ensure it stays as "ReLyf"
     } else {
         mainTitle.style.transform = 'translate(-50%, -50%) scale(1)';
         mainTitle.style.position = 'absolute';
