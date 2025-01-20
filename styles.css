@@ -42,6 +42,7 @@ h3 {
 }
 p {
 	font-family: 'ComicSauce', sans-serif;
+	font-size: clamp(1rem, 1.5rem, 5rem);
 }
 
 .center {
@@ -60,22 +61,6 @@ p {
 .bottom-right-icon img {
     width: 32px;
     height: 32px;
-}
-
-.post {
-    position: relative;
-    width: 50%;
-    height: 150px;
-    background-color: #1C1A1B;
-    border-radius: 8px;
-    overflow: hidden;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: height 0.5s ease-in-out; 
-    display: flex;
-    flex-direction: column; 
-    justify-content: flex-start;
-	animation: deradiate 0.8s ease-in forwards;
 }
 
 .post::before {
@@ -97,15 +82,38 @@ p {
     justify-content: center; 
 }
 
+.post {
+    position: relative;
+    width: 50%;
+    height: 150px;
+    background-color: #1C1A1B;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: height 0.5s ease-in-out; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+	animation: deradiate 0.8s ease-in forwards;
+}
+
 .post img {
     position: absolute; 
-    top: 1%;
-    left: 1%; 
-    width: 98%; 
-    height: 98%; 
+    width: 100%; 
+	height: 545px;
     object-fit: cover; 
     transition: transform 0.5s ease-in-out; 
     z-index: 1;
+}
+
+.post:hover {
+    height: 545px;
+	animation: radiate 0.5s ease-out forwards;
+}
+
+.post:hover img {
+    transform: translateY(0);
+	height: 545px;
 }
 
 .post h3, .post p {
@@ -121,12 +129,6 @@ p {
     display: -webkit-box; 
     -webkit-line-clamp: 4; 
     -webkit-box-orient: vertical;
-}
-
-.post:hover {
-    height: 850px; 
-	animation: radiate 0.5s ease-out forwards;
-	transform: translateY(-2px); /* Slight lift */
 }
 
 @keyframes radiate {
@@ -153,10 +155,6 @@ p {
   100% {
 	box-shadow: 0 0 0 rgba(125, 130, 120, 0.0);
   }
-}
-
-.post:hover img {
-    transform: translateY(0);
 }
 
 .post:hover h3, .post:hover p {
@@ -201,11 +199,10 @@ p {
 .vpost {
     position: relative;
     width: 50%;
-    height: 150px;
+    height: auto;
     background-color: #1C1A1B;
     border-radius: 8px;
     overflow: hidden;
-    padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: height 0.5s ease-in-out; 
     display: flex;
@@ -217,10 +214,10 @@ p {
 .vpost iframe {
     max-width: 100%;
     height: auto;
-	position: relative;
+	position: absolute;
     aspect-ratio: 16 / 9;
     border-radius: 10px;
-	z-index: 255;
+	z-index: 2;
 }
 
 .vpost:hover h3{
@@ -230,10 +227,12 @@ p {
 }
 
 .vpost h3{
-    position: absolute; 
-    z-index: 256; 
+	max-height: none!important; 
+    text-overflow: unset!important; 
+    -webkit-line-clamp: unset!important; 
+    position: relative; 
+    z-index: 900; 
     color: white; 
-	left: 45%;
     margin: 0;
     word-wrap: break-word; 
     overflow: hidden; 
@@ -245,9 +244,8 @@ p {
 }
 
 .vpost:hover {
-    height: 545px; 
+	height: 100%;
 	animation: radiate 0.5s ease-out forwards;
-	transform: translateY(-2px);
 }
 
 .tpost {
@@ -264,7 +262,7 @@ p {
 .tpost h1 {
     color: #07F468;
     font-family: 'TF', Arial, sans-serif; 
-    font-size: 10vh; 
+	font-size: clamp(2rem, 10vw, 10vh);
     margin: 0;
     line-height: 1;
 }
@@ -273,10 +271,7 @@ p {
     position: relative;
     width: 50%;
     height: auto;
-    background-color: #1C1A1B;
     border-radius: 8px;
-    overflow: hidden;
-    padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: height 0.5s ease-in-out; 
     display: flex;
@@ -306,4 +301,30 @@ body, .marquee {
 body::-webkit-scrollbar,
 .marquee::-webkit-scrollbar {
     display: none;
+}
+
+.ipost {
+    position: relative;
+    width: clamp(100rem, 10vw, 1vh);
+    height: auto;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+}
+.ipost h1 {
+	height: clamp(15rem, 1vw, 1vh);
+}
+
+#blob {
+  background-color: white;
+  height: 10vmax;
+  aspect-ratio: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, aquamarine, mediumpurple);
+  animation: rotate 20s infinite;
+  opacity: 0.8;
 }
