@@ -1,10 +1,8 @@
-/* Import custom font */
 @font-face { 
     font-family: 'havelock'; 
-    src: url('havelock.otf'); 
+    src: url('resources/havelock.otf'); 
 }
 
-/* General Styles */
 body {
     text-align: center;
     font-family: 'havelock', sans-serif;

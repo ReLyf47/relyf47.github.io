@@ -1,6 +1,5 @@
-/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: havelock, sans-serif;
     text-align: center;
     font-size: 1vw;
     padding: 20px;
@@ -29,21 +28,16 @@ img {
     }
 }
 
-/* Specific Styles */
 .box {
     display: inline-block;
     width: 100%;
     text-align: center;
 }
-
-/* Columns for Blog Page */
 .leftcolumn {
     display: inline-block;
     float: left;
     width: 100%;
 }
-
-/* Add a card effect for articles */
 .card, .card2 {
     background-color: white;
     padding: 20px;
@@ -58,14 +52,12 @@ img {
     font-family: 'Times New Roman', serif;
 }
 
-/* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* Footer */
 .footer {
     padding: 20px;
     text-align: center;
@@ -73,8 +65,7 @@ img {
     margin-top: 20px;
 }
 
-/* Custom Font */
 @font-face {
     font-family: havelock;
-    src: url('havelock.otf');
+	src: url('resources/havelock.otf') format('opentype');
 }
