@@ -1,0 +1,91 @@
+/* Import the custom font */
+@font-face {
+    font-family: "ComicCustom";
+    src: url("resources/COMIC.TTF") format("truetype");
+}
+
+/* Apply global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "ComicCustom", sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* Header styles */
+header {
+    margin-top: 20px;
+}
+
+header h1 img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Centered content */
+.center {
+    margin: 20px auto;
+    font-size: 1.2em;
+}
+
+.center a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.center a:hover {
+    color: #ffd1dc; /* Matches theme-color */
+}
+
+/* Box styles */
+.box {
+    margin: 20px auto;
+    width: fit-content;
+    border: 2px solid white;
+    padding: 10px;
+}
+
+.box img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Marquee effect */
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    background-color: black;
+    padding: 10px 0;
+}
+
+.marquee-content {
+    display: flex;
+    animation: marquee 10s linear infinite;
+	animation-direction: alternate;
+}
+
+/* Keyframes for marquee */
+@keyframes marquee {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+body, .marquee {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+body::-webkit-scrollbar,
+.marquee::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and newer versions of Edge */
+}
