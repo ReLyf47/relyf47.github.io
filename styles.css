@@ -314,17 +314,3 @@ body::-webkit-scrollbar,
 .ipost h1 {
 	height: clamp(15rem, 1vw, 1vh);
 }
-
-#blob {
-  background-color: white;
-  height: 10vmax;
-  aspect-ratio: 1;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  translate: -50% -50%;
-  border-radius: 50%;
-  background: linear-gradient(to right, aquamarine, mediumpurple);
-  animation: rotate 20s infinite;
-  opacity: 0.8;
-}
