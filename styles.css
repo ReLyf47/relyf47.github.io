@@ -26,6 +26,11 @@ body {
     overflow-x: hidden;
 }
 
+ a {
+	color: white;
+	text-decoration: none;
+}
+
 h1 {
     color: #07F468;
     font-family: 'Speed', Arial, sans-serif; 
@@ -95,6 +100,7 @@ p {
     flex-direction: column; 
     justify-content: flex-start;
 	animation: deradiate 0.8s ease-in forwards;
+	cursor: pointer;
 }
 
 .post img {
