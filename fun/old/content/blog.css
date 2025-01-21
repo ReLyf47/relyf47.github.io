@@ -67,5 +67,5 @@ img {
 
 @font-face {
     font-family: havelock;
-	src: url('resources/havelock.otf') format('opentype');
+	src: url('../../../resources/havelock.otf') format('opentype');
 }

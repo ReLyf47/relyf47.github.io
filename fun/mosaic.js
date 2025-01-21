@@ -11,7 +11,6 @@ function randomDarkColor() {
 const rows = Math.ceil(window.innerHeight / 50);
 const cols = Math.ceil(window.innerWidth / 50);
 
-// Create triangles and append to the container
 for (let i = 0; i < rows * cols; i++) {
   const triangle = document.createElement("div");
   triangle.classList.add("triangle");
@@ -25,7 +24,6 @@ for (let i = 0; i < rows * cols; i++) {
   container.appendChild(triangle);
 }
 
-// Update color on mousemove
 document.addEventListener("mousemove", () => {
   const triangles = container.children;
 
