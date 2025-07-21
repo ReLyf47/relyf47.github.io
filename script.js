@@ -85,9 +85,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-
-fetch('https://api.countapi.xyz/hit/relyf47.github.io/visits')
-  .then(response => response.json())
-  .then(data => {
-    document.getElementById('visits').innerText = data.value;
-  });
