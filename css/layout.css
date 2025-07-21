@@ -1,0 +1,21 @@
+.center {
+    padding-top: 20vh;
+    margin-top: 15vh;
+    margin-right: 5vh;
+}
+.bottom-right-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+}
+.bottom-right-icon img {
+    width: 32px;
+    height: 32px;
+}
+.posts {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}

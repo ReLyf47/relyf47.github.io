@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+    .post,
+    .vpost,
+    .tpost,
+    .spost,
+    .ipost {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin: 300px 0;
+    }
+
+    .spost iframe {
+        height: 152px;
+    }
+}

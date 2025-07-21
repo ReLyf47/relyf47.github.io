@@ -17,12 +17,20 @@
     <meta property="og:url" content="https://relyf47.github.io">
     <meta property="og:image" content="https://relyf47.github.io/resources/balls.webp" alt="The banner">
     <link rel="shortcut icon" href="resources/favico.gif" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/text.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="css/components.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/responsive.css">
+
     <title>Welcome to ReLyf's biography!</title>
 </head>
 <body>	
     <div class="center">
         <h1>ReLyf</h1>
+		<div id="counter" style="text-align:center; margin-top:1em;">Visitors: <span id="visits">...</span></div>
         <p><br>Welcome to my microblog site</p>
     </div>
 	<br><br><br>
@@ -56,30 +64,37 @@
 		</div>
 		<br>
 	
-        <div class="post" data-href="fun/rick.html">
-            <img src="resources/me.jpg" alt="Post 1">
-            <h3>Name: Alif Akbar A</h3>
-            <p>Birthdate: 18/11/2003 (DD/MM/YYY)<br></p>
-        </div>
+        <div class="instapost" data-href="fun/rick.html">
+		  <div class="instapost-text">
+		    <h3>Name: Alif Akbar A</h3>
+		    <p>Birthdate: 18/11/2003 (DD/MM/YYY)</p>
+		  </div>
+		  <div class="insta-embed">
+		    <iframe id="random-insta"
+		            style="width: 100%; height: 100%; border: none;"
+		            scrolling="no"
+		            frameborder="0"
+		            allowtransparency="true"></iframe>
 		
-		<div class="tpost">
-		<h1>My Hobbies:<br></h1>
+		    <div class="insta-overlay"></div> <!-- NEW -->
+		  </div>
 		</div>
-		<br>
-		
+
 		<div class="vpost">
-				<div style="position:relative; width:100%; height:0px; padding-bottom:56.250%">
-					<iframe allow="fullscreen" 
-					allowfullscreen height="100%" src="https://streamable.com/e/2cc392?loop=0" width="100%" style="border:none; 
-					width:100%; 
-					height:100%; 
-					position:absolute; 
-					left:0px; 
-					top:0px; 
-					overflow:hidden;">
-					</iframe>
-					<h3><a href="extra/games.html">Playing Games</a></h3>
-				</div>
+			<div class="vpost-text">
+				<h3><a href="extra/games.html">Playing Games</a></h3>
+			</div>
+			<div class="video-wrapper">
+				<iframe
+				id="latest-video"
+				allowfullscreen
+				src=""
+				style="border: none;"
+				></iframe>
+
+				<div class="vpost-placeholder"></div> <!-- NEW placeholder -->
+				<div class="vpost-overlay"></div>
+			</div>
 		</div>
 
         <div class="post" data-href="extra/manga.html">
@@ -116,15 +131,22 @@
 		<br>
 		
 		<div class="ipost">
-		<a><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=relyf47&theme=vue-dark&show_icons=true&hide_border=true&layout=compact" alt="relyf47's Top Languages"></a>
-		<a href="https://malsignature.com"><img src="https://malsignature.com/?/view?username=ReLyf&style=normal"></a>
-		</div>
+			<a href="https://malsignature.com"><img src="https://malsignature.com/?/view?username=ReLyf&style=normal"></a>
+		</div
+		>
 		<div class="ipost">
-			</div>
+			<a><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=relyf47&theme=vue-dark&show_icons=true&hide_border=true&layout=compact" alt="relyf47's Top Languages"></a>
+		</div>
+
+		<div class="ipost">
+		</div>
+
+		</div>
 		<br>
     <a href="fun/index.html" class="bottom-right-icon">
         <img src="resources/favico.png" alt="Icon">
     </a>
+	<div id="scrollTip">Fun Fact: Most of these are clickables!</div>
   <script src="script.js"></script>
 </body>
 </html>

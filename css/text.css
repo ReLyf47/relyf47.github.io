@@ -1,0 +1,21 @@
+h1 {
+    color: #07F468;
+    font-family: 'Speed', Arial, sans-serif;
+    font-size: clamp(2rem, 25vw, 25vh);
+    margin: 0;
+    line-height: 1;
+}
+h2 {
+    font-size: 2rem;
+    margin: 500px 0;
+    color: #07F468;
+    font-family: 'TF', Arial, sans-serif;
+}
+h3 {
+    font-family: 'HL', sans-serif;
+    margin: 0;
+}
+p {
+    font-family: 'ComicSauce', sans-serif;
+    font-size: clamp(1rem, 1.5rem, 5rem);
+}

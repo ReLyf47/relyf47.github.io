@@ -1,0 +1,43 @@
+/* Fonts */
+@font-face {
+    font-family: 'Speed';
+    src: url('../resources/speed.ttf') format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ComicSauce';
+    src: url('../resources/COMIC.TTF') format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'TF';
+    src: url('../resources/vc.ttf') format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'HL';
+    src: url('../resources/havelock.otf') format('opentype');
+    font-display: swap;
+}
+
+/* Base resets */
+body {
+    background-color: #1C1A1B;
+    margin: 0;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:focus {
+    outline: 2px solid #07F468;
+    outline-offset: 4px;
+}
