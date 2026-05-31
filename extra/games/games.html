@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: url('games.gif') center center / cover no-repeat;
+    filter: blur(10px) brightness(0.5);
+    z-index: -1;
+  }
+</style>
+<head>
+  <meta charset="UTF-8">
+  <title>Game List</title>
+  <link rel="stylesheet" href="games.css">
+</head>
+<body>
+  <h1>My Game Collection</h1>
+  <audio autoplay loop hidden>
+  <source src="https://files.catbox.moe/oxv9x9.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+  <div id="game-list" class="game-list"></div>
+  <div id="loading">You've reached the bottom!</div>
+  <script src="games.js"></script>
+</body>
+</html>

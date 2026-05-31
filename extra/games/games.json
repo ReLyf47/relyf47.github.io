@@ -1,0 +1,802 @@
+[
+  {
+    "name": "Mock Game 1",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100000/library_600x900.jpg",
+    "hours": "115.1 hrs",
+    "genre": "Indie",
+    "achievements": "6/19",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100000/"
+  },
+  {
+    "name": "Mock Game 2",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100001/library_600x900.jpg",
+    "hours": "79.5 hrs",
+    "genre": "Simulation",
+    "achievements": "12/41",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100001/"
+  },
+  {
+    "name": "Mock Game 3",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100002/library_600x900.jpg",
+    "hours": "56.3 hrs",
+    "genre": "Adventure",
+    "achievements": "1/11",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100002/"
+  },
+  {
+    "name": "Mock Game 4",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100003/library_600x900.jpg",
+    "hours": "31.7 hrs",
+    "genre": "RPG",
+    "achievements": "38/7",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100003/"
+  },
+  {
+    "name": "Mock Game 5",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100004/library_600x900.jpg",
+    "hours": "119.8 hrs",
+    "genre": "Action",
+    "achievements": "29/33",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100004/"
+  },
+  {
+    "name": "Mock Game 6",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100005/library_600x900.jpg",
+    "hours": "77.0 hrs",
+    "genre": "Simulation",
+    "achievements": "44/27",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100005/"
+  },
+  {
+    "name": "Mock Game 7",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100006/library_600x900.jpg",
+    "hours": "21.7 hrs",
+    "genre": "Simulation",
+    "achievements": "31/46",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100006/"
+  },
+  {
+    "name": "Mock Game 8",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100007/library_600x900.jpg",
+    "hours": "7.8 hrs",
+    "genre": "Strategy",
+    "achievements": "13/6",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100007/"
+  },
+  {
+    "name": "Mock Game 9",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100008/library_600x900.jpg",
+    "hours": "58.3 hrs",
+    "genre": "Simulation",
+    "achievements": "44/41",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100008/"
+  },
+  {
+    "name": "Mock Game 10",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100009/library_600x900.jpg",
+    "hours": "47.6 hrs",
+    "genre": "Adventure",
+    "achievements": "15/38",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100009/"
+  },
+  {
+    "name": "Mock Game 11",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100010/library_600x900.jpg",
+    "hours": "79.9 hrs",
+    "genre": "RPG",
+    "achievements": "33/16",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100010/"
+  },
+  {
+    "name": "Mock Game 12",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100011/library_600x900.jpg",
+    "hours": "99.7 hrs",
+    "genre": "Action",
+    "achievements": "12/41",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100011/"
+  },
+  {
+    "name": "Mock Game 13",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100012/library_600x900.jpg",
+    "hours": "7.4 hrs",
+    "genre": "Shooter",
+    "achievements": "49/42",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100012/"
+  },
+  {
+    "name": "Mock Game 14",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100013/library_600x900.jpg",
+    "hours": "9.7 hrs",
+    "genre": "Shooter",
+    "achievements": "3/4",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100013/"
+  },
+  {
+    "name": "Mock Game 15",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100014/library_600x900.jpg",
+    "hours": "52.6 hrs",
+    "genre": "Horror",
+    "achievements": "34/45",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100014/"
+  },
+  {
+    "name": "Mock Game 16",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100015/library_600x900.jpg",
+    "hours": "6.1 hrs",
+    "genre": "Shooter",
+    "achievements": "38/19",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100015/"
+  },
+  {
+    "name": "Mock Game 17",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100016/library_600x900.jpg",
+    "hours": "78.8 hrs",
+    "genre": "Adventure",
+    "achievements": "3/20",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100016/"
+  },
+  {
+    "name": "Mock Game 18",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100017/library_600x900.jpg",
+    "hours": "97.9 hrs",
+    "genre": "RPG",
+    "achievements": "5/8",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100017/"
+  },
+  {
+    "name": "Mock Game 19",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100018/library_600x900.jpg",
+    "hours": "12.7 hrs",
+    "genre": "Indie",
+    "achievements": "7/31",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100018/"
+  },
+  {
+    "name": "Mock Game 20",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100019/library_600x900.jpg",
+    "hours": "37.5 hrs",
+    "genre": "Indie",
+    "achievements": "24/48",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100019/"
+  },
+  {
+    "name": "Mock Game 21",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100020/library_600x900.jpg",
+    "hours": "82.0 hrs",
+    "genre": "Shooter",
+    "achievements": "42/25",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100020/"
+  },
+  {
+    "name": "Mock Game 22",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100021/library_600x900.jpg",
+    "hours": "2.1 hrs",
+    "genre": "Indie",
+    "achievements": "47/7",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100021/"
+  },
+  {
+    "name": "Mock Game 23",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100022/library_600x900.jpg",
+    "hours": "67.2 hrs",
+    "genre": "Adventure",
+    "achievements": "42/49",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100022/"
+  },
+  {
+    "name": "Mock Game 24",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100023/library_600x900.jpg",
+    "hours": "100.1 hrs",
+    "genre": "Indie",
+    "achievements": "27/29",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100023/"
+  },
+  {
+    "name": "Mock Game 25",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100024/library_600x900.jpg",
+    "hours": "93.4 hrs",
+    "genre": "Simulation",
+    "achievements": "43/37",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100024/"
+  },
+  {
+    "name": "Mock Game 26",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100025/library_600x900.jpg",
+    "hours": "99.5 hrs",
+    "genre": "Strategy",
+    "achievements": "46/33",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100025/"
+  },
+  {
+    "name": "Mock Game 27",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100026/library_600x900.jpg",
+    "hours": "29.3 hrs",
+    "genre": "Strategy",
+    "achievements": "49/5",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100026/"
+  },
+  {
+    "name": "Mock Game 28",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100027/library_600x900.jpg",
+    "hours": "89.5 hrs",
+    "genre": "Simulation",
+    "achievements": "20/14",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100027/"
+  },
+  {
+    "name": "Mock Game 29",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100028/library_600x900.jpg",
+    "hours": "69.8 hrs",
+    "genre": "Simulation",
+    "achievements": "20/33",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100028/"
+  },
+  {
+    "name": "Mock Game 30",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100029/library_600x900.jpg",
+    "hours": "66.9 hrs",
+    "genre": "Strategy",
+    "achievements": "36/50",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100029/"
+  },
+  {
+    "name": "Mock Game 31",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100030/library_600x900.jpg",
+    "hours": "65.5 hrs",
+    "genre": "Simulation",
+    "achievements": "25/21",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100030/"
+  },
+  {
+    "name": "Mock Game 32",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100031/library_600x900.jpg",
+    "hours": "91.2 hrs",
+    "genre": "Strategy",
+    "achievements": "29/24",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100031/"
+  },
+  {
+    "name": "Mock Game 33",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100032/library_600x900.jpg",
+    "hours": "66.2 hrs",
+    "genre": "Adventure",
+    "achievements": "29/16",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100032/"
+  },
+  {
+    "name": "Mock Game 34",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100033/library_600x900.jpg",
+    "hours": "100.4 hrs",
+    "genre": "Horror",
+    "achievements": "32/42",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100033/"
+  },
+  {
+    "name": "Mock Game 35",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100034/library_600x900.jpg",
+    "hours": "85.8 hrs",
+    "genre": "Strategy",
+    "achievements": "18/36",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100034/"
+  },
+  {
+    "name": "Mock Game 36",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100035/library_600x900.jpg",
+    "hours": "107.9 hrs",
+    "genre": "Shooter",
+    "achievements": "6/46",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100035/"
+  },
+  {
+    "name": "Mock Game 37",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100036/library_600x900.jpg",
+    "hours": "52.2 hrs",
+    "genre": "Adventure",
+    "achievements": "45/21",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100036/"
+  },
+  {
+    "name": "Mock Game 38",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100037/library_600x900.jpg",
+    "hours": "59.3 hrs",
+    "genre": "Action",
+    "achievements": "32/30",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100037/"
+  },
+  {
+    "name": "Mock Game 39",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100038/library_600x900.jpg",
+    "hours": "48.5 hrs",
+    "genre": "Adventure",
+    "achievements": "14/38",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100038/"
+  },
+  {
+    "name": "Mock Game 40",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100039/library_600x900.jpg",
+    "hours": "8.3 hrs",
+    "genre": "Simulation",
+    "achievements": "28/32",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100039/"
+  },
+  {
+    "name": "Mock Game 41",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100040/library_600x900.jpg",
+    "hours": "98.4 hrs",
+    "genre": "Shooter",
+    "achievements": "24/41",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100040/"
+  },
+  {
+    "name": "Mock Game 42",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100041/library_600x900.jpg",
+    "hours": "66.3 hrs",
+    "genre": "Indie",
+    "achievements": "4/41",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100041/"
+  },
+  {
+    "name": "Mock Game 43",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100042/library_600x900.jpg",
+    "hours": "116.2 hrs",
+    "genre": "Horror",
+    "achievements": "37/27",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100042/"
+  },
+  {
+    "name": "Mock Game 44",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100043/library_600x900.jpg",
+    "hours": "14.7 hrs",
+    "genre": "Action",
+    "achievements": "5/28",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100043/"
+  },
+  {
+    "name": "Mock Game 45",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100044/library_600x900.jpg",
+    "hours": "35.7 hrs",
+    "genre": "Strategy",
+    "achievements": "44/28",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100044/"
+  },
+  {
+    "name": "Mock Game 46",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100045/library_600x900.jpg",
+    "hours": "22.6 hrs",
+    "genre": "Adventure",
+    "achievements": "31/2",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100045/"
+  },
+  {
+    "name": "Mock Game 47",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100046/library_600x900.jpg",
+    "hours": "8.1 hrs",
+    "genre": "Horror",
+    "achievements": "33/49",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100046/"
+  },
+  {
+    "name": "Mock Game 48",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100047/library_600x900.jpg",
+    "hours": "61.8 hrs",
+    "genre": "Strategy",
+    "achievements": "1/27",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100047/"
+  },
+  {
+    "name": "Mock Game 49",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100048/library_600x900.jpg",
+    "hours": "28.1 hrs",
+    "genre": "Strategy",
+    "achievements": "9/27",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100048/"
+  },
+  {
+    "name": "Mock Game 50",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100049/library_600x900.jpg",
+    "hours": "45.7 hrs",
+    "genre": "Horror",
+    "achievements": "12/42",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100049/"
+  },
+  {
+    "name": "Mock Game 1",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100000/library_600x900.jpg",
+    "hours": "115.1 hrs",
+    "genre": "Indie",
+    "achievements": "6/19",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100000/"
+  },
+  {
+    "name": "Mock Game 2",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100001/library_600x900.jpg",
+    "hours": "79.5 hrs",
+    "genre": "Simulation",
+    "achievements": "12/41",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100001/"
+  },
+  {
+    "name": "Mock Game 3",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100002/library_600x900.jpg",
+    "hours": "56.3 hrs",
+    "genre": "Adventure",
+    "achievements": "1/11",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100002/"
+  },
+  {
+    "name": "Mock Game 4",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100003/library_600x900.jpg",
+    "hours": "31.7 hrs",
+    "genre": "RPG",
+    "achievements": "38/7",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100003/"
+  },
+  {
+    "name": "Mock Game 5",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100004/library_600x900.jpg",
+    "hours": "119.8 hrs",
+    "genre": "Action",
+    "achievements": "29/33",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100004/"
+  },
+  {
+    "name": "Mock Game 6",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100005/library_600x900.jpg",
+    "hours": "77.0 hrs",
+    "genre": "Simulation",
+    "achievements": "44/27",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100005/"
+  },
+  {
+    "name": "Mock Game 7",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100006/library_600x900.jpg",
+    "hours": "21.7 hrs",
+    "genre": "Simulation",
+    "achievements": "31/46",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100006/"
+  },
+  {
+    "name": "Mock Game 8",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100007/library_600x900.jpg",
+    "hours": "7.8 hrs",
+    "genre": "Strategy",
+    "achievements": "13/6",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100007/"
+  },
+  {
+    "name": "Mock Game 9",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100008/library_600x900.jpg",
+    "hours": "58.3 hrs",
+    "genre": "Simulation",
+    "achievements": "44/41",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100008/"
+  },
+  {
+    "name": "Mock Game 10",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100009/library_600x900.jpg",
+    "hours": "47.6 hrs",
+    "genre": "Adventure",
+    "achievements": "15/38",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100009/"
+  },
+  {
+    "name": "Mock Game 11",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100010/library_600x900.jpg",
+    "hours": "79.9 hrs",
+    "genre": "RPG",
+    "achievements": "33/16",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100010/"
+  },
+  {
+    "name": "Mock Game 12",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100011/library_600x900.jpg",
+    "hours": "99.7 hrs",
+    "genre": "Action",
+    "achievements": "12/41",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100011/"
+  },
+  {
+    "name": "Mock Game 13",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100012/library_600x900.jpg",
+    "hours": "7.4 hrs",
+    "genre": "Shooter",
+    "achievements": "49/42",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100012/"
+  },
+  {
+    "name": "Mock Game 14",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100013/library_600x900.jpg",
+    "hours": "9.7 hrs",
+    "genre": "Shooter",
+    "achievements": "3/4",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100013/"
+  },
+  {
+    "name": "Mock Game 15",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100014/library_600x900.jpg",
+    "hours": "52.6 hrs",
+    "genre": "Horror",
+    "achievements": "34/45",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100014/"
+  },
+  {
+    "name": "Mock Game 16",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100015/library_600x900.jpg",
+    "hours": "6.1 hrs",
+    "genre": "Shooter",
+    "achievements": "38/19",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100015/"
+  },
+  {
+    "name": "Mock Game 17",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100016/library_600x900.jpg",
+    "hours": "78.8 hrs",
+    "genre": "Adventure",
+    "achievements": "3/20",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100016/"
+  },
+  {
+    "name": "Mock Game 18",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100017/library_600x900.jpg",
+    "hours": "97.9 hrs",
+    "genre": "RPG",
+    "achievements": "5/8",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100017/"
+  },
+  {
+    "name": "Mock Game 19",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100018/library_600x900.jpg",
+    "hours": "12.7 hrs",
+    "genre": "Indie",
+    "achievements": "7/31",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100018/"
+  },
+  {
+    "name": "Mock Game 20",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100019/library_600x900.jpg",
+    "hours": "37.5 hrs",
+    "genre": "Indie",
+    "achievements": "24/48",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100019/"
+  },
+  {
+    "name": "Mock Game 21",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100020/library_600x900.jpg",
+    "hours": "82.0 hrs",
+    "genre": "Shooter",
+    "achievements": "42/25",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100020/"
+  },
+  {
+    "name": "Mock Game 22",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100021/library_600x900.jpg",
+    "hours": "2.1 hrs",
+    "genre": "Indie",
+    "achievements": "47/7",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100021/"
+  },
+  {
+    "name": "Mock Game 23",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100022/library_600x900.jpg",
+    "hours": "67.2 hrs",
+    "genre": "Adventure",
+    "achievements": "42/49",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100022/"
+  },
+  {
+    "name": "Mock Game 24",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100023/library_600x900.jpg",
+    "hours": "100.1 hrs",
+    "genre": "Indie",
+    "achievements": "27/29",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100023/"
+  },
+  {
+    "name": "Mock Game 25",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100024/library_600x900.jpg",
+    "hours": "93.4 hrs",
+    "genre": "Simulation",
+    "achievements": "43/37",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100024/"
+  },
+  {
+    "name": "Mock Game 26",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100025/library_600x900.jpg",
+    "hours": "99.5 hrs",
+    "genre": "Strategy",
+    "achievements": "46/33",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100025/"
+  },
+  {
+    "name": "Mock Game 27",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100026/library_600x900.jpg",
+    "hours": "29.3 hrs",
+    "genre": "Strategy",
+    "achievements": "49/5",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100026/"
+  },
+  {
+    "name": "Mock Game 28",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100027/library_600x900.jpg",
+    "hours": "89.5 hrs",
+    "genre": "Simulation",
+    "achievements": "20/14",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100027/"
+  },
+  {
+    "name": "Mock Game 29",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100028/library_600x900.jpg",
+    "hours": "69.8 hrs",
+    "genre": "Simulation",
+    "achievements": "20/33",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100028/"
+  },
+  {
+    "name": "Mock Game 30",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100029/library_600x900.jpg",
+    "hours": "66.9 hrs",
+    "genre": "Strategy",
+    "achievements": "36/50",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100029/"
+  },
+  {
+    "name": "Mock Game 31",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100030/library_600x900.jpg",
+    "hours": "65.5 hrs",
+    "genre": "Simulation",
+    "achievements": "25/21",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100030/"
+  },
+  {
+    "name": "Mock Game 32",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100031/library_600x900.jpg",
+    "hours": "91.2 hrs",
+    "genre": "Strategy",
+    "achievements": "29/24",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100031/"
+  },
+  {
+    "name": "Mock Game 33",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100032/library_600x900.jpg",
+    "hours": "66.2 hrs",
+    "genre": "Adventure",
+    "achievements": "29/16",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100032/"
+  },
+  {
+    "name": "Mock Game 34",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100033/library_600x900.jpg",
+    "hours": "100.4 hrs",
+    "genre": "Horror",
+    "achievements": "32/42",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100033/"
+  },
+  {
+    "name": "Mock Game 35",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100034/library_600x900.jpg",
+    "hours": "85.8 hrs",
+    "genre": "Strategy",
+    "achievements": "18/36",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100034/"
+  },
+  {
+    "name": "Mock Game 36",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100035/library_600x900.jpg",
+    "hours": "107.9 hrs",
+    "genre": "Shooter",
+    "achievements": "6/46",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100035/"
+  },
+  {
+    "name": "Mock Game 37",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100036/library_600x900.jpg",
+    "hours": "52.2 hrs",
+    "genre": "Adventure",
+    "achievements": "45/21",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100036/"
+  },
+  {
+    "name": "Mock Game 38",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100037/library_600x900.jpg",
+    "hours": "59.3 hrs",
+    "genre": "Action",
+    "achievements": "32/30",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100037/"
+  },
+  {
+    "name": "Mock Game 39",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100038/library_600x900.jpg",
+    "hours": "48.5 hrs",
+    "genre": "Adventure",
+    "achievements": "14/38",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100038/"
+  },
+  {
+    "name": "Mock Game 40",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100039/library_600x900.jpg",
+    "hours": "8.3 hrs",
+    "genre": "Simulation",
+    "achievements": "28/32",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100039/"
+  },
+  {
+    "name": "Mock Game 41",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100040/library_600x900.jpg",
+    "hours": "98.4 hrs",
+    "genre": "Shooter",
+    "achievements": "24/41",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100040/"
+  },
+  {
+    "name": "Mock Game 42",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100041/library_600x900.jpg",
+    "hours": "66.3 hrs",
+    "genre": "Indie",
+    "achievements": "4/41",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100041/"
+  },
+  {
+    "name": "Mock Game 43",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100042/library_600x900.jpg",
+    "hours": "116.2 hrs",
+    "genre": "Horror",
+    "achievements": "37/27",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100042/"
+  },
+  {
+    "name": "Mock Game 44",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100043/library_600x900.jpg",
+    "hours": "14.7 hrs",
+    "genre": "Action",
+    "achievements": "5/28",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100043/"
+  },
+  {
+    "name": "Mock Game 45",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100044/library_600x900.jpg",
+    "hours": "35.7 hrs",
+    "genre": "Strategy",
+    "achievements": "44/28",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100044/"
+  },
+  {
+    "name": "Mock Game 46",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100045/library_600x900.jpg",
+    "hours": "22.6 hrs",
+    "genre": "Adventure",
+    "achievements": "31/2",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100045/"
+  },
+  {
+    "name": "Mock Game 47",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100046/library_600x900.jpg",
+    "hours": "8.1 hrs",
+    "genre": "Horror",
+    "achievements": "33/49",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100046/"
+  },
+  {
+    "name": "Mock Game 48",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100047/library_600x900.jpg",
+    "hours": "61.8 hrs",
+    "genre": "Strategy",
+    "achievements": "1/27",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100047/"
+  },
+  {
+    "name": "Mock Game 49",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100048/library_600x900.jpg",
+    "hours": "28.1 hrs",
+    "genre": "Strategy",
+    "achievements": "9/27",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100048/"
+  },
+  {
+    "name": "Mock Game 50",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/100049/library_600x900.jpg",
+    "hours": "45.7 hrs",
+    "genre": "Horror",
+    "achievements": "12/42",
+    "review": "https://steamcommunity.com/id/mockuser/recommended/100049/"
+  }
+]
