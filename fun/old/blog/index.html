@@ -41,7 +41,18 @@
     </div>
 
     <div class="footer">
-        <a href="../../../index.html">Take me back</a>
+        <a href="#" class="back-btn" id="back-btn">⬅ Back</a>
+    <script>
+    document.getElementById("back-btn").addEventListener("click", (e) => {
+        e.preventDefault();
+
+        if (window.history.length > 1) {
+        history.back();
+        } else {
+        window.location.href = "../../";
+        }
+    });
+    </script>
     </div>
 </body>
 </html>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Dark Slate Background -->
+  <rect width="64" height="64" rx="14" fill="#1E272E" />
+  
+  <!-- List Lines -->
+  <rect x="28" y="13" width="24" height="6" rx="3" fill="#F1F2F6" />
+  <rect x="28" y="29" width="24" height="6" rx="3" fill="#F1F2F6" />
+  <rect x="28" y="45" width="24" height="6" rx="3" fill="#F1F2F6" />
+  
+  <!-- Bullet 1: Red D-Pad -->
+  <path d="M14 10 h4 v4 h4 v4 h-4 v4 h-4 v-4 h-4 v-4 h4 z" fill="#FF4757" />
+  
+  <!-- Bullet 2: Green Start Button -->
+  <rect x="11" y="29" width="10" height="5" rx="2.5" fill="#2ED573" />
+  
+  <!-- Bullet 3: Blue & Orange Action Buttons -->
+  <circle cx="12.5" cy="50" r="3.5" fill="#1E90FF" />
+  <circle cx="20.5" cy="45" r="3.5" fill="#FFA502" />
+</svg>

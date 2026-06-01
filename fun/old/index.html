@@ -17,13 +17,24 @@
     </header>
     <main>
         <div class="paragraph1">
-            <a href="content/blog.html">The blogs that I've written</a>
+            <a href="blog/">The blogs that I've written</a>
         </div>
         <div class="paragraph1">
-            <a href="../mosaic.html">Testing stuff</a>
+            <a href="mosaic/">Testing stuff</a>
         </div>
         <div class="paragraph1">
-            <a href="../../index.html">Take me back</a>
+            <a href="#" class="back-btn" id="back-btn">⬅ Back</a>
+            <script>
+            document.getElementById("back-btn").addEventListener("click", (e) => {
+                e.preventDefault();
+
+                if (window.history.length > 1) {
+                history.back();
+                } else {
+                window.location.href = "../../";
+                }
+            });
+            </script>
         </div>
     </main>
 </body>

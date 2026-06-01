@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game List</title>
+  <link rel="stylesheet" href="games.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+  <canvas id="wave-canvas"></canvas>
+  
+  <a href="#" class="back-btn" id="back-btn">⬅ Back</a>
+  <script>
+  document.getElementById("back-btn").addEventListener("click", (e) => {
+    e.preventDefault();
+
+    if (window.history.length > 1) {
+      history.back();
+    } else {
+      window.location.href = "../../";
+    }
+  });
+  </script>
+
+  <button id="sort-toggle" class="sort-btn">By Playtime</button>
+
+  <h1>Top Playtime</h1>
+  
+  <audio id="bgm" loop>
+    <source src="../../resources/background.mp3" type="audio/mpeg">
+  </audio>
+
+  <button id="audio-toggle" class="audio-btn">
+    🔇
+  </button>
+  
+  <div id="throne-room" class="throne-room"></div>
+
+  <div id="game-list" class="game-list"></div>
+  
+  <div id="loading">Scroll for more!</div>
+  
+  <script src="games.js"></script>
+</body>
+</html>

@@ -15,6 +15,26 @@ h3 {
     font-family: 'HL', sans-serif;
     margin: 0;
 }
+
+h4 {
+    font-family: 'Speed', Arial, sans-serif;
+    font-size: clamp(2.5rem, 8vw, 6rem);
+
+    color: #07F468;
+
+    text-shadow:
+        0 0 10px rgba(7, 244, 104, 0.8),
+        0 0 20px rgba(7, 244, 104, 0.5);
+
+    letter-spacing: 0.08em;
+    text-align: center;
+
+    margin: 0 0 1rem;
+    line-height: 0.9;
+
+    text-transform: uppercase;
+}
+
 p {
     font-family: 'ComicSauce', sans-serif;
     font-size: clamp(1rem, 1.5rem, 5rem);

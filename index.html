@@ -63,25 +63,25 @@
 		</div>
 		<br>
 	
-        <div class="instapost" data-href="fun/rick.html">
+        <div class="instapost" data-href="extra/about/">
 		  <div class="instapost-text">
 		    <h3>Name: Alif Akbar A</h3>
 		    <p>Birthdate: 18/11/2003 (DD/MM/YYY)</p>
 		  </div>
-		  <div class="insta-embed">
+		  <div class="insta-embed" data-href="extra/about/">
 		    <iframe id="random-insta"
 		            style="width: 100%; height: 100%; border: none;"
 		            scrolling="no"
 		            frameborder="0"
 		            allowtransparency="true"></iframe>
 		
-		    <div class="insta-overlay"></div> <!-- NEW -->
+		    <div class="insta-overlay" data-href="extra/about/"></div> <!-- NEW -->
 		  </div>
 		</div>
 
-		<div class="vpost">
+		<div class="vpost" data-href="extra/games/">
 			<div class="vpost-text">
-				<h3><a href="extra/games/games.html">Playing Games</a></h3>
+				<h3><a href="extra/games/">Playing Games</a></h3>
 			</div>
 			<div class="video-wrapper">
 				<iframe
@@ -96,12 +96,12 @@
 			</div>
 		</div>
 
-        <div class="post" data-href="extra/manga/manga.html">
+        <div class="post" data-href="extra/manga/">
 			<img src="https://areajugones.sport.es/wp-content/uploads/2024/01/the-100-girlfriends-who-really-love-me-1-1.jpg" alt="Post 3">
 			<h3>Reading Manga</h3>
 		</div>
 		
-		<div class="post" data-href="extra/anime/anime.html">
+		<div class="post" data-href="extra/anime/">
             <img src="https://sportshub.cbsistatic.com/i/2024/06/26/ac069e09-c64b-44b7-9dc4-a4139977ac48/suicide-squad-isekai-harley-quinn-watch-anime.jpg" alt="Post 4">
             <h3><a>Watching Anime</a></h3>
         </div>
@@ -143,10 +143,61 @@
 
 		</div>
 		<br>
-    <a href="fun/index.html" class="bottom-right-icon">
+    <a href="fun/" class="bottom-right-icon">
         <img src="resources/favico.png" alt="Icon">
     </a>
-	<div id="scrollTip">Fun Fact: Most of these are clickables!</div>
-  <script src="script.js"></script>
+	<div class="bottom-left-icon" id="comment-toggle">
+        <a href="https://relyf47.github.io/#disqus_thread">💬 Comments</a>
+    </div>
+
+    <div id="disqus-modal" class="hidden">
+        <div class="disqus-modal-content">
+            <span id="close-disqus">&times;</span>
+            <h2>Comments</h2>
+            <div id="disqus_thread"></div>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+    </div>
+
+    <script id="dsq-count-scr" src="//relyf.disqus.com/count.js" async></script>
+    
+    <div id="scrollTip">Fun Fact: Most of these are clickables!</div>
+    <script src="script.js"></script>
+	<!-- Privacy Policy Modal -->
+<div id="privacy-modal">
+    <div class="privacy-content">
+        <h4>Privacy Policy</h4>
+
+        <p>
+            This website does not directly collect personal information.
+        </p>
+
+        <p>
+            Comments are provided through Disqus, which may collect
+            cookies, IP addresses, and other information according
+            to their own privacy policy.
+        </p>
+
+        <p>
+            For more information, please refer to the Disqus Privacy Policy:
+        </p>
+
+        <p>
+            <a href="https://help.disqus.com/en/articles/1717103-disqus-privacy-policy"
+               target="_blank">
+                Disqus Privacy Policy
+            </a>
+        </p>
+
+        <p>
+            This website may also load content from third-party services
+            that have their own privacy practices.
+        </p>
+
+        <button id="privacy-accept">
+            I Understand
+        </button>
+    </div>
+</div>
 </body>
 </html>

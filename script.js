@@ -85,3 +85,72 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// Disqus Modal Logic
+document.addEventListener("DOMContentLoaded", () => {
+    const commentToggle = document.getElementById('comment-toggle');
+    const disqusModal = document.getElementById('disqus-modal');
+    const closeDisqus = document.getElementById('close-disqus');
+    let disqusLoaded = false;
+
+    // Open modal and load Disqus
+    commentToggle.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevents the <a> tag from jumping the page
+        disqusModal.classList.add('show');
+        
+        // Load the provided embed script ONLY once when the modal is first opened
+        if (!disqusLoaded) {
+            /* var disqus_config = function () {
+            this.page.url = "https://relyf47.github.io"; 
+            this.page.identifier = "relyf_home"; 
+            };
+            */
+            var d = document, s = d.createElement('script');
+            s.src = 'https://relyf.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            
+            disqusLoaded = true;
+        }
+    });
+
+    // Close modal on 'X' click
+    closeDisqus.addEventListener('click', () => {
+        disqusModal.classList.remove('show');
+    });
+
+    // Close modal when clicking outside the content box
+    disqusModal.addEventListener('click', (e) => {
+        if (e.target === disqusModal) {
+            disqusModal.classList.remove('show');
+        }
+    });
+});
+
+// Make all cards clickable
+document.querySelectorAll('.post, .instapost, .vpost').forEach(card => {
+    card.addEventListener('click', () => {
+        const link = card.getAttribute('data-href');
+        if (link) {
+            window.location.href = link;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.getElementById("privacy-modal");
+    const button = document.getElementById("privacy-accept");
+
+    if (!localStorage.getItem("privacyAccepted")) {
+        document.body.classList.add("modal-open");
+        modal.style.display = "flex";
+    } else {
+        modal.style.display = "none";
+    }
+
+    button.addEventListener("click", () => {
+        localStorage.setItem("privacyAccepted", "true");
+        modal.style.display = "none";
+        document.body.classList.remove("modal-open");
+    });
+});
