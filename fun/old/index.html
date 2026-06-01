@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Welcome to something idk</title>
+    <link rel="shortcut icon" href="../../resources/favico.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="paragraph1">Hello welcome to the subindex page <br> here you can find stuff that I've worked on</h1>
+        <h2 class="paragraph2">(like blog posts and stuff)</h2>
+    </header>
+    <main>
+        <div class="paragraph1">
+            <a href="blog/">The blogs that I've written</a>
+        </div>
+        <div class="paragraph1">
+            <a href="mosaic/">Testing stuff</a>
+        </div>
+        <div class="paragraph1">
+            <a href="#" class="back-btn" id="back-btn">⬅ Back</a>
+            <script>
+            document.getElementById("back-btn").addEventListener("click", (e) => {
+                e.preventDefault();
+
+                if (window.history.length > 1) {
+                history.back();
+                } else {
+                window.location.href = "../../";
+                }
+            });
+            </script>
+        </div>
+    </main>
+</body>
+</html>

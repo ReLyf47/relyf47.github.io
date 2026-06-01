@@ -1,0 +1,71 @@
+body {
+    font-family: havelock, sans-serif;
+    text-align: center;
+    font-size: 1vw;
+    padding: 20px;
+    background: #f1f1f1;
+    margin: 0;
+}
+
+h1, h2, h5 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: inline-block;
+    width: 768px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 767px) {
+    img {
+        width: 100%;
+    }
+}
+
+.box {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.leftcolumn {
+    display: inline-block;
+    float: left;
+    width: 100%;
+}
+.card, .card2 {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.card3 {
+    text-align: left;
+    font-size: 1vw;
+    font-family: 'Times New Roman', serif;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+@font-face {
+    font-family: havelock;
+	src: url('../../../resources/havelock.otf') format('opentype');
+}

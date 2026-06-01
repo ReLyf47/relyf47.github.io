@@ -1,0 +1,181 @@
+.center {
+    padding-top: 20vh;
+    margin-top: 15vh;
+    margin-right: 5vh;
+}
+.bottom-right-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+}
+.bottom-right-icon img {
+    width: 32px;
+    height: 32px;
+}
+.posts {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* Bottom Left Icon */
+.bottom-left-icon {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 10;
+    background-color: #333;
+    padding: 10px 15px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.bottom-left-icon:hover {
+    transform: scale(1.05);
+    background-color: #444;
+}
+
+.bottom-left-icon a {
+    font-family: 'ComicSauce', sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+/* Disqus Modal Overlay */
+#disqus-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+}
+
+#disqus-modal.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Disqus Modal Content Box */
+.disqus-modal-content {
+    background: #1C1A1B;
+    width: 90%;
+    max-width: 800px;
+    height: 80vh;
+    overflow-y: auto;
+    border-radius: 12px;
+    padding: 30px;
+    position: relative;
+    box-shadow: 0 0 20px rgba(7, 244, 104, 0.2);
+    /* Hide scrollbar for clean look */
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+}
+
+.disqus-modal-content::-webkit-scrollbar {
+    display: none;
+}
+
+.disqus-modal-content h2 {
+    margin: 0 0 20px 0;
+    font-size: 2rem;
+}
+
+/* Close Button */
+#close-disqus {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 2.5rem;
+    color: #07F468;
+    cursor: pointer;
+    line-height: 1;
+    transition: transform 0.2s ease;
+}
+
+#close-disqus:hover {
+    transform: scale(1.2);
+}
+
+#privacy-modal .privacy-content,
+#privacy-modal .privacy-content * {
+    all: revert;
+    box-sizing: border-box;
+}
+
+#privacy-modal {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0,0,0,.85);
+    backdrop-filter: blur(6px);
+
+    z-index: 999999;
+}
+
+#privacy-modal .privacy-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    width: min(600px, 90vw);
+    padding: 2rem;
+
+    background: #111;
+    color: white;
+
+    border: 2px solid #07F468;
+    border-radius: 20px;
+
+    font-family: sans-serif;
+}
+
+#privacy-modal .privacy-content h4 {
+    margin: 0;
+    text-align: center;
+
+    color: #07F468;
+    font-size: 2.5rem;
+    font-family: 'Speed', sans-serif;
+}
+
+#privacy-modal .privacy-content p {
+    margin: 0;
+    line-height: 1.6;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#privacy-modal .privacy-content a {
+    color: #07F468;
+    text-decoration: underline;
+}
+
+#privacy-modal .privacy-content button {
+    margin-top: 1rem;
+}
+
+#privacy-accept {
+    margin-top: 1rem;
+    width: 100%;
+    padding: .8rem;
+}
+
+body.modal-open {
+    overflow: hidden;
+}

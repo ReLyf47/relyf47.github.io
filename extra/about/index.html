@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/x-icon" href="resources/favico.png">
+
+    <title>Get To Know Me!</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #000;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            overflow: hidden;
+            transition: opacity 1s ease;
+        }
+
+        body.fade-out {
+            opacity: 0;
+        }
+
+        /* INTRO SCREEN */
+
+        #intro {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #intro h1 {
+            font-size: clamp(3rem, 8vw, 6rem);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        #startBtn {
+            padding: 18px 42px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        #startBtn:hover {
+            transform: scale(1.05);
+        }
+
+        /* RICKROLL SCREEN */
+
+        #rickroll {
+            display: none;
+            height: 100vh;
+            width: 100vw;
+
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+        }
+
+        #rickroll img {
+            width: min(768px, 95vw);
+            max-height: 70vh;
+            object-fit: contain;
+        }
+
+        #countdown {
+            margin-top: 20px;
+            font-size: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            #countdown {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NORMAL LOOKING LANDING PAGE -->
+    <div id="intro">
+        <h1>Get To Know Me!</h1>
+        <button id="startBtn" onclick="startExperience()">
+            Get Started
+        </button>
+    </div>
+
+    <!-- SURPRISE -->
+    <div id="rickroll">
+        <img src="../../../resources/rocky.gif" alt="Rocky">
+
+        <div id="countdown">
+            Just kidding, actually redirecting you in 5...
+        </div>
+    </div>
+
+    <audio id="rickrollAudio">
+        <source src="../../resources/rolls.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        function startExperience() {
+
+            document.getElementById("intro").style.display = "none";
+
+            const rickroll = document.getElementById("rickroll");
+            rickroll.style.display = "flex";
+
+            const audio = document.getElementById("rickrollAudio");
+
+            audio.play().catch(err => {
+                console.log("Audio blocked:", err);
+            });
+
+            let seconds = 5;
+
+            const countdown = document.getElementById("countdown");
+
+            const timer = setInterval(() => {
+
+                seconds--;
+
+                countdown.textContent =
+                    `Just kidding, actually redirecting you in ${seconds}...`;
+
+                if (seconds <= 0) {
+
+                    clearInterval(timer);
+
+                    document.body.classList.add("fade-out");
+
+                    setTimeout(() => {
+                        window.location.href = "/me/";
+                    }, 1000);
+                }
+
+            }, 1000);
+        }
+    </script>
+
+</body>
+</html>
