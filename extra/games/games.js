@@ -1,3 +1,31 @@
+/* ==========================================
+   18+ WARNING
+========================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+    const warning = document.getElementById("age-warning");
+
+    if (!warning) return;
+
+    if (sessionStorage.getItem("gamesAdultWarning")) {
+        warning.remove();
+        return;
+    }
+
+    document
+        .getElementById("accept-warning")
+        ?.addEventListener("click", () => {
+            sessionStorage.setItem("gamesAdultWarning", "true");
+            warning.remove();
+        });
+
+    document
+        .getElementById("reject-warning")
+        ?.addEventListener("click", () => {
+            window.location.href = "/";
+        });
+});
+
 // games.js
 let allGames = [];
 let displayGames = [];

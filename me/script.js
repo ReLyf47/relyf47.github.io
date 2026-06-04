@@ -308,7 +308,7 @@ document.querySelectorAll("[data-scroll]").forEach((link) => {
 });
 
 /* ==========================================
-   ANIME CARD DYNAMIC BANNER
+   ANIME / MANGA CARD DYNAMIC BANNER
 ========================================== */
 
 const animeCard =
@@ -345,14 +345,25 @@ if (animeCard) {
             !animeLayers.active;
     }
 
-    async function loadRandomAnimeBanner() {
+    async function loadRandomBanner() {
 
         try {
 
+            const sources = [
+                "../extra/animanga/anime-banners.json",
+                "../extra/animanga/manga-banners.json"
+            ];
+
+            const selectedSource =
+                sources[
+                    Math.floor(
+                        Math.random() *
+                        sources.length
+                    )
+                ];
+
             const response =
-                await fetch(
-                    "../extra/anime/banners.json"
-                );
+                await fetch(selectedSource);
 
             const banners =
                 await response.json();
@@ -386,17 +397,17 @@ if (animeCard) {
         catch (err) {
 
             console.error(
-                "Failed to load anime banner:",
+                "Failed to load banner:",
                 err
             );
 
         }
     }
 
-    loadRandomAnimeBanner();
+    loadRandomBanner();
 
     setInterval(
-        loadRandomAnimeBanner,
+        loadRandomBanner,
         10000
     );
 }

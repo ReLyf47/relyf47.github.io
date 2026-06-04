@@ -1,0 +1,30 @@
+{
+    "assets": [
+        "/resources/COMIC.TTF",
+        "/resources/Know.gif",
+        "/resources/Text1.gif",
+        "/resources/Text2.webp",
+        "/resources/Text3.webp",
+        "/resources/avatar.jpg",
+        "/resources/avatar.png",
+        "/resources/background.mp3",
+        "/resources/balls.webp",
+        "/resources/favico.gif",
+        "/resources/favico.png",
+        "/resources/git.png",
+        "/resources/haru.webp",
+        "/resources/havelock.otf",
+        "/resources/header.webp",
+        "/resources/home.png",
+        "/resources/inst.png",
+        "/resources/iu.webp",
+        "/resources/main.ogg",
+        "/resources/me.jpg",
+        "/resources/rocky.gif",
+        "/resources/rolls.mp3",
+        "/resources/speed.ttf",
+        "/resources/steam.png",
+        "/resources/vc.ttf",
+        "/resources/yt.png"
+    ]
+}

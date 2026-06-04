@@ -394,3 +394,60 @@ h1 {
 .audio-btn.playing {
   color: #07F468;
 }
+
+/* ==========================================
+   18+ WARNING
+========================================== */
+
+#age-warning {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.94);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+}
+
+.warning-box {
+  width: min(520px, 90%);
+  background: #1b1b1b;
+  border-radius: 16px;
+  padding: 2rem;
+  color: white;
+  box-shadow: 0 0 40px rgba(0,0,0,.6);
+}
+
+.warning-box h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.warning-box ul {
+  padding-left: 1.5rem;
+}
+
+.warning-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.warning-buttons button {
+  flex: 1;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#accept-warning {
+  background: #ff9000;
+  color: white;
+}
+
+#reject-warning {
+  background: #444;
+  color: white;
+}

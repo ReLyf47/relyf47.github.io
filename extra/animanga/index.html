@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="topbar">
+            <div class="topbar-left">
+                <a href="#" class="back-btn" id="back-btn">⬅ Back</a>
+                <h1 id="page-title">Anime List</h1>
+            </div>
+
+            <button id="switch-btn" type="button"></button>
+        </div>
+
+        <div id="anime-list"></div>
+    </div>
+
+    <div id="age-warning">
+        <div class="warning-box">
+            <h2>⚠️ ADULT CONTENT WARNING ⚠️</h2>
+
+            <p>
+                This page may contain material intended for mature audiences (18+).
+            </p>
+
+            <p>Please ensure that:</p>
+
+            <ul>
+                <li>You are of legal age in your jurisdiction.</li>
+                <li>Viewing this content is permitted where you are.</li>
+                <li>No one nearby may be offended by explicit material.</li>
+            </ul>
+
+            <p>
+                By continuing, you acknowledge these conditions.
+            </p>
+
+            <div class="warning-buttons">
+                <button id="accept-warning">I am 18+</button>
+                <button id="reject-warning">No, I am not 18+</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="page-transition"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
