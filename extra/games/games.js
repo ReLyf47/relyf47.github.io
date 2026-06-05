@@ -26,6 +26,40 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const warning = document.getElementById("age-warning");
+    if (!warning) return;
+
+    if (sessionStorage.getItem("nsfwWarningShown")) {
+        warning.remove();
+        return;
+    }
+
+    // NEW
+    document.body.style.overflow = "hidden";
+
+    document
+        .getElementById("accept-warning")
+        ?.addEventListener("click", () => {
+            sessionStorage.setItem("nsfwWarningShown", "true");
+
+            // NEW
+            document.body.style.overflow = "";
+
+            warning.remove();
+        });
+
+    document
+        .getElementById("reject-warning")
+        ?.addEventListener("click", () => {
+            body.classList.add("fade-out");
+
+            setTimeout(() => {
+                window.location.href = "/";
+            }, 420);
+        });
+});
+
 // games.js
 let allGames = [];
 let displayGames = [];
@@ -183,7 +217,7 @@ function applySortAndRender() {
 
   titleEl.textContent = isFavouritesMode
     ? 'Favourite Games by Franchise'
-    : 'Top 100 Playtime';
+    : 'Top Playtime';
 
   sortToggleEl.textContent = isFavouritesMode
     ? 'Only Favourite'

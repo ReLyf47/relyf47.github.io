@@ -71,6 +71,40 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const warning = document.getElementById("age-warning");
+    if (!warning) return;
+
+    if (sessionStorage.getItem("nsfwWarningShown")) {
+        warning.remove();
+        return;
+    }
+
+    // NEW
+    document.body.style.overflow = "hidden";
+
+    document
+        .getElementById("accept-warning")
+        ?.addEventListener("click", () => {
+            sessionStorage.setItem("nsfwWarningShown", "true");
+
+            // NEW
+            document.body.style.overflow = "";
+
+            warning.remove();
+        });
+
+    document
+        .getElementById("reject-warning")
+        ?.addEventListener("click", () => {
+            body.classList.add("fade-out");
+
+            setTimeout(() => {
+                window.location.href = "/";
+            }, 420);
+        });
+});
+
 /* ==========================================
    REFERRER MEMORY
 ========================================== */
@@ -116,8 +150,8 @@ const FORMAT_ORDER = [
 
 let coverCache = {};
 
-const CSV_FILE = type === "anime" ? "anime.csv" : "manga.csv";
-const COVER_FILE = type === "anime" ? "anime-covers.json" : "manga-covers.json";
+const CSV_FILE = type === "anime" ? "assets/anime.csv" : "assets/manga.csv";
+const COVER_FILE = type === "anime" ? "assets/anime-covers.json" : "assets/manga-covers.json";
 
 const pageTitle = document.getElementById("page-title");
 const switchBtn = document.getElementById("switch-btn");

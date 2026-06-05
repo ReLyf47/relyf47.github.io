@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" type="image/x-icon" href="resources/favico.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../../resources/rocky.gif">
 
     <title>Get To Know Me!</title>
 
@@ -126,28 +126,46 @@
             });
 
             let seconds = 5;
-
             const countdown = document.getElementById("countdown");
+
+            function updateCountdown() {
+                countdown.textContent =
+                    `Just kidding, actually redirecting you in ${seconds}...`;
+            }
+
+            function finish() {
+                document.body.classList.add("fade-out");
+
+                setTimeout(() => {
+                    window.location.href = "/me/";
+                }, 1000);
+            }
 
             const timer = setInterval(() => {
 
                 seconds--;
-
-                countdown.textContent =
-                    `Just kidding, actually redirecting you in ${seconds}...`;
+                updateCountdown();
 
                 if (seconds <= 0) {
-
                     clearInterval(timer);
-
-                    document.body.classList.add("fade-out");
-
-                    setTimeout(() => {
-                        window.location.href = "/me/";
-                    }, 1000);
+                    finish();
                 }
 
             }, 1000);
+
+            // Click anywhere to speed it up
+            rickroll.addEventListener("click", () => {
+
+                seconds--;
+
+                if (seconds <= 0) {
+                    clearInterval(timer);
+                    finish();
+                } else {
+                    updateCountdown();
+                }
+
+            });
         }
     </script>
 

@@ -1,6 +1,6 @@
 extra/games/tools
 resourcemaker.py
-extra/animanga/animemakecover.py
-extra/animanga/mangamakecover.py
-extra/animanga/animemakebanner.py
-extra/animanga/mangamakebanner.py
+extra/animanga/assets/animemakecover.py
+extra/animanga/assets/mangamakecover.py
+extra/animanga/assets/animemakebanner.py
+extra/animanga/assets/mangamakebanner.py

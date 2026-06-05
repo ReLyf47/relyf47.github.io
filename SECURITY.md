@@ -2,67 +2,66 @@
 
 ## Supported Versions
 
-This project is provided as-is and does not currently maintain separate supported release branches.
+This project is maintained on a rolling basis.
 
 | Version        | Supported |
 | -------------- | --------- |
 | Latest         | ✅         |
 | Older Versions | ❌         |
 
----
-
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability related to this website, please report it responsibly by opening a private security report or contacting the maintainer directly.
+If you discover a security vulnerability affecting this project, please report it responsibly.
 
-Please include:
+A report should include:
 
 * A description of the vulnerability
 * Steps to reproduce the issue
 * Potential impact
-* Suggested mitigation (if available)
+* Proof of concept (if applicable)
+* Suggested remediation (optional)
 
-Do **not** publicly disclose security vulnerabilities until they have been reviewed and addressed.
+Please do not publicly disclose security vulnerabilities until they have been reviewed and addressed.
 
----
+## Scope
 
-## Data Collection
+This policy applies to:
 
-This website does not directly collect personal information from visitors.
+* Website source code
+* Client-side JavaScript
+* Configuration files
+* GitHub Pages deployment
 
-However, some third-party services integrated into the website may collect information according to their own policies.
+Examples of relevant issues include:
 
-### Disqus
+* Cross-site scripting (XSS)
+* Content injection
+* Security misconfigurations
+* Dependency-related vulnerabilities
+* Information disclosure caused by this project's code
 
-Comments are provided through Disqus. Disqus may collect information such as:
+## Third-Party Services
 
-* Cookies
-* IP addresses
-* Browser information
-* Usage analytics
+This website may use third-party services, APIs, embedded content, or external resources.
 
-For details, please review the official Disqus Privacy Policy:
+Security issues that originate from third-party providers should be reported to the respective service maintainers.
 
-https://help.disqus.com/en/articles/1717103-disqus-privacy-policy
+## Response Process
 
----
+Reports will be reviewed as time permits.
 
-## Third-Party Content
+If a vulnerability is confirmed, reasonable efforts will be made to investigate, mitigate, or resolve the issue. Response times and fixes are not guaranteed.
 
-This website may load resources, embeds, scripts, or content from third-party providers.
+## Safe Harbor
 
-These services operate independently and may have their own:
+Security researchers acting in good faith to identify and report vulnerabilities will not be considered to be engaging in unauthorized activity, provided that:
 
-* Privacy policies
-* Security practices
-* Data collection procedures
-
-Users should review the policies of any third-party services they interact with while using this website.
-
----
+* Testing does not intentionally harm the website, its users, or its availability.
+* No data is modified, destroyed, or publicly disclosed.
+* Findings are reported privately and responsibly.
 
 ## Disclaimer
 
-While reasonable efforts are made to maintain the security and integrity of this website, no website or online service can guarantee absolute security.
+This project is provided "as is" without warranty of any kind.
 
-Users access and use this website at their own discretion and risk.
+While reasonable efforts are made to maintain the security and integrity of the website, no guarantees are made regarding security, availability, reliability, or fitness for any particular purpose.

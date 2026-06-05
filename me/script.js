@@ -350,8 +350,8 @@ if (animeCard) {
         try {
 
             const sources = [
-                "../extra/animanga/anime-banners.json",
-                "../extra/animanga/manga-banners.json"
+                "../extra/animanga/assets/anime-banners.json",
+                "../extra/animanga/assets/manga-banners.json"
             ];
 
             const selectedSource =
@@ -500,9 +500,6 @@ if (gamesCard) {
 
             const hero =
                 `https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/${appid}/library_hero.jpg`;
-
-            const portrait =
-                randomGame.image;
 
             const img2x = new Image();
 

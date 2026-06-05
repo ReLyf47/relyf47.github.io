@@ -179,3 +179,38 @@
 body.modal-open {
     overflow: hidden;
 }
+
+footer{
+
+    text-align:center;
+
+    padding:4rem 2rem;
+
+    border-top:
+        1px solid rgba(255,255,255,.05);
+}
+
+footer a{
+    margin: 20px !important;
+    color:var(--muted);
+}
+
+footer h1{
+    font-size:1.5rem;
+
+    color:var(--primary);
+
+    margin-bottom:2rem;
+}
+
+footer h2{
+    font-size: 50px;
+    margin: 20px 0;
+    color: #07F468;
+    font-family: 'TF', Arial, sans-serif;
+}
+
+footer h3{
+    margin-top: -10px !important;
+    color:var(--muted);
+}

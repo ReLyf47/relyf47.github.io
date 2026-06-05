@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Security Policy</title>
+
+<style>
+:root{
+    --bg:#0d0d0d;
+    --surface:#171717;
+    --border:#2a2a2a;
+    --text:#f5f5f5;
+    --muted:#a0a0a0;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    line-height:1.8;
+}
+
+header{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:rgba(13,13,13,.9);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--border);
+}
+
+.nav{
+    max-width:900px;
+    margin:auto;
+    padding:1rem;
+}
+
+#marquee-link{
+    color:var(--text);
+    text-decoration:none;
+    font-weight:600;
+    transition:.2s;
+}
+
+#marquee-link:hover{
+    opacity:.7;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:3rem 1.5rem;
+}
+
+.hero{
+    margin-bottom:2rem;
+}
+
+.hero h1{
+    font-size:clamp(2rem,5vw,3rem);
+    margin-bottom:.5rem;
+}
+
+.hero p{
+    color:var(--muted);
+}
+
+.card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:2rem;
+    margin-bottom:1.5rem;
+}
+
+.card h2{
+    margin-bottom:1rem;
+    font-size:1.3rem;
+}
+
+.card p{
+    margin-bottom:1rem;
+}
+
+.card ul{
+    padding-left:1.5rem;
+}
+
+.card li{
+    margin-bottom:.5rem;
+}
+
+.notice{
+    margin-top:1rem;
+    padding:1rem;
+    border-left:4px solid white;
+    background:rgba(255,255,255,.03);
+}
+
+code{
+    background:#0a0a0a;
+    border:1px solid var(--border);
+    padding:.15rem .4rem;
+    border-radius:6px;
+}
+
+footer{
+    text-align:center;
+    color:var(--muted);
+    padding:3rem 1rem;
+}
+
+@media (max-width:768px){
+
+    .container{
+        padding:2rem 1rem;
+    }
+
+    .card{
+        padding:1.5rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="nav">
+        <a href="../" id="marquee-link">← Back</a>
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="hero">
+        <h1>Security Policy</h1>
+
+        <p>
+            Information regarding responsible vulnerability
+            disclosure, supported versions, and security
+            reporting procedures for this project.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Supported Versions</h2>
+
+        <p>
+            This project is maintained on a rolling basis.
+        </p>
+
+        <ul>
+            <li>Latest Version — Supported</li>
+            <li>Older Versions — Not Supported</li>
+        </ul>
+
+        <div class="notice">
+            Security fixes and improvements may only be
+            applied to the latest available version.
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Reporting a Vulnerability</h2>
+
+        <p>
+            If you discover a security vulnerability affecting
+            this project, please report it responsibly.
+        </p>
+
+        <p>
+            A report should include:
+        </p>
+
+        <ul>
+            <li>Description of the vulnerability</li>
+            <li>Steps required to reproduce the issue</li>
+            <li>Potential impact</li>
+            <li>Proof of concept, if applicable</li>
+            <li>Suggested remediation (optional)</li>
+        </ul>
+
+        <p>
+            Please do not publicly disclose vulnerabilities
+            until they have been reviewed and assessed.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Scope</h2>
+
+        <p>
+            This policy applies to:
+        </p>
+
+        <ul>
+            <li>Website source code</li>
+            <li>Client-side JavaScript</li>
+            <li>Configuration files</li>
+            <li>GitHub Pages deployment</li>
+        </ul>
+
+        <p>
+            Examples of relevant issues include:
+        </p>
+
+        <ul>
+            <li>Cross-site scripting (XSS)</li>
+            <li>Content injection vulnerabilities</li>
+            <li>Security misconfigurations</li>
+            <li>Dependency vulnerabilities</li>
+            <li>Information disclosure caused by project code</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>Out of Scope</h2>
+
+        <p>
+            The following generally fall outside the scope
+            of this policy:
+        </p>
+
+        <ul>
+            <li>Issues originating solely from third-party providers</li>
+            <li>Social engineering attempts</li>
+            <li>Denial-of-service testing</li>
+            <li>Automated spam submissions</li>
+            <li>Physical access attacks</li>
+            <li>Browser-specific issues unrelated to project code</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>Third-Party Services</h2>
+
+        <p>
+            This website may utilize third-party APIs,
+            embedded content, hosting infrastructure,
+            comment platforms, analytics services,
+            and external resources.
+        </p>
+
+        <p>
+            Security issues originating from third-party
+            providers should be reported directly to the
+            maintainers of those services.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Response Process</h2>
+
+        <p>
+            Vulnerability reports will be reviewed as
+            time and availability permit.
+        </p>
+
+        <p>
+            If a report is confirmed, reasonable efforts
+            may be made to investigate, mitigate, or
+            resolve the issue.
+        </p>
+
+        <p>
+            Response times, acknowledgements,
+            and fixes are not guaranteed.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Safe Harbor</h2>
+
+        <p>
+            Security researchers acting in good faith
+            to identify and report vulnerabilities
+            will not be considered to be engaging in
+            unauthorized activity provided that:
+        </p>
+
+        <ul>
+            <li>Testing does not intentionally harm the website.</li>
+            <li>Testing does not disrupt availability.</li>
+            <li>No data is modified or destroyed.</li>
+            <li>No information is publicly disclosed before review.</li>
+            <li>Findings are reported responsibly.</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>Disclaimer</h2>
+
+        <p>
+            This project is provided
+            <code>"AS IS"</code>
+            without warranty of any kind.
+        </p>
+
+        <p>
+            While reasonable efforts may be made to
+            maintain security and integrity,
+            no guarantees are provided regarding:
+        </p>
+
+        <ul>
+            <li>Security</li>
+            <li>Availability</li>
+            <li>Reliability</li>
+            <li>Fitness for a particular purpose</li>
+            <li>Protection from all vulnerabilities</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>Policy Updates</h2>
+
+        <p>
+            This Security Policy may be modified,
+            updated, or replaced at any time
+            without prior notice.
+        </p>
+
+        <p>
+            Continued use of the project following
+            publication of changes constitutes
+            acceptance of the updated policy.
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    © 2026 ReLyf. All rights reserved.
+</footer>
+
+<script>
+document.getElementById("marquee-link").addEventListener("click", (e) => {
+    e.preventDefault();
+
+    if (
+        document.referrer &&
+        new URL(document.referrer).origin === location.origin
+    ) {
+        history.back();
+    } else {
+        location.href = "../";
+    }
+});
+</script>
+
+</body>
+</html>
