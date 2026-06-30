@@ -4,1420 +4,5847 @@
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1113000/library_600x900.jpg",
     "playtime": "1400.0h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/1113000/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Banana",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2923300/baa0ce7a76b0a504512b4a152d72a5309fc8f568/library_600x900.jpg",
     "playtime": "1158.4h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/2923300/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Persona 5 Royal",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1687950/library_600x900.jpg",
     "playtime": "858.1h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/1687950/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "PAYDAY 2",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/218620/library_600x900.jpg",
     "playtime": "258.4h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/218620/",
-    "favorite": false
+    "favorite": true,
+    "nsfw": false
+  },
+  {
+    "name": "Left 4 Dead 2",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/550/library_600x900.jpg",
+    "playtime": "212.0h",
+    "review": "https://steamcommunity.com/id/relyf_/recommended/550/",
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Cyberpunk 2077",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1091500/6399de67cce3cecadce7900e03f6e09ff910a235/library_capsule.jpg",
     "playtime": "209.1h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/1091500/",
-    "favorite": true
-  },
-  {
-    "name": "Left 4 Dead 2",
-    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/550/library_600x900.jpg",
-    "playtime": "208.2h",
-    "review": "https://steamcommunity.com/id/relyf_/recommended/550/",
-    "favorite": false
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Counter-Strike 2",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/730/library_600x900.jpg",
-    "playtime": "142.6h",
+    "playtime": "152.4h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/730/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "LEGO® DC Super-Villains",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/829110/library_600x900.jpg",
     "playtime": "135.9h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/829110/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "LEGO® MARVEL Super Heroes 2",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/647830/library_600x900.jpg",
     "playtime": "134.7h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/647830/",
-    "favorite": false
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Grand Theft Auto V Legacy",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/271590/library_600x900.jpg",
     "playtime": "122.1h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/271590/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Persona 3 Reload",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2161700/library_600x900.jpg",
+    "playtime": "117.8h",
+    "review": "https://steamcommunity.com/id/relyf_/recommended/2161700/",
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "LEGO® Star Wars™: The Skywalker Saga",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/920210/library_600x900.jpg",
     "playtime": "114.0h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/920210/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "LEGO® Pirates of the Caribbean The Video Game",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/311770/library_600x900.jpg",
     "playtime": "111.2h",
     "review": "",
-    "favorite": false
-  },
-  {
-    "name": "Persona 3 Reload",
-    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2161700/library_600x900.jpg",
-    "playtime": "110.0h",
-    "review": "https://steamcommunity.com/id/relyf_/recommended/2161700/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Black Myth: Wukong",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2358720/library_600x900.jpg",
     "playtime": "109.2h",
     "review": "",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Tom Clancy's Rainbow Six Siege",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/359550/5878a9291aaf2334e08424c6db8e9635d9fa05b4/library_capsule.jpg",
     "playtime": "107.7h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/359550/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "THE FINALS",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2073850/755e36577cc4a72d936c4532c1cf7ecf7d89dae5/library_capsule.jpg",
     "playtime": "98.3h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/2073850/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Terraria",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/105600/library_600x900.jpg",
     "playtime": "93.9h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/105600/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "LEGO® MARVEL Super Heroes",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/249130/library_600x900.jpg",
     "playtime": "92.7h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/249130/",
-    "favorite": false
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "LEGO® Jurassic World",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/352400/library_600x900.jpg",
     "playtime": "88.9h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/352400/",
-    "favorite": false
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Clair Obscur: Expedition 33",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1903340/8b21381a43ac5a535a838f723815f8fe14ceaf7c/library_600x900.jpg",
     "playtime": "85.1h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/1903340/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Atelier Resleriana: Forgotten Alchemy and the Polar Night Liberator",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2594920/library_600x900.jpg",
     "playtime": "84.5h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/2594920/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "LEGO® MARVEL's Avengers",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/405310/library_600x900.jpg",
     "playtime": "82.7h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/405310/",
-    "favorite": false
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Forspoken",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1680880/library_600x900.jpg",
     "playtime": "79.7h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/1680880/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Wallpaper Engine",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/431960/library_600x900.jpg",
-    "playtime": "79.5h",
+    "playtime": "79.6h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Persona 5 Strikers",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1382330/library_600x900.jpg",
     "playtime": "68.6h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/1382330/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
+  },
+  {
+    "name": "Wuthering Waves",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3513350/d2cb0c5bf4f7ec856f55e2b7c49ce7548e5c98a6/library_capsule.jpg",
+    "playtime": "61.8h",
+    "review": "",
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "LEGO® The Hobbit™",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/285160/library_600x900.jpg",
     "playtime": "60.7h",
     "review": "",
-    "favorite": false
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "LEGO® Star Wars™: The Complete Saga",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/32440/library_600x900.jpg",
     "playtime": "60.5h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/32440/",
-    "favorite": false
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Far Cry 5",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/552520/library_600x900.jpg",
     "playtime": "60.5h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "LEGO® Batman™ 3: Beyond Gotham",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/313690/library_600x900.jpg",
     "playtime": "60.2h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/313690/",
-    "favorite": false
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "METAL GEAR SOLID V: THE PHANTOM PAIN",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/287700/library_600x900.jpg",
     "playtime": "58.5h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/287700/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "NARUTO SHIPPUDEN: Ultimate Ninja STORM 3 Full Burst",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/234670/portrait.png",
     "playtime": "56.8h",
     "review": "",
-    "favorite": false
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "LEGO® Batman™: The Videogame",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/21000/library_600x900.jpg",
     "playtime": "54.1h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/21000/",
-    "favorite": false
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "LEGO® City Undercover",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/578330/library_600x900.jpg",
     "playtime": "53.6h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/578330/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "NARUTO SHIPPUDEN: Ultimate Ninja STORM 4",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/349040/library_600x900.jpg",
     "playtime": "49.8h",
     "review": "",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
+  },
+  {
+    "name": "TBH: Task Bar Hero",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3678970/27924ae787ba8bd793a39efd6c778b0b32226a31/library_capsule.jpg",
+    "playtime": "49.0h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Persona 5 Tactica",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2254740/library_600x900.jpg",
     "playtime": "44.6h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/2254740/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Crimson Desert",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3321460/0ea942465fd1dff8a7fbc11cc9fca8c476c5e5ae/library_capsule.jpg",
-    "playtime": "43.0h",
+    "playtime": "43.3h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/3321460/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "LEGO® Batman™ 2: DC Super Heroes",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/213330/library_600x900.jpg",
     "playtime": "42.4h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/213330/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Watch_Dogs",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/243470/portrait.png",
     "playtime": "41.8h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/243470/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "NARUTO X BORUTO Ultimate Ninja STORM CONNECTIONS",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1020790/library_600x900.jpg",
     "playtime": "41.6h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/1020790/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "EA SPORTS FC™ 25",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2669320/c5ddf022ee6adee9aa6a6a6e8cb9e1c8b8490022/library_600x900.jpg",
     "playtime": "41.1h",
     "review": "",
-    "favorite": false
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Borderlands 2",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/49520/library_600x900.jpg",
     "playtime": "40.0h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/49520/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Suicide Squad: Kill the Justice League",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/315210/library_600x900.jpg",
     "playtime": "38.9h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/315210/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Sheep Love",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1520060/library_600x900.jpg",
     "playtime": "38.2h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/1520060/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": true
   },
   {
     "name": "DEAD OR ALIVE Xtreme Venus Vacation",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/958260/library_600x900.jpg",
     "playtime": "38.0h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/958260/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": true
   },
   {
     "name": "NARUTO: Ultimate Ninja STORM",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/495140/portrait.png",
     "playtime": "36.7h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/495140/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "The LEGO® NINJAGO® Movie Video Game",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/640590/library_600x900.jpg",
     "playtime": "35.5h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/640590/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Warframe",
-    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/230410/d34f5b8006b986b9a8fafd6429d6c71c36b3c6d6/library_capsule.jpg",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/230410/2c0bfd80883c15c57f995b7007c15d439e7dd0fc/library_capsule.jpg",
     "playtime": "35.4h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Apex Legends",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1172470/1dcf9e8c09b18f953c969dffb4deb36e7d8a05f7/library_capsule.jpg",
     "playtime": "35.4h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/1172470/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Marvel's Guardians of the Galaxy",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1088850/library_600x900.jpg",
     "playtime": "35.1h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "NARUTO SHIPPUDEN: Ultimate Ninja STORM 2",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/543870/portrait.png",
     "playtime": "34.7h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/543870/",
-    "favorite": false
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Soul Hackers 2",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1777620/library_600x900.jpg",
     "playtime": "33.6h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/1777620/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Crime Boss: Rockay City",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2933080/library_600x900.jpg",
     "playtime": "32.0h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/2933080/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "STAR WARS Jedi: Fallen Order™ ",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1172380/library_600x900.jpg",
     "playtime": "31.1h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/1172380/",
-    "favorite": false
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "EA SPORTS FC™ 24",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2195250/library_600x900.jpg",
     "playtime": "28.6h",
     "review": "",
-    "favorite": false
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Slay the Spire 2",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2868840/4bf4dad2c9c82b1989eee4a664ca7ce7bf3cc4a7/library_600x900.jpg",
     "playtime": "28.4h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Geometry Dash",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/322170/library_600x900.jpg",
     "playtime": "27.7h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "CrossCode",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/368340/library_600x900.jpg",
     "playtime": "25.5h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/368340/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "LEGO® The Incredibles",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/818320/library_600x900.jpg",
     "playtime": "25.2h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/818320/",
-    "favorite": false
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Mad Max",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/234140/library_600x900.jpg",
     "playtime": "24.8h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "ONE PUNCH MAN: A HERO NOBODY KNOWS ",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/991560/library_600x900.jpg",
     "playtime": "24.4h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/991560/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Crash Bandicoot™ N. Sane Trilogy",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/731490/library_600x900.jpg",
     "playtime": "23.8h",
     "review": "",
-    "favorite": false
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Blue Archive",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3557620/56639673818079bf966c8bec85d7c3b26baced24/library_600x900.jpg",
     "playtime": "23.5h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/3557620/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "TRIBE NINE",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2376580/6bd5d7646d2a602c14cbf36861ca1f6dbdaf0794/library_600x900.jpg",
     "playtime": "23.3h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "HuniePop 2: Double Date",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/930210/library_600x900.jpg",
     "playtime": "23.2h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/930210/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": true
   },
   {
     "name": "FINAL FANTASY VII EVER CRISIS",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2484110/library_600x900.jpg",
     "playtime": "21.5h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/2484110/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "AKIBA'S TRIP: Hellbound & Debriefed",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1236780/library_600x900.jpg",
     "playtime": "21.1h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/1236780/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Catherine Classic",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/893180/library_600x900.jpg",
     "playtime": "20.9h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/893180/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Capcom Arcade Stadium",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1515950/library_600x900.jpg",
     "playtime": "20.2h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1490890/library_600x900.jpg",
     "playtime": "19.8h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/1490890/",
-    "favorite": false
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "The LEGO® Movie 2 - Videogame",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/881320/library_600x900.jpg",
     "playtime": "19.6h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/881320/",
-    "favorite": false
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "The LEGO® Movie - Videogame",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/267530/library_600x900.jpg",
     "playtime": "19.1h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/267530/",
-    "favorite": false
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Need for Speed™ Heat ",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1222680/library_600x900.jpg",
     "playtime": "18.7h",
     "review": "",
-    "favorite": false
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "HuniePop",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/339800/library_600x900.jpg",
     "playtime": "18.6h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/339800/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": true
   },
   {
     "name": "The Lord of the Rings: Gollum™",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1265780/library_600x900.jpg",
     "playtime": "18.5h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/1265780/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Forza Horizon 4",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1293830/library_600x900.jpg",
     "playtime": "18.3h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "NBA 2K25",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2878980/library_600x900.jpg",
     "playtime": "17.7h",
     "review": "",
-    "favorite": false
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Mortal Kombat 1",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1971870/library_600x900.jpg",
     "playtime": "17.5h",
     "review": "",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Bayonetta",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/460790/library_600x900.jpg",
     "playtime": "17.1h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/460790/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Severed Steel",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1227690/library_600x900.jpg",
     "playtime": "17.0h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Golf With Your Friends",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/431240/library_600x900.jpg",
     "playtime": "16.8h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Middle-earth™: Shadow of Mordor™",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/241930/library_600x900.jpg",
     "playtime": "16.4h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/241930/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "eFootball™",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1665460/70afd2f5cd6a38ce23abb85e986e8d1a57e2eda7/library_capsule.jpg",
     "playtime": "16.1h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "FINAL FANTASY X/X-2 HD Remaster",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/359870/library_600x900.jpg",
     "playtime": "15.6h",
     "review": "",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Puyo Puyo™ Tetris® 2",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1259790/library_600x900.jpg",
     "playtime": "15.0h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "STORY OF SEASONS: Friends of Mineral Town",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/978780/library_600x900.jpg",
     "playtime": "14.8h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "TSUNDERE MILFIN",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2307220/721d24528f7cfa9003ed1ae21fd5e796ca530418/library_600x900.jpg",
     "playtime": "14.7h",
     "review": "",
-    "favorite": false
+    "favorite": true,
+    "nsfw": true
   },
   {
     "name": "DYNASTY WARRIORS 7: Xtreme Legends Definitive Edition",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/968790/portrait.png",
     "playtime": "14.6h",
     "review": "",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Watch_Dogs 2",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/447040/library_600x900.jpg",
     "playtime": "14.3h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "LEGO® STAR WARS™: The Force Awakens",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/438640/library_600x900.jpg",
     "playtime": "14.0h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/438640/",
-    "favorite": false
+    "favorite": true,
+    "nsfw": false
+  },
+  {
+    "name": "StarSavior",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3609080/55e968722995ca1d9857fa04cf6643365d1a43f9/library_600x900.jpg",
+    "playtime": "12.8h",
+    "review": "https://steamcommunity.com/id/relyf_/recommended/3609080/",
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Green Hell",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/815370/library_600x900.jpg",
     "playtime": "12.8h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Hogwarts Legacy",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/990080/941d5ed2debf633890dc5d9af39f2e22b404c177/library_600x900.jpg",
     "playtime": "12.6h",
     "review": "",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Resident Evil 4 (2005)",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/254700/library_600x900.jpg",
     "playtime": "12.2h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/254700/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Ridge Racer™ Unbounded",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/202310/portrait.png",
     "playtime": "12.0h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "PUBG: BATTLEGROUNDS",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/578080/36a1a274b3a7870e475ea1e110e58db8a0803c41/library_600x900.jpg",
     "playtime": "12.0h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Resident Evil 2",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/883710/library_600x900.jpg",
     "playtime": "11.7h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Hitman: Absolution",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/203140/library_600x900.jpg",
     "playtime": "11.6h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Flowers Blooming at the End of Summer",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1173010/c6296f57405161a98cedf2d10d90793c84a90828/library_600x900.jpg",
     "playtime": "11.4h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "MyDockFinder",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1787090/library_600x900.jpg",
     "playtime": "11.2h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/1787090/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Black Desert (Retired)",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/836620/library_600x900.jpg",
     "playtime": "11.2h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/836620/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "MY HERO ONE'S JUSTICE",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/748360/portrait.png",
     "playtime": "11.1h",
     "review": "",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Ryse: Son of Rome",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/302510/library_600x900.jpg",
     "playtime": "10.6h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Metaphor: ReFantazio",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2679460/library_600x900.jpg",
+    "playtime": "10.4h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Futanari Quest",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/790410/library_600x900.jpg",
     "playtime": "10.4h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/790410/",
-    "favorite": false
-  },
-  {
-    "name": "StarSavior",
-    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3609080/55e968722995ca1d9857fa04cf6643365d1a43f9/library_600x900.jpg",
-    "playtime": "10.1h",
-    "review": "https://steamcommunity.com/id/relyf_/recommended/3609080/",
-    "favorite": true
+    "favorite": false,
+    "nsfw": true
   },
   {
     "name": "Prey",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/480490/library_600x900.jpg",
     "playtime": "9.8h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/480490/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Overwatch®",
-    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2357570/bbc8ff3e233ad7a678d111ab9a658580a1789033/library_capsule.jpg",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2357570/145628e31879edf7385bf02f9b7949ce46e39f2d/library_capsule.jpg",
     "playtime": "9.4h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/2357570/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "F1 2015",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/286570/library_600x900.jpg",
     "playtime": "9.4h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Assassin's Creed Unity",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/289650/library_600x900.jpg",
     "playtime": "9.2h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Marvel's Avengers - The Definitive Edition",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/997070/library_600x900.jpg",
     "playtime": "8.9h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/997070/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Persona 4 Arena Ultimax",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1602010/library_600x900.jpg",
     "playtime": "8.7h",
     "review": "",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Yu-Gi-Oh! Duel Links",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/601510/f2ed4ee02c1baf316f3f2b08ec1522268b6288c5/library_capsule.jpg",
     "playtime": "8.5h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "PGA TOUR 2K21",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1016120/library_600x900.jpg",
     "playtime": "8.4h",
     "review": "",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Nunholy",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2854740/ead26d4dcb39d347eea4e302fe10b5905b988a74/library_600x900.jpg",
     "playtime": "8.4h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/2854740/",
-    "favorite": false
+    "favorite": true,
+    "nsfw": true
   },
   {
     "name": "Super Battle Golf",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4069520/0940643e803bdce6e3b7c6560f1970e8ed42dec1/library_capsule.jpg",
     "playtime": "8.4h",
     "review": "",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "ヘブンバーンズレッド",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1973710/library_600x900.jpg",
     "playtime": "8.4h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Tomb Raider",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/203160/6cf7bf60b8dbbbcf693f0456819bbdcfe6187c8c/library_capsule.jpg",
+    "playtime": "8.4h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Mirror's Edge",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/17410/library_600x900.jpg",
     "playtime": "8.3h",
     "review": "",
-    "favorite": false
-  },
-  {
-    "name": "Tomb Raider",
-    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/203160/6cf7bf60b8dbbbcf693f0456819bbdcfe6187c8c/library_capsule.jpg",
-    "playtime": "8.2h",
-    "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Little Nightmares",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/424840/61f07d0288ff0d62cfb718dcab0a0eb33d9241c0/library_capsule.jpg",
     "playtime": "8.2h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Back 4 Blood",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/924970/library_600x900.jpg",
     "playtime": "8.2h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/924970/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Succubus★Connect!",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1435010/library_600x900.jpg",
     "playtime": "8.2h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/1435010/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": true
   },
   {
     "name": "FOR HONOR",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/304390/93723b4e6f256d52d617b04789ffd4eee77e7e2b/library_capsule.jpg",
     "playtime": "7.7h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/304390/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Another Crab's Treasure",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1887840/library_600x900.jpg",
     "playtime": "7.7h",
     "review": "",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Mortal Kombat X",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/307780/library_600x900.jpg",
     "playtime": "7.6h",
     "review": "",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Need for Speed™ Most Wanted",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1262560/library_600x900.jpg",
     "playtime": "7.3h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Agony UNRATED",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/879420/library_600x900.jpg",
     "playtime": "7.2h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/879420/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": true
   },
   {
     "name": "Adorable Crush",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1266800/library_600x900.jpg",
     "playtime": "7.2h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/1266800/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": true
   },
   {
     "name": "Super Star",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/503300/portrait.png",
     "playtime": "7.2h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": true
   },
   {
     "name": "Milk outside a bag of milk outside a bag of milk",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1604000/library_600x900.jpg",
     "playtime": "7.1h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "MOBIUS FINAL FANTASY",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/536930/library_600x900.jpg",
     "playtime": "6.7h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "DEEP SPACE WAIFU: FANTASY",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/859680/library_600x900.jpg",
     "playtime": "6.6h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "KILL la KILL -IF",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/922500/library_600x900.jpg",
     "playtime": "6.6h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/922500/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Muse Dash",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/774171/library_600x900.jpg",
     "playtime": "6.6h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/774171/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "MiSide",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2527500/library_600x900.jpg",
     "playtime": "6.5h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/2527500/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Content Warning",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2881650/library_600x900.jpg",
     "playtime": "6.4h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "WARSAW RISING: City of Heroes",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1026420/6525be708b7ee87250f23571bd933fcd65bee066/library_600x900.jpg",
     "playtime": "6.2h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Chicken Invaders 3",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/377460/library_600x900.jpg",
     "playtime": "6.2h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Mokoko X",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1785000/library_600x900.jpg",
     "playtime": "6.2h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/1785000/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": true
   },
   {
     "name": "Them and Us",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/915600/library_600x900.jpg",
     "playtime": "6.2h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Injustice: Gods Among Us Ultimate Edition",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/242700/portrait.png",
     "playtime": "6.2h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "The Tenants",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1009560/library_600x900.jpg",
     "playtime": "6.1h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Love wish",
-    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1153430/library_600x900.jpg",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1153430/08228bf168cc21b0d98623144b9cf7afa37cf4e3/library_capsule.jpg",
     "playtime": "6.0h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/1153430/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": true
   },
   {
     "name": "Urban Trial Freestyle",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/243450/library_600x900.jpg",
     "playtime": "6.0h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Lords Of The Fallen",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/265300/library_600x900.jpg",
     "playtime": "6.0h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Need for Speed™",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1262540/library_600x900.jpg",
     "playtime": "5.9h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/1262540/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Planet Coaster",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/493340/library_600x900.jpg",
     "playtime": "5.9h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Between Me and The Night",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/285070/portrait.png",
     "playtime": "5.8h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Soulslinger: Envoy of Death",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2429240/library_600x900.jpg",
     "playtime": "5.8h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/2429240/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "MURDERED: SOUL SUSPECT™",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/233290/portrait.png",
     "playtime": "5.7h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Black Desert",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/582660/388d66db256e9e20778ac5ded1a21e34d160adbe/library_capsule.jpg",
     "playtime": "5.7h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "DEEP SPACE WAIFU: NEKOMIMI",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/868980/library_600x900.jpg",
     "playtime": "5.7h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/868980/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": true
   },
   {
     "name": "Marvel Rivals",
-    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2767030/26c975e5dbc58b8e9a83caa0f6ac0d84ed2003b4/library_capsule.jpg",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2767030/108a2d7bfd11ce1f5abe1abd9a51914bb494ced0/library_capsule.jpg",
     "playtime": "5.6h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "LEGO® Harry Potter: Years 1-4",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/21130/library_600x900.jpg",
     "playtime": "5.6h",
     "review": "",
-    "favorite": false
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "SWORD ART ONLINE Alicization Lycoris",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1009290/library_600x900.jpg",
     "playtime": "5.6h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/1009290/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Trepang2",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1164940/library_600x900.jpg",
     "playtime": "5.5h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Killing Floor 2",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/232090/library_600x900.jpg",
     "playtime": "5.5h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/232090/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "PUBG: BLINDSPOT",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3143710/2e6e2ed3d5f1aff1803cfa8a97a961ee4cbb192c/library_capsule.jpg",
     "playtime": "5.4h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "FINAL FANTASY XIII",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/292120/library_600x900.jpg",
     "playtime": "5.4h",
     "review": "",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "DEATH STRANDING DIRECTOR'S CUT",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1850570/library_600x900.jpg",
     "playtime": "5.4h",
     "review": "",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Nitroplus Blasterz: Heroines Infinite Duel",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/482450/library_600x900.jpg",
     "playtime": "5.4h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "UNLOVED",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/321270/library_600x900.jpg",
     "playtime": "5.3h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Control Ultimate Edition",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/870780/library_600x900.jpg",
     "playtime": "5.2h",
     "review": "",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Truberbrook",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/757300/library_600x900.jpg",
     "playtime": "5.2h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "The Cursed Crusade",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/106000/portrait.png",
     "playtime": "5.2h",
     "review": "",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
-    "name": "ENDLESS™ Space - Definitive Edition",
+    "name": "ENDLESS Space™ - Definitive Edition",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/208140/library_600x900.jpg",
     "playtime": "5.2h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Heavy Rain",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/960910/library_600x900.jpg",
     "playtime": "5.2h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "White Noise 2",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/503350/library_600x900.jpg",
     "playtime": "5.2h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Lawn Mowing Simulator",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1480560/library_600x900.jpg",
     "playtime": "5.1h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "LEGO® Star Wars™ III: The Clone Wars™",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/32510/library_600x900.jpg",
     "playtime": "5.1h",
     "review": "",
-    "favorite": false
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Neptunia x SENRAN KAGURA: Ninja Wars",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1836860/library_600x900.jpg",
     "playtime": "5.1h",
     "review": "",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "LEGO® Bricktales",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1898290/library_600x900.jpg",
     "playtime": "5.1h",
     "review": "",
-    "favorite": false
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Breathedge",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/738520/library_600x900.jpg",
     "playtime": "5.1h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Prismata",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/490220/library_600x900.jpg",
     "playtime": "5.0h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "GRIME",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1123050/library_600x900.jpg",
     "playtime": "5.0h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Vainglory",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1025580/library_600x900.jpg",
     "playtime": "5.0h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "AKIBA'S TRIP: Undead & Undressed",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/333980/library_600x900.jpg",
     "playtime": "4.9h",
     "review": "",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Sex with the Devil",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1202690/library_600x900.jpg",
     "playtime": "4.9h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/1202690/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": true
   },
   {
     "name": "Borderlands: The Pre-Sequel",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/261640/library_600x900.jpg",
     "playtime": "4.9h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Floppy Knights",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1057800/library_600x900.jpg",
     "playtime": "4.9h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Garry's Mod",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4000/library_600x900.jpg",
     "playtime": "4.8h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Train Valley 2",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/602320/library_600x900.jpg",
     "playtime": "4.8h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Hyperdimension Neptunia Re;Birth2 Sisters Generation",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/351710/library_600x900.jpg",
     "playtime": "4.8h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Fairy Fencer F Advent Dark Force",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/524580/library_600x900.jpg",
     "playtime": "4.8h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Sexy Fitness Girl",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1170610/portrait.png",
     "playtime": "4.8h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/1170610/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": true
   },
   {
     "name": "V-LOVER!",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3044740/library_600x900.jpg",
     "playtime": "4.8h",
     "review": "",
-    "favorite": true
-  },
-  {
-    "name": "Wuthering Waves",
-    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3513350/4ff4d5f1e66a1580fa2dfefe88bdaa36015c8e18/library_capsule.jpg",
-    "playtime": "4.7h",
-    "review": "",
-    "favorite": true
+    "favorite": true,
+    "nsfw": true
   },
   {
     "name": "SNK HEROINES Tag Team Frenzy",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/794580/library_600x900.jpg",
     "playtime": "4.7h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Mahjong Strip Solitaire: Harem Guild",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1008520/portrait.png",
     "playtime": "4.7h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": true
   },
   {
     "name": "Conception II: Children of the Seven Stars",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/458730/library_600x900.jpg",
     "playtime": "4.7h",
     "review": "",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "THE KING OF FIGHTERS XIV STEAM EDITION",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/571260/library_600x900.jpg",
     "playtime": "4.7h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "The Anacrusis",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1120480/library_600x900.jpg",
     "playtime": "4.6h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Maneater",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/629820/library_600x900.jpg",
     "playtime": "4.6h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Tetris® Effect: Connected",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1003590/library_600x900.jpg",
     "playtime": "4.6h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "BOOBS SAGA: Prepare To Hentai Edition",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/726360/9cbec78b49d1642497a3ef5e13af630791be6362/library_capsule.jpg",
     "playtime": "4.6h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": true
   },
   {
     "name": "Thumper",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/356400/library_600x900.jpg",
     "playtime": "4.5h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Psychonauts",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3830/library_600x900.jpg",
     "playtime": "4.5h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Enigmoon",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/406090/portrait.png",
     "playtime": "4.5h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "NEEDY STREAMER OVERLOAD",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1451940/library_600x900.jpg",
     "playtime": "4.4h",
     "review": "",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Reverse: 1999",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3092660/library_600x900.jpg",
     "playtime": "4.4h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "HunieCam Studio",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/426000/library_600x900.jpg",
     "playtime": "4.4h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/426000/",
-    "favorite": true
+    "favorite": true,
+    "nsfw": true
   },
   {
     "name": "Shadowverse",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/453480/library_600x900.jpg",
     "playtime": "4.4h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Killer is Dead",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/261110/library_600x900.jpg",
     "playtime": "4.4h",
     "review": "",
-    "favorite": true
+    "favorite": true,
+    "nsfw": false
   },
   {
     "name": "Danganronpa: Trigger Happy Havoc",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/413410/library_600x900.jpg",
     "playtime": "4.3h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "GRID 2",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/44350/library_600x900.jpg",
     "playtime": "4.3h",
     "review": "https://steamcommunity.com/id/relyf_/recommended/44350/",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
   },
   {
     "name": "Fahrenheit: Indigo Prophecy Remastered",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/312840/portrait.png",
     "playtime": "4.3h",
     "review": "",
-    "favorite": false
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "The Escapists 2",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/641990/library_600x900.jpg",
+    "playtime": "4.2h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Detroit: Become Human",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1222140/library_600x900.jpg",
+    "playtime": "4.2h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Garbage",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1253710/library_600x900.jpg",
+    "playtime": "4.2h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Dungeon of Elements",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/302310/library_600x900.jpg",
+    "playtime": "4.2h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Praey for the Gods",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/494430/library_600x900.jpg",
+    "playtime": "4.2h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Observation",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/906100/library_600x900.jpg",
+    "playtime": "4.2h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "ScourgeBringer",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1037020/library_600x900.jpg",
+    "playtime": "4.2h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Danganronpa S: Ultimate Summer Camp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1691970/library_600x900.jpg",
+    "playtime": "4.2h",
+    "review": "",
+    "favorite": true,
+    "nsfw": false
+  },
+  {
+    "name": "The Last Spell",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1105670/library_600x900.jpg",
+    "playtime": "4.1h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Going Under",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1154810/library_600x900.jpg",
+    "playtime": "4.1h",
+    "review": "",
+    "favorite": true,
+    "nsfw": false
+  },
+  {
+    "name": "Zoeti",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1434540/library_600x900.jpg",
+    "playtime": "4.1h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "112 Operator",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/793460/library_600x900.jpg",
+    "playtime": "4.1h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Far Cry Primal",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/371660/library_600x900.jpg",
+    "playtime": "4.0h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Sniper Elite 3",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/238090/library_600x900.jpg",
+    "playtime": "4.0h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Paradise Killer",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1160220/library_600x900.jpg",
+    "playtime": "4.0h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Blue Estate",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/305380/portrait.png",
+    "playtime": "4.0h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Metro 2033 Redux",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/286690/library_600x900.jpg",
+    "playtime": "3.9h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Drug Dealer Simulator",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/682990/d9982816b4915d16c9d6c14f1d582834b08e711f/library_600x900.jpg",
+    "playtime": "3.9h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "GOD EATER 3",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/899440/library_600x900.jpg",
+    "playtime": "3.9h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Injustice™ 2",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/627270/library_600x900.jpg",
+    "playtime": "3.9h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Disney Planes",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/286880/15c545bb5c46979687c375f4daa1e27a8dc5a9cb/library_600x900.jpg",
+    "playtime": "3.8h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Spirit of the North",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1213700/library_600x900.jpg",
+    "playtime": "3.8h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Total War: ATTILA",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/325610/library_600x900.jpg",
+    "playtime": "3.8h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Middle-earth™: Shadow of War™",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/356190/library_600x900.jpg",
+    "playtime": "3.8h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Late Shift",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/584980/library_600x900.jpg",
+    "playtime": "3.8h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Femdom Waifu",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1024800/library_600x900.jpg",
+    "playtime": "3.8h",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Akin",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/487370/portrait.png",
+    "playtime": "3.8h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "The Coffin of Andy and Leyley",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2378900/9a57e0e863676b4660cd2047ef0440939292c18d/library_600x900.jpg",
+    "playtime": "3.7h",
+    "review": "https://steamcommunity.com/id/relyf_/recommended/2378900/",
+    "favorite": true,
+    "nsfw": false
+  },
+  {
+    "name": "NSFW ~ Not a Simulator For Working",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/545030/library_600x900.jpg",
+    "playtime": "3.7h",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "QUICKERFLAK",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1836120/library_600x900.jpg",
+    "playtime": "3.6h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Scribblenauts Unlimited",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/218680/portrait.png",
+    "playtime": "3.6h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Moving Out",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/996770/library_600x900.jpg",
+    "playtime": "3.6h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "KHOLAT",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/343710/library_600x900.jpg",
+    "playtime": "3.6h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Dead Island Riptide Definitive Edition",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/383180/library_600x900.jpg",
+    "playtime": "3.6h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Made in Abyss: Binary Star Falling into Darkness",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1324340/library_600x900.jpg",
+    "playtime": "3.6h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Operation: Tango - Demo",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1377150/library_600x900.jpg",
+    "playtime": "3.5h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Etrian Odyssey HD",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1868180/library_600x900.jpg",
+    "playtime": "3.5h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Star Wars: Battlefront 2 (Classic, 2005)",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/6060/library_600x900.jpg",
+    "playtime": "3.5h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Cook, Serve, Delicious!",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/247020/library_600x900.jpg",
+    "playtime": "3.5h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Syberia",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/46500/library_600x900.jpg",
+    "playtime": "3.4h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Blood Knights",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/258220/library_600x900.jpg",
+    "playtime": "3.4h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Panty Party",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/562410/library_600x900.jpg",
+    "playtime": "3.4h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Tower of Time",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/617480/b8a3dec0dbe769f199171beab68acd479ea48c4e/library_600x900.jpg",
+    "playtime": "3.4h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Metro: Last Light Redux",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/287390/library_600x900.jpg",
+    "playtime": "3.4h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "LEGOⓇ Indiana Jones™: The Original Adventures",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/32330/library_600x900.jpg",
+    "playtime": "3.3h",
+    "review": "",
+    "favorite": true,
+    "nsfw": false
+  },
+  {
+    "name": "Layers of Fear (2016)",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/391720/library_600x900.jpg",
+    "playtime": "3.3h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Lust for Darkness",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/523650/library_600x900.jpg",
+    "playtime": "3.3h",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "ONE PIECE BURNING BLOOD",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/425220/portrait.png",
+    "playtime": "3.3h",
+    "review": "",
+    "favorite": true,
+    "nsfw": false
+  },
+  {
+    "name": "Shipped",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1037190/library_600x900.jpg",
+    "playtime": "3.3h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Looking Up I See Only A Ceiling",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1742930/library_600x900.jpg",
+    "playtime": "3.3h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Mitsurugi Kamui Hikae",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/263620/library_600x900.jpg",
+    "playtime": "3.3h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Trip to Vinelands",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/546090/library_600x900.jpg",
+    "playtime": "3.3h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "TTV2",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/701470/library_600x900.jpg",
+    "playtime": "3.3h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Danganronpa 2: Goodbye Despair",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/413420/library_600x900.jpg",
+    "playtime": "3.2h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "CRYSTAR",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/981750/library_600x900.jpg",
+    "playtime": "3.2h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Finding Paradise",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/337340/library_600x900.jpg",
+    "playtime": "3.2h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Hentai Asmodeus",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1147510/library_600x900.jpg",
+    "playtime": "3.2h",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Warface: Clutch",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/291480/412ad71c7972c3e8006dfa3aec08982f5658d42a/library_capsule.jpg",
+    "playtime": "3.2h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "UBERMOSH",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/357070/library_600x900.jpg",
+    "playtime": "3.2h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Grand Theft Auto V Enhanced",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3240220/394239e5da54fed177bd0ab04590812f6add1bb5/library_600x900.jpg",
+    "playtime": "3.2h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "NARAKA: BLADEPOINT",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1203220/dd5db88d94465641a8f3a5bb903de7f006877834/library_capsule.jpg",
+    "playtime": "3.2h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Mirror",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/644560/library_600x900.jpg",
+    "playtime": "3.2h",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Beyond: Two Souls",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/960990/library_600x900.jpg",
+    "playtime": "3.2h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "SUPER CRAZY RHYTHM CASTLE",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1812560/library_600x900.jpg",
+    "playtime": "3.1h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "OneShot: World Machine Edition",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2915460/library_600x900.jpg",
+    "playtime": "3.1h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "DEEP SPACE WAIFU: FLAT JUSTICE",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/639780/library_600x900.jpg",
+    "playtime": "3.1h",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Mutazione",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1080750/library_600x900.jpg",
+    "playtime": "3.0h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Deadlock",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1422450/43ca731f79816ad94bfcd45287c2e0a22080dab7/library_capsule.jpg",
+    "playtime": "3.0h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "BLACK CLOVER: QUARTET KNIGHTS",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/714080/portrait.png",
+    "playtime": "3.0h",
+    "review": "",
+    "favorite": true,
+    "nsfw": false
+  },
+  {
+    "name": "嗜血印 Bloody Spell",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/992300/library_600x900.jpg",
+    "playtime": "3.0h",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Company of Heroes 2",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/231430/library_600x900.jpg",
+    "playtime": "2.9h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Hunt: Showdown 1896",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/594650/library_600x900.jpg",
+    "playtime": "2.9h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Need for Speed: Hot Pursuit",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/47870/library_600x900.jpg",
+    "playtime": "2.8h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Wedding Witch",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2529820/library_600x900.jpg",
+    "playtime": "2.8h",
+    "review": "",
+    "favorite": true,
+    "nsfw": true
+  },
+  {
+    "name": "Saints Row 2",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/9480/library_600x900.jpg",
+    "playtime": "2.7h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Jujutsu Kaisen Cursed Clash",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1877020/library_600x900.jpg",
+    "playtime": "2.7h",
+    "review": "",
+    "favorite": true,
+    "nsfw": false
+  },
+  {
+    "name": "Glory & Miserable Survivors DX",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2178330/library_600x900.jpg",
+    "playtime": "2.6h",
+    "review": "",
+    "favorite": true,
+    "nsfw": true
+  },
+  {
+    "name": "Moonglow Bay",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1361400/library_600x900.jpg",
+    "playtime": "2.5h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "DEEP SPACE WAIFU",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/639790/library_600x900.jpg",
+    "playtime": "2.5h",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "PrprLive",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1279610/library_600x900.jpg",
+    "playtime": "2.5h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "THE GAME OF LIFE ",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/403120/library_600x900.jpg",
+    "playtime": "2.5h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Zenless Zone Zero",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4162040/bae92fe95e33651e06bf6fdaa877bcf44ac11918/library_capsule.jpg",
+    "playtime": "2.5h",
+    "review": "",
+    "favorite": true,
+    "nsfw": false
+  },
+  {
+    "name": "God's Trigger",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/488730/library_600x900.jpg",
+    "playtime": "2.5h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Portal 2",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/620/library_600x900.jpg",
+    "playtime": "2.5h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Watchmen: The End Is Nigh",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/21010/portrait.png",
+    "playtime": "2.4h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "UNO",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/470220/8315ac8b7e91e0501b473cff7cf88b1b67906489/library_capsule.jpg",
+    "playtime": "2.3h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "The Vagrant",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/598700/8b2147c53af4a784593ae22f8cb0c3191bc2442f/library_capsule.jpg",
+    "playtime": "2.3h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Your Mother",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3399950/3f63914162eb46f38ad993d7b2d704582f68c2b3/library_600x900.jpg",
+    "playtime": "2.2h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Duelyst",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/291410/library_600x900.jpg",
+    "playtime": "2.2h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Sword Art Online: Fatal Bullet",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/626690/library_600x900.jpg",
+    "playtime": "2.2h",
+    "review": "",
+    "favorite": true,
+    "nsfw": false
+  },
+  {
+    "name": "The Falconeer: Revolution Remaster",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1135260/ca4dbd2106bbc2568a2af795d8fc9c1f39283f7f/library_capsule.jpg",
+    "playtime": "2.2h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Super Panda Adventures",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/311190/library_600x900.jpg",
+    "playtime": "2.2h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Settlement Survival",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1509510/library_600x900.jpg",
+    "playtime": "2.1h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "WISH Paradise",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1573300/library_600x900.jpg",
+    "playtime": "2.1h",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Danganronpa Another Episode: Ultra Despair Girls",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/555950/library_600x900.jpg",
+    "playtime": "2.1h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "METAL GEAR SOLID V: GROUND ZEROES",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/311340/portrait.png",
+    "playtime": "2.0h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Paladins",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/444090/library_600x900.jpg",
+    "playtime": "2.0h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "A Detective's Novel",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/503820/portrait.png",
+    "playtime": "2.0h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Adventure Time: Pirates of the Enchiridion",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/728240/library_600x900.jpg",
+    "playtime": "2.0h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Valkyria Chronicles™",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/294860/library_600x900.jpg",
+    "playtime": "1.9h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "ONE PIECE World Seeker",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/755500/library_600x900.jpg",
+    "playtime": "1.9h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Scratch Girl",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1814490/library_600x900.jpg",
+    "playtime": "1.9h",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Summer in Mara",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/962580/library_600x900.jpg",
+    "playtime": "1.9h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Far Cry® 3",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/220240/library_600x900.jpg",
+    "playtime": "1.9h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "The Crew 2",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/646910/library_600x900.jpg",
+    "playtime": "1.9h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Kawaii Deathu Desu",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1102880/library_600x900.jpg",
+    "playtime": "1.8h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Once Human",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2139460/ad0a4c549b9fac7239213b5e0a3b09c2a5188802/library_capsule.jpg",
+    "playtime": "1.8h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "INDIKA",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1373960/library_600x900.jpg",
+    "playtime": "1.8h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Lords and Villeins",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1287530/library_600x900.jpg",
+    "playtime": "1.8h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Hitman: Contracts",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/247430/library_600x900.jpg",
+    "playtime": "1.7h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Gauntlet™ ",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/258970/portrait.png",
+    "playtime": "1.7h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Kingdom: Classic",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/368230/library_600x900.jpg",
+    "playtime": "1.7h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Lust from Beyond",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1035120/library_600x900.jpg",
+    "playtime": "1.7h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Long and Hard... Summer!",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1770600/library_600x900.jpg",
+    "playtime": "1.7h",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Overcooked",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/448510/library_600x900.jpg",
+    "playtime": "1.6h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "One Night Stand",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/549860/library_600x900.jpg",
+    "playtime": "1.6h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "MagiCat",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/656970/library_600x900.jpg",
+    "playtime": "1.6h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Pixel Cafe",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2409360/library_600x900.jpg",
+    "playtime": "1.6h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "My Sexy Waitress",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1656240/library_600x900.jpg",
+    "playtime": "1.6h",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Dragon Princess Anastasia",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1864650/library_600x900.jpg",
+    "playtime": "1.6h",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Elsword",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/237310/243ea816f4ae15c6bae9f2ee652e7a31fea67450/library_capsule.jpg",
+    "playtime": "1.6h",
+    "review": "",
+    "favorite": true,
+    "nsfw": false
+  },
+  {
+    "name": "Anima Gate of Memories",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/380750/library_600x900.jpg",
+    "playtime": "1.6h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Super Bullet Break",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1767170/library_600x900.jpg",
+    "playtime": "1.6h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Bright Memory",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/955050/library_600x900.jpg",
+    "playtime": "1.6h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Haven",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/983970/library_600x900.jpg",
+    "playtime": "1.6h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "TOKYO GHOUL：re [CALL to EXIST]",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/756530/library_600x900.jpg",
+    "playtime": "1.6h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Phoenix Wright: Ace Attorney Trilogy",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/787480/library_600x900.jpg",
+    "playtime": "1.6h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Cars 2",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/301760/382083d822a6df7294e4efe56463359b89f2490f/library_600x900.jpg",
+    "playtime": "1.5h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "MultiVersus",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1818750/library_600x900.jpg",
+    "playtime": "1.5h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Nordhold",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3028310/d6a234b63471ed443ce3a294f61bda42fb42e05f/library_600x900.jpg",
+    "playtime": "1.5h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "SMITE",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/386360/79115b45914d6a9dad3a21d7150aed56f3318b59/library_600x900.jpg",
+    "playtime": "1.4h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Plants vs. Zombies: Game of the Year",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3590/library_600x900.jpg",
+    "playtime": "1.4h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "DEEP SPACE WAIFU: WORLD",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/872130/library_600x900.jpg",
+    "playtime": "1.3h",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Remember Me",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/228300/library_600x900.jpg",
+    "playtime": "1.3h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Klonoa Phantasy Reverie Series",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1730680/library_600x900.jpg",
+    "playtime": "1.3h",
+    "review": "",
+    "favorite": true,
+    "nsfw": false
+  },
+  {
+    "name": "Sword of Convallaria",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2526380/library_600x900.jpg",
+    "playtime": "1.2h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Street Racing Syndicate",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/292410/portrait.png",
+    "playtime": "1.2h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Your Mom",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4147820/584ed3a2c3aa794f26b41eb2e6698f112d15bb84/library_capsule.jpg",
+    "playtime": "1.2h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Xvirus",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4450350/f9a0fffb36de6175744c2dee08bbee76ab25dc9a/library_capsule.jpg",
+    "playtime": "1.2h",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Snake Pass",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/544330/library_600x900.jpg",
+    "playtime": "1.2h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Cake Bash",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/971690/library_600x900.jpg",
+    "playtime": "1.2h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Hitman: Blood Money",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/6860/library_600x900.jpg",
+    "playtime": "1.1h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Chivalry: Medieval Warfare",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/219640/library_600x900.jpg",
+    "playtime": "1.1h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Sex Chess",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1948450/library_600x900.jpg",
+    "playtime": "1.1h",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Usagi Health Club",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1806630/library_600x900.jpg",
+    "playtime": "1.1h",
+    "review": "https://steamcommunity.com/id/relyf_/recommended/1806630/",
+    "favorite": true,
+    "nsfw": true
+  },
+  {
+    "name": "Etrian Odyssey III HD",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1810820/library_600x900.jpg",
+    "playtime": "1.1h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Just Cause 2",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/8190/library_600x900.jpg",
+    "playtime": "1.1h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Campaign Clicker",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/485650/portrait.png",
+    "playtime": "1.1h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Troublemaker",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1498740/library_600x900.jpg",
+    "playtime": "1.1h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "LEGO® Brawls",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1731460/library_600x900.jpg",
+    "playtime": "1.1h",
+    "review": "",
+    "favorite": true,
+    "nsfw": false
+  },
+  {
+    "name": "Spec Ops: The Line",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/50300/library_600x900.jpg",
+    "playtime": "1.1h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Tumblebugs",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1843880/library_600x900.jpg",
+    "playtime": "1.0h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Portal with RTX",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2012840/library_600x900.jpg",
+    "playtime": "1.0h",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Spike Volleyball",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/738550/portrait.png",
+    "playtime": "59m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "DiRT Rally",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/310560/library_600x900.jpg",
+    "playtime": "58m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Time Clickers",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/385770/library_600x900.jpg",
+    "playtime": "58m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Ragnarok Clicker",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/493370/portrait.png",
+    "playtime": "58m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Fake Hostel",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1735420/library_600x900.jpg",
+    "playtime": "58m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Strange Brigade",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/312670/library_600x900.jpg",
+    "playtime": "57m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Mortal Shell",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1110910/library_600x900.jpg",
+    "playtime": "57m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Styx: Shards of Darkness",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/355790/library_600x900.jpg",
+    "playtime": "56m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Love Rhythm",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1185520/library_600x900.jpg",
+    "playtime": "56m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "My Lovely Wife",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1251930/library_600x900.jpg",
+    "playtime": "56m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Karate Survivor",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3027930/library_600x900.jpg",
+    "playtime": "56m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Faery - Legends of Avalon",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/303790/library_600x900.jpg",
+    "playtime": "54m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Danganronpa V3: Killing Harmony",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/567640/library_600x900.jpg",
+    "playtime": "54m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Descenders",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/681280/library_600x900.jpg",
+    "playtime": "54m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Etrian Odyssey II HD",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1868170/library_600x900.jpg",
+    "playtime": "54m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Delta Force",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2507950/762eed0d9b5da21438051c1015a07ae7ffe57502/library_capsule.jpg",
+    "playtime": "54m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Astral Party ",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2622000/e2d2a0f6acf82088f8dfaa4fb2bffcd83777a7e4/library_600x900.jpg",
+    "playtime": "53m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Contrast",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/224460/library_600x900.jpg",
+    "playtime": "52m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Sakura Clicker",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/383080/library_600x900.jpg",
+    "playtime": "51m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Coromon",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1218210/0ced1a1e7748b6dde759b75f5315105e79bff9d6/library_600x900.jpg",
+    "playtime": "51m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Dota 2",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/570/6843027380c3bfd0952449fd9174f492ef2e7b40/library_capsule.jpg",
+    "playtime": "50m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Evan's Remains",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1110050/library_600x900.jpg",
+    "playtime": "49m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Poker Fate - Okada Sayaka Collab Now Live!",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4042800/88e713127f273d35b01e0dc7b40d1518d605219d/library_capsule.jpg",
+    "playtime": "49m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Prototype",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/10150/portrait.png",
+    "playtime": "48m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Alice: Madness Returns",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/19680/library_600x900.jpg",
+    "playtime": "48m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Tempest",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/418180/library_600x900.jpg",
+    "playtime": "48m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Sniper Elite",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3700/library_600x900.jpg",
+    "playtime": "47m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Blood and Bacon",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/434570/library_600x900.jpg",
+    "playtime": "47m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Aaero",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/499890/library_600x900.jpg",
+    "playtime": "47m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Toribash",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/248570/library_600x900.jpg",
+    "playtime": "46m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Asterix & Obelix XXL 2",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/887060/library_600x900.jpg",
+    "playtime": "46m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "ULTIMATE HARDBASS DEFENCE",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/915460/portrait.png",
+    "playtime": "46m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Pickleball Smash",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2343740/library_600x900.jpg",
+    "playtime": "45m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Zuma Deluxe",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3330/library_600x900.jpg",
+    "playtime": "43m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Mars: War Logs",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/232750/library_600x900.jpg",
+    "playtime": "43m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "UBERMOSH:WRAITH",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/586350/library_600x900.jpg",
+    "playtime": "43m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "F.E.A.R.",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/21090/portrait.png",
+    "playtime": "41m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Velvet Assassin",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/16720/portrait.png",
+    "playtime": "40m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Kritika:REBOOT",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/439350/library_600x900.jpg",
+    "playtime": "40m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "GOD EATER RESURRECTION",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/460870/portrait.png",
+    "playtime": "40m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "FAR: Lone Sails",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/609320/library_600x900.jpg",
+    "playtime": "40m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Forever To You!",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1609010/abeb0e59d62d49c3faec615ee192fea8f2c24a05/library_600x900.jpg",
+    "playtime": "40m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "BRINK",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/22350/library_600x900.jpg",
+    "playtime": "39m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Worm.is: The Game",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/466910/portrait.png",
+    "playtime": "37m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "UBERMOSH Vol.3",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/515570/library_600x900.jpg",
+    "playtime": "37m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Ikonei Island: An Earthlock Adventure",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1550730/library_600x900.jpg",
+    "playtime": "37m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "skate.",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3354750/8dd654efd195e289b91d1d3afe1cbb24123fe6b5/library_capsule.jpg",
+    "playtime": "37m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Blackguards",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/249650/library_600x900.jpg",
+    "playtime": "36m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "GOD EATER 2 Rage Burst",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/438490/portrait.png",
+    "playtime": "36m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "World of Warships",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/552990/87870c668047e2ad2724cc4e1ed92de81b321315/library_capsule.jpg",
+    "playtime": "36m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "EA SPORTS FC™ 26",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3405690/ab701536fe57b7a000cd8d166484f18160d490fc/library_capsule.jpg",
+    "playtime": "36m",
+    "review": "",
+    "favorite": true,
+    "nsfw": false
+  },
+  {
+    "name": "Bullet Witch",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/696180/library_600x900.jpg",
+    "playtime": "35m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "V Rising",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1604030/ca28e9f8487563163dfd25eb1f6d5e26bde87c18/library_capsule.jpg",
+    "playtime": "35m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Celebrity Kombat",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2240390/library_600x900.jpg",
+    "playtime": "34m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Sword Art Online: Integral Factor",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2371630/library_600x900.jpg",
+    "playtime": "34m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "DAISY THE SWIMMER",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2888830/library_600x900.jpg",
+    "playtime": "33m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Assassin's Creed",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/15100/portrait.png",
+    "playtime": "32m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "SNOW",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/244930/library_600x900.jpg",
+    "playtime": "32m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Imagine Lifetimes",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1229570/library_600x900.jpg",
+    "playtime": "32m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "MXGP - The Official Motocross Videogame",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/256370/library_600x900.jpg",
+    "playtime": "31m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Gamer Girls (18+)",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1565220/library_600x900.jpg",
+    "playtime": "31m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Soulstice",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1602080/library_600x900.jpg",
+    "playtime": "30m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Lust Goddess",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2808930/9cc44e9627d78b28c54c6b8a991a38c4a2a1be3d/library_600x900.jpg",
+    "playtime": "30m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Slap 'em UP!",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3703520/d56d7f9f38057862617b4873b5d5ef91100eaee4/library_600x900.jpg",
+    "playtime": "30m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Feeding Frenzy 2: Shipwreck Showdown Deluxe",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3390/portrait.png",
+    "playtime": "29m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "The Hive",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/325730/74a21481f9e5618a29b9978d456f06553a821490/library_capsule.jpg",
+    "playtime": "29m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "《Rise of Eros》",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2346550/library_600x900.jpg",
+    "playtime": "29m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Handball 21",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/891020/library_600x900.jpg",
+    "playtime": "28m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Waifu Closet",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3119520/36a9fb3719af2d567aaa4759c5b6fd803a63c4d4/library_600x900.jpg",
+    "playtime": "28m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "The Witch's Warehouse Management",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3981660/314472acd8e154c23d363c2d498a34ee9163cf21/library_capsule.jpg",
+    "playtime": "28m",
+    "review": "",
+    "favorite": true,
+    "nsfw": true
+  },
+  {
+    "name": "Tomb Raider: Underworld",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/8140/library_600x900.jpg",
+    "playtime": "27m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Another Lost Phone: Laura's Story",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/689910/library_600x900.jpg",
+    "playtime": "27m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Dead or Alive 5 Last Round",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/311730/portrait.png",
+    "playtime": "26m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "A Normal Lost Phone",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/523210/library_600x900.jpg",
+    "playtime": "26m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "I Am Jesus Christ Playtest",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1818860/59392ed07e091a4a5049ebc92970b2d82362b5e3/library_600x900.jpg",
+    "playtime": "26m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Leisure Suit Larry - Magna Cum Laude Uncut and Uncensored",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/765900/library_600x900.jpg",
+    "playtime": "25m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "KurtzPel",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/844870/8a3fd4a910fff862c5cdfccebdae64ea104cfd85/library_600x900.jpg",
+    "playtime": "25m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Electronic Super Joy 2",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1113940/library_600x900.jpg",
+    "playtime": "25m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Where Winds Meet",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3564740/2ca8b95c52577eae830c347ff9292369fc950d57/library_capsule.jpg",
+    "playtime": "25m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "City Life 2008",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4460/library_600x900.jpg",
+    "playtime": "24m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Hitman: Sniper Challenge",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/205930/portrait.png",
+    "playtime": "24m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "UBERMOSH:BLACK",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/444940/library_600x900.jpg",
+    "playtime": "24m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Gear.Club Unlimited 2 Ultimate Edition",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1557860/library_600x900.jpg",
+    "playtime": "24m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "BUNNY GARDEN",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2654470/library_600x900.jpg",
+    "playtime": "24m",
+    "review": "",
+    "favorite": true,
+    "nsfw": true
+  },
+  {
+    "name": "Cry of Fear",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/223710/portrait.png",
+    "playtime": "22m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Lara Croft and the Temple of Osiris",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/289690/library_600x900.jpg",
+    "playtime": "22m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Picross Touch",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/476460/library_600x900.jpg",
+    "playtime": "22m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "UBERMOSH Vol.5",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/640380/library_600x900.jpg",
+    "playtime": "22m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Baby Shark™: Sing & Swim Party",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2075240/library_600x900.jpg",
+    "playtime": "22m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "METAL SLUG DEFENSE",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/356310/portrait.png",
+    "playtime": "21m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Prince of Suburbia - Part 1",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1896170/library_600x900.jpg",
+    "playtime": "21m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "The Seven Deadly Sins: Origin",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3679080/cffe528549b32416ef33f4f23df8496e9ff3ba7d/library_capsule.jpg",
+    "playtime": "20m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Counter-Strike:Global Offensive",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4465480/c667416eab27d88abfdd15de42cc92bee105b1d3/library_capsule.jpg",
+    "playtime": "20m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Far Cry New Dawn",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/939960/library_600x900.jpg",
+    "playtime": "19m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "God of Rock",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1851030/library_600x900.jpg",
+    "playtime": "19m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Splitgate",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/677620/library_600x900.jpg",
+    "playtime": "18m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Marble Combat",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/949000/portrait.png",
+    "playtime": "18m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Action Taimanin",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1335200/77f61f8b89ba7cd805bdaaaa0c10b6bd77c6510a/library_600x900.jpg",
+    "playtime": "18m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Deiland",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/760620/library_600x900.jpg",
+    "playtime": "17m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Blaze and the Monster Machines: Axle City Racers",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1434330/library_600x900.jpg",
+    "playtime": "17m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Wanted: Dead",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1981610/library_600x900.jpg",
+    "playtime": "17m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "TrackMania Nations Forever",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/11020/library_600x900.jpg",
+    "playtime": "16m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Moirai",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/496920/portrait.png",
+    "playtime": "16m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Override 2: Super Mech League",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1329790/library_600x900.jpg",
+    "playtime": "16m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Little League World Series Baseball 2022",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1681890/library_600x900.jpg",
+    "playtime": "16m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Hitman 2: Silent Assassin",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/6850/library_600x900.jpg",
+    "playtime": "15m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Lossless Scaling",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/993090/cf61f5661bf92791cfd16fe878e5eec7add0a14f/library_capsule.jpg",
+    "playtime": "15m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "XIII - Classic",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1170760/library_600x900.jpg",
+    "playtime": "15m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Hitman: Codename 47",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/6900/library_600x900.jpg",
+    "playtime": "14m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "World of Tanks Blitz",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/444200/82f9ecd3104e04eb16a2280889c20a047978601f/library_capsule.jpg",
+    "playtime": "14m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Strike.is: The Game",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/502550/portrait.png",
+    "playtime": "14m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Ceress and Orea",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/820900/portrait.png",
+    "playtime": "14m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "WGT Golf",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1182020/e982af43f4f1f698354c66a1de68e8758bba76d0/library_capsule.jpg",
+    "playtime": "14m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "DC's Justice League: Cosmic Chaos",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1944850/library_600x900.jpg",
+    "playtime": "14m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "WHAT THE PAK?!",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2752710/1b8ac372db62f808f89ee885fb0d264de858c192/library_capsule.jpg",
+    "playtime": "14m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Acceleration of SUGURI 2",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/390710/library_600x900.jpg",
+    "playtime": "13m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "GOAT OF DUTY",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/555000/library_600x900.jpg",
+    "playtime": "13m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Billion Road",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1163040/library_600x900.jpg",
+    "playtime": "13m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Farlight 84",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1928420/ed0fa38e38af2fba6530a685c0680128a441bece/library_capsule.jpg",
+    "playtime": "13m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Brawlhalla",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/291550/library_600x900.jpg",
+    "playtime": "12m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Booty Calls",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/823550/library_600x900.jpg",
+    "playtime": "12m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Garfield Kart - Furious Racing",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1085510/library_600x900.jpg",
+    "playtime": "12m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "MY HERO ULTRA RUMBLE",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1607250/library_600x900.jpg",
+    "playtime": "12m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Tomb Raider: Anniversary",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/8000/library_600x900.jpg",
+    "playtime": "11m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Pool Nation FX",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/314000/portrait.png",
+    "playtime": "11m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "TERA",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/323370/library_600x900.jpg",
+    "playtime": "11m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Shonen Idle Z",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/492800/library_600x900.jpg",
+    "playtime": "11m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "MadOut2 BigCityOnline",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/586980/portrait.png",
+    "playtime": "11m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Guardians of the Ashes",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1195020/library_600x900.jpg",
+    "playtime": "11m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "En Garde!",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1654660/library_600x900.jpg",
+    "playtime": "11m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Eiyuden Chronicle: Rising",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1658290/library_600x900.jpg",
+    "playtime": "11m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Enlisted",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2051620/3be312e02696663fc05d63b03065df215fbca5fa/library_capsule.jpg",
+    "playtime": "11m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Big Mutha Truckers",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/12364/2fe99908936a124461c320a6a7ddf4c675e164d1/library_600x900.jpg",
+    "playtime": "10m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "SEGA Mega Drive & Genesis Classics",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/34270/library_600x900.jpg",
+    "playtime": "10m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "RPG Maker XP",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/235900/portrait.png",
+    "playtime": "10m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Soccer Manager 2017",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/510630/portrait.png",
+    "playtime": "10m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Thief Simulator",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/704850/library_600x900.jpg",
+    "playtime": "10m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "DEAD OR ALIVE 6",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/838380/library_600x900.jpg",
+    "playtime": "10m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Garfield Lasagna Party",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2008410/library_600x900.jpg",
+    "playtime": "10m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Bejeweled 2 Deluxe",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3300/library_600x900.jpg",
+    "playtime": "9m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Tomb Raider: Legend",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/7000/library_600x900.jpg",
+    "playtime": "9m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Headsnatchers",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/797410/library_600x900.jpg",
+    "playtime": "9m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Angel Legion: LSP Idle RPG",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1333350/library_600x900.jpg",
+    "playtime": "9m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "I Am Jesus Christ: Prologue",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1509650/library_600x900.jpg",
+    "playtime": "9m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Nice Day for Fishing",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2393160/190abdf6410dc29b03d96eaa44a1343994329c4f/library_capsule.jpg",
+    "playtime": "9m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Breath of Death VII: The Beginning: Reanimated",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3184210/14f3305092128bb6753e33ca860cc0b75d3e9d56/library_600x900.jpg",
+    "playtime": "9m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Cars Toon: Mater's Tall Tales",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/316320/e8f6286215ea2e5ebee3c70e29fb2ad6b266a9e0/library_600x900.jpg",
+    "playtime": "8m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Dungeon Fighter Online",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/495910/8d900b883524ba43cdea279fe529ba2a97f63b14/library_600x900.jpg",
+    "playtime": "8m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Street Outlaws The List",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/987330/library_600x900.jpg",
+    "playtime": "8m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Under Ichigo Love me baby!!! in TOKYO SUPER ARENA 2025",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3500840/f7fff7a0a624a370e022048ae342746c06ef232e/library_600x900.jpg",
+    "playtime": "8m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Premium Pool",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/434110/portrait.png",
+    "playtime": "7m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Rubber Bandits",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1206610/library_600x900.jpg",
+    "playtime": "7m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Soul Dossier",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1520470/9aae0e598f1f8514d9bbcb6755cbcb2566e5726a/library_capsule.jpg",
+    "playtime": "7m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Witchaven",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1655410/library_600x900.jpg",
+    "playtime": "7m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Highguard",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4128260/720b71240c14e3b5773a6370170a4aeabcb21cf9/library_capsule.jpg",
+    "playtime": "7m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Garfield Kart",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/362930/library_600x900.jpg",
+    "playtime": "6m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Ultimate Epic Battle Simulator",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/616560/portrait.png",
+    "playtime": "6m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "The Prison Experiment",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/857240/portrait.png",
+    "playtime": "6m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Street Power Football",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1275760/library_600x900.jpg",
+    "playtime": "6m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Scars Above",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1196090/library_600x900.jpg",
+    "playtime": "5m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "shapez",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1318690/library_600x900.jpg",
+    "playtime": "5m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "JoJo Siwa: Worldwide Party",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1910300/library_600x900.jpg",
+    "playtime": "5m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Indivisible",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/421170/library_600x900.jpg",
+    "playtime": "4m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Initial Drift Online",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1456200/library_600x900.jpg",
+    "playtime": "4m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "13Z Playtest",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3213920/bda84f8c0c49b2e59ff4bb87870c83a131ebff7d/library_600x900.jpg",
+    "playtime": "4m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Kane & Lynch 2: Dog Days",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/28000/library_600x900.jpg",
+    "playtime": "3m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "GUTS",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/682810/portrait.png",
+    "playtime": "3m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Distortions",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/772500/library_600x900.jpg",
+    "playtime": "3m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "1000xRESIST",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1675830/library_600x900.jpg",
+    "playtime": "3m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Insaniquarium! Deluxe",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3320/portrait.png",
+    "playtime": "2m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Silverfall",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4420/library_600x900.jpg",
+    "playtime": "2m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "100% Orange Juice",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/282800/1076ed1e28e33835a110dc1eac8139b96ef7de2d/library_600x900.jpg",
+    "playtime": "2m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Skillshot City",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/308600/e23ce9f3651c97f43ff257d3257e9e5306f5ce95/library_capsule.jpg",
+    "playtime": "2m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Neverinth",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/966430/library_600x900.jpg",
+    "playtime": "2m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "UBERMOSH Vol.7",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1029980/library_600x900.jpg",
+    "playtime": "2m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Big Mutha Truckers 2: Truck Me Harder",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1377920/ca9700a551cc8b3aa29393771cc71f0cf7adcd4c/library_600x900.jpg",
+    "playtime": "2m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "The Ramp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1506510/library_600x900.jpg",
+    "playtime": "2m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "God Of Weapons",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2342950/9770177a72761d2e757a984da67a242dc253f999/library_600x900.jpg",
+    "playtime": "2m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Tales of Virginia",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2659870/69858501231ce4cf1319002cdd11503dc32950f8/library_600x900.jpg",
+    "playtime": "2m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Sex Adventures - Incest Family - Episode 1",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3395190/b834c111d78c5a6d487bff4286150844a7665c98/library_600x900.jpg",
+    "playtime": "2m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Half-Life",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/70/library_600x900.jpg",
+    "playtime": "1m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Left 4 Dead",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/500/library_600x900.jpg",
+    "playtime": "1m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Go! Go! Nippon! ~My First Trip to Japan~",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/251870/library_600x900.jpg",
+    "playtime": "1m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "200% Mixed Juice!",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/335190/library_600x900.jpg",
+    "playtime": "1m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Brine",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/447940/portrait.png",
+    "playtime": "1m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "The Addams Family: Mansion Mayhem",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1543830/library_600x900.jpg",
+    "playtime": "1m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "My Stepmom is a Futanari",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1676580/library_600x900.jpg",
+    "playtime": "1m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Cakey's Twisted Bakery",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3028500/library_600x900.jpg",
+    "playtime": "1m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Half-Life 2",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/220/ac2f074d790656a06ef8305bd54a6f64e9a70082/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Half-Life 2: Deathmatch",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/320/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Half-Life Deathmatch: Source",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/360/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Portal",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/400/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Silverfall: Earth Awakening",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4470/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Eets",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/6100/b05abed2262852feb964f73b12de2b736494d2af/library_capsule.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "F.E.A.R. 2: Project Origin",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/16450/portrait.png",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Watchmen: The End Is Nigh Part 2",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/21030/portrait.png",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "F.E.A.R. 3",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/21100/portrait.png",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "F.E.A.R.: Extraction Point",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/21110/portrait.png",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "F.E.A.R.: Perseus Mandate",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/21120/portrait.png",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Dark Sector",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/29900/6c6a65309d596354ae94585757bb6e61e74dd30b/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "LEGO® Indiana Jones™ 2: The Adventure Continues",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/32450/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Metro 2033",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/43110/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Metro: Last Light Complete Edition",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/43160/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Still Life",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/46480/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Still Life 2",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/46490/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Post Mortem",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/46550/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Fantasy Wars",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/63900/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "LEGO® Harry Potter: Years 5-7",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/204120/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Deponia",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/214340/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "LEGO® The Lord of the Rings™",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/214510/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "NiGHTS into Dreams...",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/219950/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "RPG Maker VX Ace",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/220700/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "POSTAL",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/232770/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Daikatana",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/242980/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "SteamWorld Dig",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/252410/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "GameGuru Classic",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/266310/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Amerzone: The Explorer’s Legacy (1999)",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/302190/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Trove",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/304050/d63386bfb404f36cd5f38796da0260e9c71ad378/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "AppGameKit Classic",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/325180/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "RIOT - Civil Unrest",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/342310/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "ARK: Survival Evolved",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/346110/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Weapon of Choice",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/373600/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Dead In Bermuda",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/384310/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Bulb Boy",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/390290/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "The Uncertain: Last Quiet Day",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/406970/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "ARK: Survival Of The Fittest",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/407530/portrait.png",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "12 is Better Than 6",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/410110/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Pankapu",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/418670/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "The Deed",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/420740/portrait.png",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Space Pilgrim Episode II: Epsilon Indi",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/431710/portrait.png",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Space Pilgrim Episode III: Delta Pavonis",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/439250/portrait.png",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Drawful 2",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/442070/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "TGV Voyages Train Simulator",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/443910/portrait.png",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "The Deed: Dynasty",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/460960/portrait.png",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Caveman World: Mountains of Unga Boonga",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/462960/portrait.png",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Scrap Garden",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/465760/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Demolish & Build 2017",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/470740/portrait.png",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Mini Thief",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/481870/portrait.png",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Ninja Stealth",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/485450/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Minion Masters",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/489520/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Warhammer 40,000: Gladius - Relics of War",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/489630/bb5aa1e802ad6e657f5b0bea50c817fbbdd59e41/library_capsule.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "911 Operator",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/503560/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Along the Edge",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/504390/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Crown Champion: Legends of the Arena",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/527710/portrait.png",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Life is Strange 2",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/532210/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Police Stories",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/539470/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Battlestar Galactica Deadlock",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/544610/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Warhammer: Vermintide 2",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/552500/54a7de937ef37ebae81b1f89c0122953b23355c9/library_capsule.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Just Ignore Them",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/561770/portrait.png",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Merry Snowballs",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/567730/portrait.png",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Distant Space",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/569610/portrait.png",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Winexy",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/577740/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Minimalism",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/585690/portrait.png",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Graveyard Keeper",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/599140/cf24c64388ff550c6d35f35643426e66be6aa622/library_capsule.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Valfaris",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/600130/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Paradox Soul",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/610570/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "House Flipper",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/613100/e28856fc6bbdf3d8a4d612e8d3cb7a4c400c4220/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Tom Clancy's Rainbow Six Siege - Test Server",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/623990/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "NEXT JUMP: Shmup Tactics",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/624690/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Nephise Begins",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/628950/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Remothered: Tormented Fathers",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/633360/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Sentience: The Android's Tale",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/635850/portrait.png",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Narvas",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/640700/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Will Glow the Wisp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/640890/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Car Mechanic Simulator 2018",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/645630/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "For Honor - Public Test",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/654310/portrait.png",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Distant Space 2",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/729460/portrait.png",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Blackout Z: Slaughterhouse Edition",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/729660/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Zomborg",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/729720/portrait.png",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Snake Eyes Dungeon",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/740240/portrait.png",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Puzzle Chambers",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/740410/portrait.png",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "AtmaSphere",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/753660/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Hunt: Showdown 1896 (Test Server)",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/770720/e826e7403ecae288eb6a3b5b521c4ae8017e86e9/library_capsule.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Scheming Through The Zombie Apocalypse: The Beginning",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/813540/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "The Awesome Adventures of Captain Spirit",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/845070/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Gravity Circuit",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/858710/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "OneShift",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/862740/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "HITMAN™ 2",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/863550/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Shenmue III",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/878670/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Death Fungeon",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/897630/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "UBERMOSH:SANTICIDE",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/898450/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Cybarian: The Time Travelling Warrior",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/928840/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Legend of Keepers",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/978520/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Fantasy General II",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1025440/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Alt-Frequencies",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1035050/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Moonrise Fall",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1035110/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Ultimate Zombie Defense",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1035510/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "BLOCKADE War Stories",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1051890/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "The Red Lantern",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1053710/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Drift86",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1070580/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Weird West: Definitive Edition",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1097350/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Sense - 不祥的预感: A Cyberpunk Ghost Story",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1120560/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Wild Terra 2: New Lands",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1134700/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "My Breast Friend Sally",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1173410/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Space Crew: Legendary Edition",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1176710/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "UBERMOSH:OMEGA",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1181000/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "One Gun Guy",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1200580/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Golden Light",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1245430/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "SYNDUALITY Echo of Ada",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1245480/edcdb2b53fb8d70900a279b400e902bdf29a1214/library_capsule.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Ashina: The Red Witch",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1259140/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Asterix & Obelix XXL",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1261520/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Crowalt: Traces of the Lost Colony",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1269500/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Karma City Police",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1270850/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Fobia - St. Dinfna Hotel",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1298140/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "The Magister",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1304770/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Ampersat",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1356040/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Field of Glory II: Medieval",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1368870/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Milk inside a bag of milk inside a bag of milk",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1392820/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Happy's Humble Burger Farm",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1433340/ff79f47dcfaa76cbaf053ac40a5714017b6b53f5/library_capsule.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Intravenous",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1486630/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Machinika Museum",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1507190/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Toy Tinker Simulator",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1510580/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Internet Cafe Simulator 2",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1563180/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Sucker for Love",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1574270/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Hellslave",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1608450/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Nocturnal",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1634080/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Lust from Beyond: M Edition",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1641890/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Star Trek Prodigy: Supernova",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1655220/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Witchaven II: Blood Vengeance",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1655430/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "HITMAN World of Assassination",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1659040/893b14fe999e64777ad2660cf88c52f1f403053f/library_capsule.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Isle of Jura",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1703140/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Tiny Tina's Assault on Dragon Keep: A Wonderlands One-shot Adventure",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1712840/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Hentai Girls Sliding Puzzle",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1747340/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Smart Factory Tycoon",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1755300/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Monument Valley",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1927720/1b7eff892cf3eb229c14c3b35d9e7145007cd483/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Jigsaw Novel - Futanari Nurse",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1948650/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Memory Puzzle - Futanari Threesome",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1976030/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Jigsaw Puzzle - Futanari Massage",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1979280/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "POPGOES Arcade",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1986840/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Barro GT",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1990740/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Memory Puzzle - Neko Girls",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1992560/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Jigsaw Puzzle - Swingers Party",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2000750/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Invincible Presents: Atom Eve",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2060870/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Jigsaw Puzzle - Futanari Roomate",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2067750/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Jigsaw Puzzle - Futanari Threesome",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2117510/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Memory Puzzle - Futanari Massage",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2121620/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "What the Fog",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2139020/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Little Nightmares Enhanced Edition",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2149010/6024db900a8beca8c32cab4bb4f7bf9951a198c7/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Sucker for Love: Date to Die For",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2240790/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "The Crush House",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2337820/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "ARC Raiders Playtest",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2427520/e33d26c3175e3f590a0153fdcf0f4863f6c84288/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "GUNTOUCHABLES",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2543510/807c55b25f0f41350385c00ee82911552ec5712c/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Battle Simulator: Counter Stickman",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2623090/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Wednesdays",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2747770/1cc43ed1b6828151666938204e0018052c8e450a/library_capsule.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Stickman Killing Zombie",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2792610/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Party Club",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2796010/3165d9de68eb7d569c3f235b622018188847e92a/library_capsule.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "8AM",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2835590/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Kitchen Wars",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2955840/bd673b8c15dfe471be9a7cd0a0a3f08b4d4724dd/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Paragnosia",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3017580/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Unplagued",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3062930/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "World Crafter TD",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3098890/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Pet Lands",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3144950/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Sex Adventures - Naughty Sisters - Episode 1",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3260900/db72b577cf6f5305d266b745acd1e33c01dee162/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "The Butterfly Collector",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3384350/3f13e038af9a5924b3c22ee6a8039e35d5c3f21c/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Sex Adventures - Naughty Sisters - Episode 2",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3388130/911ccfc36e7e0fc3414fb25d41880a590fcba33a/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Dreams of Aether",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3463050/644e666caf02cb8356e9faef7bae9a50827122ae/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Sex Adventures - Incest Family - Episode 2",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3484130/26035b1c299aba8afb69f0fe966f0f0c62b1a9bc/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Sex Adventures - Naughty Sisters - Episode 3",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3487130/551b497b8ed9c6ce924a0bf2a3f71f134ee00b31/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Sex Adventures - Incest Family - Episode 3",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3499650/4db003ba9b0490df20575f46d0418718b708fc8c/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Sex Adventures - Naughty Sisters - Episode 4",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3515770/644096b3395b498799d7f5116be8900730d0f8c3/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Sex Adventures - Incest Family - Episode 4",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3527930/dd1fe9409df4281e80a688ba83ab811c15e655dd/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Sex Adventures - Naughty Sisters - Episode 5",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3532920/06a2417069654f2866fe5edd03e462ed5e5c6662/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Overcome Your Fears - Caretaker",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3550490/63bd8578adad1dd7913e79dbe5432db325f019a0/library_capsule.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
+  },
+  {
+    "name": "Sex Adventures - Incest Family - Episode 5",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3559550/bcd347c62d54a85b499a9473fb7307886f183a4c/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Sex Adventures - Naughty Sisters - Episode 6",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3561980/8988010543028594f82095253a80761c5a5802da/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Sex Adventures - Incest Family - Episode 6",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3573780/a7a9fab206298489ba7715d5297f2d0eb5eeb1de/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Sex Adventures - Naughty Sisters - Episode 7",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3596630/db0c4fba22ebad3cb57af54c0623b1bc15b2a892/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Sex Adventures - Incest Family - Episode 7",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3615830/0cc46149956130a29dfbc125b02714c8c8c428d6/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Sex Adventures - Naughty Sisters - Episode 8",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3625560/453c7f1072a0bcd5f76df14c5e54c081cf1a41da/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Sex Adventures - Naughty Sisters - Episode 9",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3663960/95b328bfc1d4f90568581b0aea9d6da2d9b1488b/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Sex Adventures - Incest Family - Episode 8",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3677750/2e17600a6a7f96f0374d5093b493c8640a0812cc/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "Sex Adventures - Incest Family - Episode 9",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3707590/b0f0181746165b8f2f8e4b5f2d147f3d073de29d/library_600x900.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": true
+  },
+  {
+    "name": "DEAD OR ALIVE 6 Last Round",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4144680/fce54b268b7147d92f572ad2ee0622b104ad6ae3/library_capsule.jpg",
+    "playtime": "0m",
+    "review": "",
+    "favorite": false,
+    "nsfw": false
   }
 ]

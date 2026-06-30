@@ -39,6 +39,17 @@ body {
     overflow-x: hidden;
 
     opacity: 0;
+    transition: background 0.6s ease;
+}
+
+body.manga-mode {
+    background:
+        radial-gradient(
+            circle at top,
+            #1e122b 0%,
+            #0b0b0f 45%,
+            #050307 100%
+        );
 }
 
 body.page-ready {
@@ -212,6 +223,8 @@ body.manga-mode h1 {
     font-size: .98rem;
     font-weight: 700;
     white-space: nowrap;
+    view-transition-name: switch-btn;
+    width: fit-content;
 }
 
 .back-btn {
@@ -440,6 +453,8 @@ summary:hover {
     transition:
         font-size .35s cubic-bezier(.22,1,.36,1),
         transform .35s cubic-bezier(.22,1,.36,1);
+    view-transition-name: page-title;
+    width: fit-content;
 }
 
 .topbar.compact #page-title {
@@ -448,64 +463,97 @@ summary:hover {
 
 #page-transition {
     position: fixed;
-    inset: 0;
-    z-index: 9999999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 140vw;
+    height: 100vh;
+    z-index: 99999999;
     pointer-events: none;
-    overflow: hidden;
+    overflow: visible;
+    transform: translateX(-140vw);
     opacity: 0;
-    transform: translateX(110%);
-    will-change: transform, opacity;
 }
 
-#page-transition::before,
-#page-transition::after {
-    content: "";
-    position: absolute;
-    top: -8%;
-    bottom: -8%;
-    left: -12%;
-    right: -12%;
-    transform: skewX(-10deg);
+#page-transition.active {
+    opacity: 1;
+    animation: P5Slash 0.8s cubic-bezier(0.77, 0, 0.175, 1) forwards;
 }
 
-#page-transition::before {
-    background:
-        linear-gradient(
-            180deg,
-            rgba(229, 9, 20, .98),
-            rgba(255, 44, 70, .96)
-        );
-    z-index: 1;
-    box-shadow: 0 0 80px rgba(229, 9, 20, .18);
+#page-transition svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
 }
 
-#page-transition::after {
-    background:
-        linear-gradient(
-            180deg,
-            rgba(12, 12, 14, .98),
-            rgba(6, 6, 8, .98)
-        );
-    z-index: 0;
-    left: -24%;
+#page-transition {
+    --glow-color: #ff2c46;
 }
 
-#page-transition[data-to="manga"]::before {
-    background:
-        linear-gradient(
-            180deg,
-            rgba(193, 34, 153, .98),
-            rgba(255, 74, 192, .96)
-        );
+#page-transition[data-to="manga"] {
+    --glow-color: #ff4ac0;
 }
 
-#page-transition[data-to="manga"]::after {
-    background:
-        linear-gradient(
-            180deg,
-            rgba(18, 8, 24, .98),
-            rgba(7, 4, 10, .98)
-        );
+#page-transition[data-to="anime"] {
+    --glow-color: #ff2c46;
+}
+
+.fill-black {
+    fill: #000000;
+}
+
+.fill-white {
+    fill: #ffffff;
+}
+
+.eye-glow {
+    fill: var(--glow-color);
+}
+
+.slash-line {
+    stroke: var(--glow-color);
+    filter: url(#slash-glow);
+}
+
+.slash-line-outer {
+    stroke: var(--glow-color);
+}
+
+/* Custom View Transition for split-screen diagonal wipe */
+::view-transition-old(root) {
+    animation: none;
+    mix-blend-mode: normal;
+}
+
+::view-transition-new(root) {
+    animation: P5Reveal 0.8s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+    mix-blend-mode: normal;
+}
+
+@keyframes P5Slash {
+    0% {
+        transform: translateX(-140vw);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+@keyframes P5Reveal {
+    0% {
+        clip-path: polygon(0 0, 0 0, -40vw 100%, 0 100%);
+    }
+    100% {
+        clip-path: polygon(0 0, 240vw 0, 200vw 100%, 0 100%);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    ::view-transition-group(*),
+    ::view-transition-old(*),
+    ::view-transition-new(*) {
+        animation: none !important;
+    }
 }
 
 @media (max-width: 700px) {

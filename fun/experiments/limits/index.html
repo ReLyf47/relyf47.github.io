@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>limits — a quiet sort of violence</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<canvas id="c" aria-label="WebGL scene"></canvas>
+<div class="vignette"></div>
+<div class="scanline"></div>
+<canvas class="grain" id="grain"></canvas>
+<div class="flash" id="flash"></div>
+
+<div class="ui" id="tl">
+  <div id="title">LIMITS <em>//</em> v0.1</div>
+  <div class="row" style="margin-top:6px;">
+    <span class="k">fps</span><span class="v" id="v-fps">—</span>
+    <span class="k">·</span>
+    <span class="k">ms</span><span class="v" id="v-ms">—</span>
+    <span class="k">·</span>
+    <span class="k">gpu</span><span class="v" id="v-gpu">—</span>
+  </div>
+</div>
+
+<div class="ui" id="tr">
+  <div><span class="k">scene</span> <span class="pill" id="v-scene">mandelbox</span></div>
+  <div style="margin-top:6px;"><span class="k">orbit</span> <span class="pill" id="v-mode">auto</span></div>
+</div>
+
+<div class="ui" id="bl">
+  <div class="row" style="gap:14px;">
+    <span><span class="k">zoom</span> <span class="v" id="v-zoom">1.00</span></span>
+    <span><span class="k">speed</span> <span class="v" id="v-speed">0.30</span></span>
+    <span><span class="k">detail</span> <span class="v" id="v-detail">128</span></span>
+    <span><span class="k">palette</span> <span class="v" id="v-pal">01</span></span>
+  </div>
+  <div class="row" style="margin-top:4px; gap:14px;">
+    <span class="k">drag</span><span class="v">orbit</span>
+    <span class="k">·</span>
+    <span class="k">wheel</span><span class="v">zoom</span>
+    <span class="k">·</span>
+    <span class="k">space</span><span class="v">auto</span>
+    <span class="k">·</span>
+    <span class="k">1–6</span><span class="v">scene</span>
+  </div>
+</div>
+
+<div class="ui" id="br">
+  <div><span class="k">audio</span> <span class="pill" id="v-audio">off</span></div>
+  <div style="margin-top:6px;"><span class="k">it/s</span> <span class="v" id="v-its">0</span></div>
+</div>
+
+<div class="vbar" id="vbar">
+  <div class="seg" data-i="0"></div>
+  <div class="seg" data-i="1"></div>
+  <div class="seg" data-i="2"></div>
+  <div class="seg" data-i="3"></div>
+  <div class="seg" data-i="4"></div>
+  <div class="seg" data-i="5"></div>
+  <div class="seg" data-i="6"></div>
+  <div class="seg" data-i="7"></div>
+</div>
+
+<div class="toast" id="toast">scene: mandelbox</div>
+
+<div class="panel corner-marks" id="panel-help">
+  <h2>LIMITS</h2>
+  <p>a real-time fragment-shader scene rendered every frame into a single fullscreen quad. GLSL does all the geometry: raymarching, signed distance fields, ambient occlusion, soft shadows, and a filmic palette ramp.</p>
+  <p>
+    <kbd>drag</kbd> orbit &nbsp; <kbd>wheel</kbd> zoom &nbsp; <kbd>space</kbd> auto-orbit &nbsp;
+    <kbd>1</kbd>–<kbd>6</kbd> scenes &nbsp; <kbd>p</kbd> palette &nbsp; <kbd>m</kbd> audio &nbsp;
+    <kbd>f</kbd> fullscreen &nbsp; <kbd>?</kbd> help &nbsp; <kbd>h</kbd> hide
+  </p>
+  <p class="small">best on a real GPU. mobile devices throttle the steps automatically.</p>
+  <button class="start" id="start">enter</button>
+</div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>

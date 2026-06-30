@@ -1,75 +1,117 @@
-/* Post */
+body {
+    background: radial-gradient(circle at top, #2a2a35, #111 70%);
+}
+
+/*post*/
 .post {
-    height: 150px;
-    position: relative;
-    width: 50%;
-    background-color: #1C1A1B;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    animation: deradiate 0.8s ease-in forwards;
-    cursor: pointer;
-    transition: all 0.4s ease-in-out;
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+
+  background: rgba(0,0,0,.5);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255,255,255,.1);
+  box-shadow: 0 8px 32px rgba(0,0,0,.35);
+
+  animation: deradiate 0.8s ease-in forwards;
+  transition: box-shadow 0.4s ease;
 }
 
-.post::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
-    z-index: 2;
-    border-radius: 8px;
-    transition: background-color 0.4s ease;
-}
-
-.post:hover::before {
-    background-color: rgba(0, 0, 0, 0); /* remove overlay on hover */
-}
-
-.post img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 545px;
-    object-fit: cover;
-    transition: transform 0.5s ease-in-out;
-    z-index: 1;
-}
 .post:hover {
-    height: 545px;
-    animation: radiate 0.5s ease-out forwards;
+  animation: radiate 0.5s ease-out forwards;
 }
-.post:hover img {
-    transform: translateY(0);
-}
-.post h3,
-.post p {
-    position: relative;
-    z-index: 3;
-    color: white;
-    padding-top: 10px;
-    word-wrap: break-word;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    line-clamp: 4;
-    -webkit-box-orient: vertical;
-}
-.post:hover h3,
-.post:hover p {
-    max-height: none;
-    text-overflow: unset;
-    -webkit-line-clamp: unset;
-    line-clamp: 4;
 
+.post h3 {
+  margin: 0;
+  padding: .75rem 1rem;
+  color: white;
+  position: relative;
+}
+
+/* dark header overlay — on top of text, fades on hover */
+.post h3::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.7);
+  transition: opacity .4s ease;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.post:hover h3::after {
+  opacity: 0;
+}
+
+.banner-slider {
+  position: relative;
+  width: 100%;
+  /* collapsed: show just enough to tease the image */
+  height: var(--peek-height, 120px);
+  overflow: hidden;
+
+  transition: height .45s ease;
+}
+
+.post:hover .banner-slider {
+  height: var(--full-height, var(--peek-height, 120px));
+}
+
+.banner-image {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  opacity: 0;
+
+  transition: opacity .6s ease;
+}
+
+.banner-image.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.banner-slider::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  /* dark overlay when collapsed */
+  background: rgba(0,0,0,.5);
+
+  transition: opacity .4s ease;
+
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* top vignette — always present, blends image into the dark header above */
+.banner-slider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+
+  background: linear-gradient(to bottom, rgba(17,17,17,.9) 0%, transparent 100%);
+
+  z-index: 3;
+  pointer-events: none;
+}
+
+.post:hover .banner-slider::after {
+  opacity: 0;
 }
 
 /* vPost */
@@ -96,9 +138,15 @@
 .video-wrapper {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  /* peek: collapsed, expands to full 16/9 on hover */
+  height: var(--video-peek, 120px);
   overflow: hidden;
   border-radius: 0 0 8px 8px;
+  transition: height .45s ease;
+}
+
+.vpost:hover .video-wrapper {
+  height: var(--video-full, 120px);
 }
 
 .video-wrapper iframe {
@@ -106,10 +154,12 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  /* iframe renders at full 16/9, container clips it when collapsed */
+  height: var(--video-full, 100%);
   z-index: 1;
   border-radius: 0 0 8px 8px;
 }
+
 
 .vpost-overlay {
   position: absolute;
@@ -141,7 +191,31 @@
   padding: 0.75em 1em;
   width: 100%;
   box-sizing: border-box;
-  border-radius: 8px 8px 0 0; /* matches .spost or others if needed */
+  border-radius: 8px 8px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* overlay — on top of text, fades on hover to reveal */
+.vpost-text::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.7);
+  border-radius: 8px 8px 0 0;
+  transition: opacity .4s ease;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* text sits below overlay */
+.vpost-text h3 {
+  position: relative;
+  z-index: 1;
+}
+
+.vpost:hover .vpost-text::after {
+  opacity: 0;
 }
 
 .vpost-placeholder {
@@ -173,153 +247,256 @@
     position: relative;
     width: 50%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: height 0.5s ease-in-out; 
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: flex-start;
-	animation: deradiate 0.8s ease-in forwards;
+    animation: deradiate 0.8s ease-in forwards;
 }
 
 .spost iframe {
-    max-width: 100%;
-    height: auto;
-	position: relative;
-    aspect-ratio: 16 / 9;
-    border-radius: 10px;
-	z-index: 255;
+    display: block;
+    width: 100%;
+    height: 352px;
+    border-radius: 12px;
+    position: relative;
+    z-index: 1;
 }
 
 .spost:hover {
-	animation: radiate 0.5s ease-out forwards;
+    animation: radiate 0.5s ease-out forwards;
 }
 
 /* iPost */
 .ipost {
     width: 50%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
 }
+
 .ipost img {
+    display: block;
     width: 100%;
     height: auto;
     object-fit: contain;
-    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 1;
+}
+
+.ipost-inner {
     position: relative;
+    width: 100%;
+    height: var(--ipost-peek, 120px);
+    overflow: hidden;
+    transition: height .45s ease;
+    border-radius: 8px;
+}
+
+.ipost:hover .ipost-inner {
+    height: var(--ipost-full, var(--ipost-peek, 120px));
+}
+
+/* overlay */
+.ipost-inner::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,.5);
+
+    opacity: 1;
+    transition: opacity .4s ease;
+
+    z-index: 2;
+    pointer-events: none;
+}
+
+.ipost:hover {
+    animation: radiate .5s ease-out forwards;
+}
+
+.ipost:hover .ipost-inner::after {
+    opacity: 0;
 }
 
 /* insta */
-.instapost {
-    position: relative;
+.instapost,
+.experience-post {
     width: 50%;
-    height: auto;
-    border-radius: 0 0 8px 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: height 0.5s ease-in-out; 
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
     display: flex;
-    flex-direction: column; 
-    justify-content: flex-start;
-	animation: deradiate 0.8s ease-in forwards;
+    flex-direction: column;
+
+    box-shadow: 0 4px 8px rgba(0,0,0,.1);
+
+    animation: deradiate .8s ease-in forwards;
+    transition: all .4s ease;
+    cursor: pointer;
 }
 
-.instapost iframe {
-    max-width: 100%;
-    height: auto;
-	position: relative;
-    aspect-ratio: 16 / 9;
-    border-radius: 10px;
-	z-index: 255;
+.instapost:hover,
+.experience-post:hover {
+    animation: radiate .5s ease-out forwards;
 }
-
-.instapost:hover {
-	animation: radiate 0.5s ease-out forwards;
-}
-
-.instapost-text {
-  background-color: white;
-  color: black;
-  padding: 0.75em 1em;
-  width: 100%;
-  box-sizing: border-box;
-  border-radius: 8px 8px 0 0; /* match border-radius with .spost if needed */
-}
-
 .insta-embed {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
-  z-index: 0;
+    position: relative;
+    width: 100%;
+    /* peek: show top portion of the embed */
+    height: var(--insta-peek, 160px);
+    overflow: hidden;
+    transition: height .45s ease;
+}
+
+.instapost:hover .insta-embed {
+    height: var(--insta-full, 160px);
+}
+
+.insta-embed iframe {
+    width: 100%;
+    /* iframe needs a fixed height to render; JS will read this and set vars */
+    height: var(--insta-full, 480px);
+    border: none;
 }
 
 .insta-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.5);
-  border-radius: 0 0 8px 8px;
-  z-index: 2;
-  transition: opacity 0.4s ease;
-  pointer-events: none; /* allow hover to reach iframe */
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,.5);
+
+    transition: opacity .4s ease;
+    pointer-events: none;
 }
 
-.instapost:hover .insta-overlay {
-  opacity: 0;
-}
-
-
-.insta-placeholder {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  border-radius: 0 0 8px 8px;
-  z-index: 3;
-  transition: opacity 0.4s ease;
-  pointer-events: none;
-}
-
-/* === Glow & Overlay for .ipost === */
-
-.ipost:hover {
-    animation: radiate 0.5s ease-out forwards;
-}
-
-/* === Glow & Overlay for .instapost === */
-.instapost::before {
+/* second overlay layer on top */
+.insta-embed::after {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
+    inset: 0;
+
+    background: rgba(0,0,0,.4);
+
+    transition: opacity .4s ease;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.instapost:hover .insta-overlay,
+.instapost:hover .insta-embed::after {
+    opacity: 0;
+}
+
+.experience-gallery {
+    position: relative;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 2;
-    border-radius: 0 0 8px 8px;
-    transition: background-color 0.4s ease;
-    pointer-events: none; /* <--- ADD THIS LINE */
+    /* peek height; JS sets --exp-peek and --exp-full based on loaded image */
+    height: var(--exp-peek, 120px);
+    overflow: hidden;
+    transition: height .45s ease;
 }
 
-.instapost:hover::before {
-    background-color: rgba(0, 0, 0, 0);
+.experience-post:hover .experience-gallery {
+    height: var(--exp-full, var(--exp-peek, 120px));
 }
 
-.instapost:hover {
-    animation: radiate 0.5s ease-out forwards;
-}
 
-/* Invisible shield to stop the iframe from eating clicks */
-.instapost::after {
+.experience-gallery::after {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
+    inset: 0;
+
+    background: rgba(0,0,0,.5);
+
+    transition: opacity .4s ease;
+
+    z-index: 5;
+    pointer-events: none;
+}
+
+.experience-post:hover .experience-gallery::after {
+    opacity: 0;
+}
+
+.fade-image {
+    position: absolute;
+    inset: 0;
+
     width: 100%;
     height: 100%;
-    z-index: 999; /* Must be higher than the iframe's 255 */
-    cursor: pointer;
+
+    object-fit: cover;
+
+    opacity: 0;
+    transition: opacity 1s ease;
 }
+
+.fade-image.active {
+    opacity: 1;
+}
+.instapost-text,
+.experience-text {
+    padding: .75rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    box-sizing: border-box;
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* dark header overlay, fades on hover — sits on top of everything including text */
+.instapost-text::after,
+.experience-text::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.7);
+    transition: opacity .4s ease;
+    pointer-events: none;
+    z-index: 10;
+}
+
+/* text stays below overlay when collapsed — revealed on hover */
+.instapost-text h3,
+.instapost-text p,
+.experience-text h3,
+.experience-text p {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+}
+
+.instapost:hover .instapost-text::after,
+.experience-post:hover .experience-text::after {
+    opacity: 0;
+}
+
+.instapost-text {
+    background: white;
+    color: black;
+}
+
+.experience-text {
+    background: white;
+    color: black;
+}
+
+.instapost-text h3,
+.instapost-text p,
+.experience-text h3,
+.experience-text p {
+    margin: 0;
+}
+

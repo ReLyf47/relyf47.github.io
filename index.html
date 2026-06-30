@@ -21,9 +21,9 @@
 	<link rel="stylesheet" href="css/text.css">
 	<link rel="stylesheet" href="css/layout.css">
 	<link rel="stylesheet" href="css/menu.css">
-	<link rel="stylesheet" href="css/components.css">
+	<link rel="stylesheet" href="css/components.css?v=2">
 	<link rel="stylesheet" href="css/animations.css">
-	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/responsive.css?v=2">
 
     <title>Welcome to ReLyf's biography!</title>
 </head>
@@ -63,22 +63,42 @@
 		</div>
 		<br>
 	
-        <div class="instapost" data-href="extra/about/">
-		  <div class="instapost-text">
-		    <h3>Name: Alif Akbar A</h3>
-		    <p>Birthdate: 18/11/2003 (DD/MM/YYY)</p>
-		  </div>
-		  <div class="insta-embed" data-href="extra/about/">
-		    <iframe id="random-insta"
-		            style="width: 100%; height: 100%; border: none;"
-		            scrolling="no"
-		            frameborder="0"
-		            allowtransparency="true"></iframe>
-		
-		    <div class="insta-overlay" data-href="extra/about/"></div> <!-- NEW -->
-		  </div>
+	<div class="instapost" data-href="extra/about/">
+		<div class="instapost-text">
+			<h3>Name: Alif Akbar A</h3>
+			<p>Birthdate: 18/11/2003 (DD/MM/YYYY)</p>
 		</div>
 
+		<div class="insta-embed">
+			<iframe
+				id="random-insta"
+				scrolling="no"
+				frameborder="0"
+				allowtransparency="true">
+			</iframe>
+
+			<div class="insta-overlay"></div>
+		</div>
+	</div>
+
+	<br>
+
+	<div class="experience-post" data-href="me/experience/">
+		<div class="experience-text">
+			<h3>Organization Experiences</h3>
+			<p>Labs, Internship and More!</p>
+		</div>
+
+		<div class="experience-gallery">
+			<img class="fade-image active" id="imgA" src="" alt="">
+			<img class="fade-image" id="imgB" src="" alt="">
+		</div>
+	</div>
+
+		<br>
+		<div class="tpost">
+		<h1>Hobby:<br></h1>
+		</div>
 		<div class="vpost" data-href="extra/games/">
 			<div class="vpost-text">
 				<h3><a href="extra/games/">Playing Games</a></h3>
@@ -97,14 +117,21 @@
 		</div>
 
         <div class="post" data-href="extra/animanga/?type=manga&from=/">
-			<img src="https://areajugones.sport.es/wp-content/uploads/2024/01/the-100-girlfriends-who-really-love-me-1-1.jpg" alt="Post 3">
 			<h3>Reading Manga</h3>
+
+			<div class="banner-slider" id="manga-slider">
+				<img class="banner-image active" src="/resources/" alt="">
+				<img class="banner-image" src="" alt="">
+			</div>
 		</div>
-		
+
 		<div class="post" data-href="extra/animanga/?type=anime&from=/">
-            <img src="https://sportshub.cbsistatic.com/i/2024/06/26/ac069e09-c64b-44b7-9dc4-a4139977ac48/suicide-squad-isekai-harley-quinn-watch-anime.jpg" alt="Post 4">
-            <h3><a>Watching Anime</a></h3>
-        </div>
+			<h3>Watching Anime</h3>
+			<div class="banner-slider" id="anime-slider">
+				<img class="banner-image active" src="" alt="">
+				<img class="banner-image" src="" alt="">
+			</div>
+		</div>
 		
 		
 		<div class="tpost">
@@ -113,15 +140,7 @@
 		<br>
 		
         <div class="spost">
-			<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/00DgxNaO6dCeSPCViWy0Sw?utm_source=generator&theme=0"
-			width="100%"
-			height="152"
-			frameBorder="0"
-			allowfullscreen="" allow="autoplay;
-			clipboard-write;
-			encrypted-media;
-			fullscreen;
-			picture-in-picture" loading="lazy"></iframe>
+			<iframe data-testid="embed-iframe" style="border-radius:12px; height: 352px !important;" src="https://open.spotify.com/embed/playlist/00DgxNaO6dCeSPCViWy0Sw?utm_source=generator&theme=0&si=0ff5599369564c09" width="100%" height="352" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
 		
 		<div class="tpost">
@@ -130,12 +149,16 @@
 		<br>
 		
 		<div class="ipost">
-			<a href="https://anilist.co/user/ReLyf/" target="_blank">
-				<img src="https://img.anili.st/user/7445864" alt="ReLyf AniList">
-			</a>
+			<div class="ipost-inner">
+				<a href="https://anilist.co/user/ReLyf/" target="_blank">
+					<img src="https://img.anili.st/user/7445864" alt="ReLyf AniList">
+				</a>
+			</div>
 		</div>
 		<div class="ipost">
-			<a><img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=relyf47&layout=compact&theme=tokyonight" alt="relyf47's Top Languages"></a>
+			<div class="ipost-inner">
+				<a><img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=relyf47&layout=compact&theme=tokyonight" alt="relyf47's Top Languages"></a>
+			</div>
 		</div>
 
 		<div class="ipost">
@@ -183,7 +206,7 @@
     <script id="dsq-count-scr" src="//relyf.disqus.com/count.js" async></script>
     
     <div id="scrollTip">Fun Fact: Most of these are clickables!</div>
-    <script src="script.js"></script>
+    <script src="script.js?v=2"></script>
 	<!-- Privacy Policy Modal -->
 <div id="privacy-modal">
     <div class="privacy-content">
@@ -241,5 +264,6 @@
 
 	</div>
 </div>
+<div class="adsbox" id="adblock-test"></div>
 </body>
 </html>

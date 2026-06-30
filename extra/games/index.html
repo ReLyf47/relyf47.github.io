@@ -3,75 +3,221 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Game List</title>
+  <title>Game Library</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="games.css">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
-  <div id="age-warning">
-    <div class="warning-box">
-        <h2>⚠️ ADULT CONTENT WARNING ⚠️</h2>
+  <canvas id="xmb-canvas"></canvas>
+  <header class="site-header">
+    <div class="header-container">
+      <div class="header-left">
+        <a href="#" class="back-btn" id="back-btn">
+          <svg class="icon-back" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          <span>Back</span>
+        </a>
+      </div>
+      <script>
+        document.getElementById("back-btn").addEventListener("click", (e) => {
+          e.preventDefault();
+          if (window.history.length > 1) {
+            history.back();
+          } else {
+            window.location.href = "../../";
+          }
+        });
+      </script>
 
-        <p>
-            This page may contain material intended for mature audiences (18+).
-        </p>
-
-        <p>Please ensure that:</p>
-
-        <ul>
-            <li>You are of legal age in your jurisdiction.</li>
-            <li>Viewing this content is permitted where you are.</li>
-            <li>No one nearby may be offended by explicit material.</li>
-        </ul>
-
-        <p>
-            By continuing, you acknowledge these conditions.
-        </p>
-
-        <div class="warning-buttons">
-            <button id="accept-warning">
-                I am 18+
-            </button>
-
-            <button id="reject-warning">
-                No, I am not 18+
-            </button>
+      <div class="header-title-section">
+        <h1>Library</h1>
+        <div class="header-stats">
+          <span class="stats-badge" id="stats-badge">Loading...</span>
         </div>
+      </div>
+
+      <div class="header-right">
+        <div class="navigation-tabs" id="navigation-tabs">
+          <button class="tab-btn active" data-tab="library">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9"></rect><rect x="14" y="3" width="7" height="5"></rect><rect x="14" y="12" width="7" height="9"></rect><rect x="3" y="16" width="7" height="5"></rect></svg>
+            <span>Library</span>
+          </button>
+          <button class="tab-btn" data-tab="favorites">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <span>Favorites</span>
+          </button>
+          <button class="tab-btn" data-tab="wishlist">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+            <span>Wishlist</span>
+          </button>
+        </div>
+      </div>
     </div>
-</div>
-  <canvas id="wave-canvas"></canvas>
+  </header>
   
-  <a href="#" class="back-btn" id="back-btn">⬅ Back</a>
-  <script>
-  document.getElementById("back-btn").addEventListener("click", (e) => {
-    e.preventDefault();
+  <div id="content-area" class="content-area">
+    <div id="throne-room" class="throne-room"></div>
+    <div id="hero-banner" class="hero-banner"></div>
+    <div id="game-list" class="game-list">
+      <!-- 12 Skeleton loading cards -->
+      <div class="game-card skeleton">
+        <div class="cover-wrapper shimmer-loader"></div>
+        <div class="game-card-details">
+          <div class="skeleton-line title-line shimmer-loader"></div>
+          <div class="skeleton-line playtime-line shimmer-loader"></div>
+        </div>
+      </div>
+      <div class="game-card skeleton">
+        <div class="cover-wrapper shimmer-loader"></div>
+        <div class="game-card-details">
+          <div class="skeleton-line title-line shimmer-loader"></div>
+          <div class="skeleton-line playtime-line shimmer-loader"></div>
+        </div>
+      </div>
+      <div class="game-card skeleton">
+        <div class="cover-wrapper shimmer-loader"></div>
+        <div class="game-card-details">
+          <div class="skeleton-line title-line shimmer-loader"></div>
+          <div class="skeleton-line playtime-line shimmer-loader"></div>
+        </div>
+      </div>
+      <div class="game-card skeleton">
+        <div class="cover-wrapper shimmer-loader"></div>
+        <div class="game-card-details">
+          <div class="skeleton-line title-line shimmer-loader"></div>
+          <div class="skeleton-line playtime-line shimmer-loader"></div>
+        </div>
+      </div>
+      <div class="game-card skeleton">
+        <div class="cover-wrapper shimmer-loader"></div>
+        <div class="game-card-details">
+          <div class="skeleton-line title-line shimmer-loader"></div>
+          <div class="skeleton-line playtime-line shimmer-loader"></div>
+        </div>
+      </div>
+      <div class="game-card skeleton">
+        <div class="cover-wrapper shimmer-loader"></div>
+        <div class="game-card-details">
+          <div class="skeleton-line title-line shimmer-loader"></div>
+          <div class="skeleton-line playtime-line shimmer-loader"></div>
+        </div>
+      </div>
+      <div class="game-card skeleton">
+        <div class="cover-wrapper shimmer-loader"></div>
+        <div class="game-card-details">
+          <div class="skeleton-line title-line shimmer-loader"></div>
+          <div class="skeleton-line playtime-line shimmer-loader"></div>
+        </div>
+      </div>
+      <div class="game-card skeleton">
+        <div class="cover-wrapper shimmer-loader"></div>
+        <div class="game-card-details">
+          <div class="skeleton-line title-line shimmer-loader"></div>
+          <div class="skeleton-line playtime-line shimmer-loader"></div>
+        </div>
+      </div>
+      <div class="game-card skeleton">
+        <div class="cover-wrapper shimmer-loader"></div>
+        <div class="game-card-details">
+          <div class="skeleton-line title-line shimmer-loader"></div>
+          <div class="skeleton-line playtime-line shimmer-loader"></div>
+        </div>
+      </div>
+      <div class="game-card skeleton">
+        <div class="cover-wrapper shimmer-loader"></div>
+        <div class="game-card-details">
+          <div class="skeleton-line title-line shimmer-loader"></div>
+          <div class="skeleton-line playtime-line shimmer-loader"></div>
+        </div>
+      </div>
+      <div class="game-card skeleton">
+        <div class="cover-wrapper shimmer-loader"></div>
+        <div class="game-card-details">
+          <div class="skeleton-line title-line shimmer-loader"></div>
+          <div class="skeleton-line playtime-line shimmer-loader"></div>
+        </div>
+      </div>
+      <div class="game-card skeleton">
+        <div class="cover-wrapper shimmer-loader"></div>
+        <div class="game-card-details">
+          <div class="skeleton-line title-line shimmer-loader"></div>
+          <div class="skeleton-line playtime-line shimmer-loader"></div>
+        </div>
+      </div>
+    </div>
+    <div id="loading">Scroll for more!</div>
 
-    if (window.history.length > 1) {
-      history.back();
-    } else {
-      window.location.href = "../../";
-    }
-  });
-  </script>
+  <!-- Game details modal dialog -->
+  <dialog id="game-detail-dialog">
+    <button class="close-btn" id="close-detail-dialog" aria-label="Close dialog">&times;</button>
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal-cover-wrapper">
+          <img id="modal-game-image" src="" alt="" onerror="handleImageError(this)">
+        </div>
+        <div class="modal-details">
+          <div class="modal-header-row">
+            <h2 id="modal-game-name"></h2>
+            <span id="modal-game-favorite" class="favorite-badge">★ Favorite</span>
+          </div>
+          <div class="stat-section">
+            <span class="stat-label">Playtime</span>
+            <span id="modal-game-playtime" class="stat-value"></span>
+          </div>
+          <div class="modal-actions">
+            <a id="modal-steam-link" href="#" target="_blank" rel="noopener noreferrer" class="modal-btn steam-btn">Open on Steam</a>
+            <a id="modal-review-link" href="#" target="_blank" rel="noopener noreferrer" class="modal-btn review-btn">Read Review</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
 
-  <button id="sort-toggle" class="sort-btn">By Playtime</button>
+  <!-- Collection details modal dialog -->
+  <dialog id="collection-dialog">
+    <div class="modal-content">
+      <button class="close-btn" id="close-collection-dialog" aria-label="Close dialog">&times;</button>
+      <div class="collection-modal-header">
+        <h2 id="collection-modal-title">Collection</h2>
+        <span id="collection-modal-count" class="collection-count-badge">0 Games</span>
+      </div>
+      <div class="collection-modal-body">
+        <div id="collection-game-grid" class="game-grid"></div>
+      </div>
+    </div>
+  </dialog>
 
-  <h1>Top Playtime</h1>
+  <!-- Age warning overlay -->
+  <div id="age-warning" style="display: none;">
+    <div class="warning-box">
+      <h2>⚠️ ADULT CONTENT WARNING ⚠️</h2>
+
+      <p>
+        This page may contain material intended for mature audiences (18+).
+      </p>
+
+      <p>Please ensure that:</p>
+
+      <ul>
+        <li>You are of legal age in your jurisdiction.</li>
+        <li>Viewing this content is permitted where you are.</li>
+        <li>No one nearby may be offended by explicit material.</li>
+      </ul>
+
+      <p>
+        By continuing, you acknowledge these conditions.
+      </p>
+
+      <div class="warning-buttons">
+        <button id="accept-warning">I am 18+</button>
+        <button id="reject-warning">No, I am not 18+</button>
+      </div>
+    </div>
+  </div>
   
-  <audio id="bgm" loop>
-    <source src="../../resources/background.mp3" type="audio/mpeg">
-  </audio>
-
-  <button id="audio-toggle" class="audio-btn">
-    🔇
-  </button>
-  
-  <div id="throne-room" class="throne-room"></div>
-
-  <div id="game-list" class="game-list"></div>
-  
-  <div id="loading">Scroll for more!</div>
-  
+  <script src="xmb-background.js"></script>
   <script src="games.js"></script>
 </body>
 </html>

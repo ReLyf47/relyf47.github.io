@@ -544,3 +544,69 @@ if (gamesCard) {
         10000
     );
 }
+
+/* ==========================================
+   EXPERIENCE CARD DYNAMIC BANNER
+========================================== */
+
+const experienceCard = document.querySelector(".experience-card-large");
+
+// Make sure your setupCardLayers function is declared ABOVE this in your script.js
+if (experienceCard) {
+
+    // 1. Hijack your existing layer setup for smooth crossfading
+    const expLayers = setupCardLayers(experienceCard);
+
+    // 2. The "Wildcard" Array. List your image files here!
+    const labImages = [
+        "1.jpeg",
+        "2.jpeg",
+        "3.jpeg",
+        "4.jpeg",
+        "5.jpeg",
+        "6.jpeg",
+        "7.jpeg",
+        "8.jpeg",
+        "9.jpeg"
+    ];
+
+    function setExpImage(imageUrl) {
+        const incoming = expLayers.active ? expLayers.bgA : expLayers.bgB;
+        const outgoing = expLayers.active ? expLayers.bgB : expLayers.bgA;
+
+        incoming.style.backgroundImage = `url("${imageUrl}")`;
+
+        requestAnimationFrame(() => {
+            incoming.style.opacity = "1";
+            outgoing.style.opacity = "0";
+        });
+
+        expLayers.active = !expLayers.active;
+    }
+
+    function loadRandomExpBanner() {
+        try {
+            // Pick a random image from your array
+            const randomImg = labImages[Math.floor(Math.random() * labImages.length)];
+            const fullPath = `../resources/LAB/${randomImg}`;
+
+            // Preload the image so it doesn't flicker while downloading
+            const preload = new Image();
+            
+            preload.onload = () => {
+                setExpImage(fullPath);
+            };
+            
+            preload.src = fullPath;
+            
+        } catch (err) {
+            console.error("Failed to load experience banner:", err);
+        }
+    }
+
+    // Load the first random image immediately
+    loadRandomExpBanner();
+
+    // Swap images every 10 seconds (10000ms) to match your other cards
+    setInterval(loadRandomExpBanner, 10000);
+}

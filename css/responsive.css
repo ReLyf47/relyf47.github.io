@@ -15,8 +15,23 @@
         font-size: 1.5rem;
         margin: 300px 0;
     }
+}
 
-    .spost iframe {
-        height: 152px;
-    }
+/* banner-slider height is driven by --peek-height / --full-height CSS vars set in JS */
+.banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: auto;        /* natural height so JS can measure it */
+
+    object-fit: unset;   /* don't crop — let the full image show on reveal */
+
+    opacity: 0;
+    transition: opacity 1.5s ease;
+}
+
+.banner-image.active {
+    opacity: 1;
 }

@@ -1,11 +1,11 @@
 /* ==========================================
    TRANSITION BOOT
-   Keeps the wipe from flashing on load.
+   Initializes URL parameters and states.
 ========================================== */
 
 const params = new URLSearchParams(location.search);
 
-const type =
+let type =
     params.get("type") === "manga"
         ? "manga"
         : "anime";
@@ -15,31 +15,6 @@ const from =
 
 const body = document.body;
 const pageTransition = document.getElementById("page-transition");
-
-function setTransitionState(toType, covered = false) {
-    if (!pageTransition) return;
-
-    pageTransition.dataset.to = toType;
-    pageTransition.style.transition = "none";
-    pageTransition.style.opacity = covered ? "1" : "0";
-    pageTransition.style.transform = covered
-        ? "translateX(0%)"
-        : "translateX(110%)";
-}
-
-(function applyInstantCover() {
-    const pending = sessionStorage.getItem("pendingTransition");
-    if (!pending) return;
-
-    sessionStorage.removeItem("pendingTransition");
-
-    try {
-        const { toType } = JSON.parse(pending);
-        setTransitionState(toType, true);
-    } catch {
-        setTransitionState(type, true);
-    }
-})();
 
 /* ==========================================
    18+ WARNING
@@ -51,57 +26,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (sessionStorage.getItem("nsfwWarningShown")) {
         warning.remove();
+        document.body.style.overflow = "";
         return;
     }
 
-    document
-        .getElementById("accept-warning")
-        ?.addEventListener("click", () => {
-            sessionStorage.setItem("nsfwWarningShown", "true");
-            warning.remove();
-        });
-
-    document
-        .getElementById("reject-warning")
-        ?.addEventListener("click", () => {
-            body.classList.add("fade-out");
-            setTimeout(() => {
-                window.location.href = "/";
-            }, 420);
-        });
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-    const warning = document.getElementById("age-warning");
-    if (!warning) return;
-
-    if (sessionStorage.getItem("nsfwWarningShown")) {
-        warning.remove();
-        return;
-    }
-
-    // NEW
     document.body.style.overflow = "hidden";
 
     document
         .getElementById("accept-warning")
         ?.addEventListener("click", () => {
             sessionStorage.setItem("nsfwWarningShown", "true");
-
-            // NEW
+            sessionStorage.setItem("nsfwAllowed", "true");
             document.body.style.overflow = "";
-
             warning.remove();
+            renderFilteredData();
         });
 
     document
         .getElementById("reject-warning")
         ?.addEventListener("click", () => {
-            body.classList.add("fade-out");
-
-            setTimeout(() => {
-                window.location.href = "/";
-            }, 420);
+            sessionStorage.setItem("nsfwWarningShown", "true");
+            sessionStorage.setItem("nsfwAllowed", "false");
+            document.body.style.overflow = "";
+            warning.remove();
+            renderFilteredData();
         });
 });
 
@@ -148,11 +96,6 @@ const FORMAT_ORDER = [
     "ONE_SHOT"
 ];
 
-let coverCache = {};
-
-const CSV_FILE = type === "anime" ? "assets/anime.csv" : "assets/manga.csv";
-const COVER_FILE = type === "anime" ? "assets/anime-covers.json" : "assets/manga-covers.json";
-
 const pageTitle = document.getElementById("page-title");
 const switchBtn = document.getElementById("switch-btn");
 const topbar = document.querySelector(".topbar");
@@ -166,9 +109,7 @@ if (switchBtn) {
 
     switchBtn.addEventListener("click", () => {
         const nextType = type === "anime" ? "manga" : "anime";
-        triggerTransition(nextType, () => {
-            location.href = `?type=${nextType}&from=${encodeURIComponent(from)}`;
-        });
+        performTransition(nextType, true);
     });
 }
 
@@ -192,56 +133,66 @@ window.addEventListener("load", updateTopbarState);
    TRANSITION FUNCTIONS
 ========================================== */
 
-function triggerTransition(toType, callback) {
-    if (!pageTransition) {
-        callback();
-        return;
+let isTransitioning = false;
+
+function updateState(nextType) {
+    type = nextType;
+    
+    // Update body classes
+    body.classList.toggle("manga-mode", type === "manga");
+    
+    // Update titles and buttons
+    if (pageTitle) {
+        pageTitle.textContent = type === "anime" ? "Anime List" : "Manga List";
     }
-
-    setTransitionState(toType, false);
-    void pageTransition.offsetWidth;
-
-    body.classList.add("fade-out");
-
-    requestAnimationFrame(() => {
-        pageTransition.style.transition =
-            "transform .48s cubic-bezier(.77,0,.18,1), opacity .22s ease";
-        pageTransition.style.opacity = "1";
-        pageTransition.style.transform = "translateX(0%)";
-    });
-
-    sessionStorage.setItem(
-        "pendingTransition",
-        JSON.stringify({ toType })
-    );
-
-    setTimeout(callback, 490);
+    if (switchBtn) {
+        switchBtn.textContent = type === "anime" ? "Switch to Manga" : "Switch to Anime";
+    }
+    
+    // Update status name for current type
+    STATUS_NAMES.CURRENT = type === "manga" ? "Reading" : "Watching";
+    
+    // Load and render data
+    loadAndRenderData(type);
 }
 
-function playReveal() {
-    if (!pageTransition) return;
+function performTransition(nextType, pushHistory = true) {
+    if (type === nextType || isTransitioning) return;
+    isTransitioning = true;
 
-    if (pageTransition.style.transform !== "translateX(0%)") {
-        body.classList.add("page-ready");
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const executeStateUpdate = () => {
+        if (document.startViewTransition) {
+            document.startViewTransition(() => updateState(nextType));
+        } else {
+            updateState(nextType);
+        }
+    };
+
+    if (pushHistory) {
+        const newUrl = `?type=${nextType}&from=${encodeURIComponent(from)}`;
+        history.pushState({ type: nextType }, '', newUrl);
+    }
+
+    if (prefersReducedMotion || !pageTransition) {
+        executeStateUpdate();
+        isTransitioning = false;
         return;
     }
 
-    body.classList.add("page-ready");
+    // 1. Set target media type to update active color theme (glow and eyes)
+    pageTransition.dataset.to = nextType;
+    
+    // 2. Trigger the synced CSS animations
+    pageTransition.classList.add("active");
+    executeStateUpdate();
 
-    requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-            pageTransition.style.transition =
-                "transform .62s cubic-bezier(.77,0,.18,1), opacity .34s ease";
-            pageTransition.style.opacity = "0";
-            pageTransition.style.transform = "translateX(-110%)";
-        });
-    });
-
+    // 3. Cleanup after animation completes (800ms)
     setTimeout(() => {
-        pageTransition.style.transition = "none";
-        pageTransition.style.opacity = "0";
-        pageTransition.style.transform = "translateX(110%)";
-    }, 700);
+        pageTransition.classList.remove("active");
+        isTransitioning = false;
+    }, 800);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -250,7 +201,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-window.addEventListener("load", playReveal);
+window.addEventListener("popstate", (e) => {
+    const nextType = (e.state && e.state.type) || 
+                     (new URLSearchParams(location.search).get("type") === "manga" ? "manga" : "anime");
+    if (nextType !== type) {
+        performTransition(nextType, false);
+    }
+});
 
 /* ==========================================
    NORMALISE / FORMAT HELPERS
@@ -278,24 +235,62 @@ function getFormatOrder(entries) {
 }
 
 /* ==========================================
-   DATA FETCH + RENDER
+   DATA FETCH + RENDER (WITH CACHING & PREFETCHING)
 ========================================== */
 
-Promise.all([
-    fetch(CSV_FILE).then(r => r.text()),
-    fetch(COVER_FILE).then(r => r.json())
-]).then(([csv, covers]) => {
-    coverCache = covers;
+const dataCache = {
+    anime: null,
+    manga: null
+};
 
-    const parsed = Papa.parse(csv, {
-        header: true,
-        skipEmptyLines: true
-    });
+let allData = [];
 
-    render(parsed.data);
-}).catch(err => {
-    console.error("Failed to load data:", err);
-});
+function renderFilteredData() {
+    const nsfwAllowed = sessionStorage.getItem("nsfwAllowed") === "true";
+    const filteredData = nsfwAllowed ? allData : allData.filter(item => !item.NSFW);
+    render(filteredData);
+}
+
+function loadAndRenderData(targetType) {
+    if (dataCache[targetType]) {
+        allData = dataCache[targetType];
+        renderFilteredData();
+        return Promise.resolve();
+    }
+
+    const file = targetType === "anime" ? "assets/anime.json" : "assets/manga.json";
+    return fetch(file)
+        .then(r => r.json())
+        .then(items => {
+            dataCache[targetType] = items;
+            if (type === targetType) {
+                allData = items;
+                renderFilteredData();
+            }
+            const otherType = targetType === "anime" ? "manga" : "anime";
+            if (!dataCache[otherType]) {
+                prefetchData(otherType);
+            }
+        })
+        .catch(err => {
+            console.error(`Failed to load ${targetType} data:`, err);
+        });
+}
+
+function prefetchData(targetType) {
+    const file = targetType === "anime" ? "assets/anime.json" : "assets/manga.json";
+    fetch(file)
+        .then(r => r.json())
+        .then(items => {
+            dataCache[targetType] = items;
+        })
+        .catch(err => {
+            console.error(`Failed to prefetch ${targetType} data:`, err);
+        });
+}
+
+// Initial load
+loadAndRenderData(type);
 
 function render(data) {
     const container = document.getElementById("anime-list");
@@ -345,7 +340,7 @@ function render(data) {
                     entry.id;
 
                 const cover =
-                    coverCache[String(animeId)] ||
+                    entry.Cover ||
                     "https://placehold.co/400x600?text=No+Cover";
 
                 const card = document.createElement("a");

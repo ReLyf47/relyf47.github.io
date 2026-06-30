@@ -931,3 +931,16 @@ footer h3 {
         0 0 10px rgba(85,255,153,.6);
 
 }
+
+strong a {
+    color:var(--muted);
+}
+
+.experience-card-large {
+    grid-column: 1 / -1;
+    min-height: 520px; 
+}
+.experience-card-large .card-bg {
+    background-size: cover; 
+    background-position: center center; 
+}

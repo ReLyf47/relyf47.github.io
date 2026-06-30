@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience — ReLyf</title>
+    <link rel="icon" href="../../resources/favico.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@400;600;700;800&family=Geist:wght@300;400;500&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ocean particles — only visible on deep slides -->
+<div id="ocean-depth"></div>
+<canvas id="particles"></canvas>
+<div id="scan-lines"></div>
+
+<!-- NAVBAR -->
+<header id="nav">
+    <div class="nav-inner">
+        <a href="../../" class="nav-logo">ReLyf</a>
+        <div class="nav-dots" id="nav-dots"></div>
+        <a href="../" class="nav-back">← BACK</a>
+    </div>
+</header>
+
+<!-- SLIDES -->
+<div id="slides">
+
+    <!-- ================================
+         SLIDE 0 — SURFACE (white)
+    ================================= -->
+    <div class="slide slide-surface" data-index="0">
+        <div class="slide-inner layout-center">
+            <div class="surface-content">
+                <p class="surface-eyebrow">Alif Akbar A · ReLyf</p>
+                <h1 class="surface-title">Experience</h1>
+                <p class="surface-sub">A record of my experiences and contributions.<br>Scroll down to dive in.</p>
+                <div class="surface-divider"></div>
+                <div class="surface-meta">
+                    <span>01 organisation</span>
+                    <span>·</span>
+                    <span>Active since 2025</span>
+                </div>
+                <div class="dive-hint">
+                    <span class="dive-label">DIVE</span>
+                    <div class="dive-arrow">↓</div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-num">00</div>
+    </div>
+
+    <!-- ================================
+         SLIDE 1 — SEA LABORATORY (deep)
+    ================================= -->
+    <div class="slide slide-deep" data-index="1">
+        <div class="slide-inner layout-lab">
+
+            <div class="lab-left">
+                <div class="org-badge">SEA Laboratory</div>
+                <h2 class="lab-title">Practicum<br>Coordinator</h2>
+                <span class="exp-period">2025 — 2026</span>
+                <div class="photo-stack">
+                    <img src="../../resources/LAB/1.jpeg" alt="SEA Lab" class="photo p1">
+                    <img src="../../resources/LAB/5.jpeg" alt="SEA Lab" class="photo p2">
+                    <img src="../../resources/LAB/9.jpeg" alt="SEA Lab" class="photo p3">
+                </div>
+            </div>
+
+            <div class="lab-right">
+                <div class="roles-grid">
+                    <div class="role-card">
+                        <div class="role-id">KOOR-001</div>
+                        <div class="role-accent"></div>
+                        <h4>Module Development</h4>
+                        <p>Coordinating the creation and revision of practicum modules and learning materials.</p>
+                    </div>
+
+                    <div class="role-card">
+                        <div class="role-id">KOOR-002</div>
+                        <div class="role-accent"></div>
+                        <h4>Assessment Design</h4>
+                        <p>Preparing pre-tests, post-tests, assignments, and evaluation materials.</p>
+                    </div>
+
+                    <div class="role-card">
+                        <div class="role-id">KOOR-003</div>
+                        <div class="role-accent"></div>
+                        <h4>Journal Management</h4>
+                        <p>Overseeing practicum journals and submission workflows.</p>
+                    </div>
+
+                    <div class="role-card">
+                        <div class="role-id">KOOR-004</div>
+                        <div class="role-accent"></div>
+                        <h4>Team Coordination</h4>
+                        <p>Leading assistants and coordinating practicum activities.</p>
+                    </div>
+
+                    <div class="role-card">
+                        <div class="role-id">KOOR-005</div>
+                        <div class="role-accent"></div>
+                        <h4>Scheduling</h4>
+                        <p>Managing practicum schedules, timelines, and session planning.</p>
+                    </div>
+
+                    <div class="role-card">
+                        <div class="role-id">KOOR-006</div>
+                        <div class="role-accent"></div>
+                        <h4>Learning Resources</h4>
+                        <p>Preparing presentation materials and supporting documentation.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="slide-num">01</div>
+    </div>
+
+    <!-- ================================
+         SLIDE 2 — MORE INCOMING (surface)
+    ================================= -->
+    <div class="slide slide-surface" data-index="2">
+        <div class="slide-inner layout-center">
+            <div class="surface-content">
+                <p class="surface-eyebrow">To be continued</p>
+                <h1 class="surface-title">More<br>Incoming</h1>
+                <p class="surface-sub">More organisations and roles will be added here<br>as they unfold.</p>
+                <div class="surface-divider"></div>
+                <div class="surface-meta">
+                    <span>Scroll to loop back</span>
+                </div>
+                <div class="dive-hint resurface">
+                    <span class="dive-label">BACK TO TOP</span>
+                    <div class="dive-arrow">↑</div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-num">—</div>
+    </div>
+
+</div>
+
+<!-- WATER TRANSITION OVERLAY -->
+<div id="water-overlay">
+    <canvas id="water-canvas"></canvas>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

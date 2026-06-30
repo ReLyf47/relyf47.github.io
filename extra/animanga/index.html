@@ -6,9 +6,7 @@
     <title>Library</title>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/favico.svg" type="image/x-icon">
-
-    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+    <link rel="shortcut icon" href="favico.svg" type="image/x-icon">
 </head>
 <body>
     <div class="container">
@@ -51,7 +49,35 @@
         </div>
     </div>
 
-    <div id="page-transition"></div>
+    <div id="page-transition">
+        <svg viewBox="0 0 1400 1000" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <filter id="slash-glow" x="-50%" y="-50%" width="200%" height="200%">
+                    <feGaussianBlur stdDeviation="8" result="blur1" />
+                    <feGaussianBlur stdDeviation="18" result="blur2" />
+                    <feMerge>
+                        <feMergeNode in="blur2" />
+                        <feMergeNode in="blur1" />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            
+            <line class="slash-line" x1="1400" y1="0" x2="1000" y2="1000" stroke-width="6" />
+            <line class="slash-line-outer" x1="1400" y1="0" x2="1000" y2="1000" stroke-width="20" opacity="0.25" />
+
+            <g class="character-silhouette">
+                <path class="fill-black" d="M 1250 420 L 1280 430 L 1290 410 L 1315 440 L 1340 430 L 1330 455 L 1355 460 L 1320 480 L 1335 500 L 1295 505 L 1310 530 L 1285 520 L 1290 540 L 1270 525 L 1260 550 L 1250 515 L 1235 530 L 1240 500 L 1210 495 L 1235 470 L 1205 460 L 1240 450 L 1230 430 Z" />
+                <path class="fill-black" d="M 1280 430 L 1380 300 L 1400 315 L 1290 450 Z" />
+                <path class="fill-black" d="M 1380 300 L 1395 260 L 1415 285 L 1400 315 Z" />
+                <path class="fill-black" d="M 1250 515 L 1260 550 L 1220 630 L 1150 700 L 1050 750 L 980 770 L 1000 710 L 1080 660 L 1150 580 L 1210 495 Z" />
+                <path class="fill-black" d="M 1150 700 L 1020 850 L 920 900 L 900 870 L 1000 780 L 1050 750 Z" />
+                <path class="fill-white" d="M 1255 460 L 1275 465 L 1285 450 L 1295 475 L 1270 485 L 1260 475 Z" />
+                <path class="fill-white" d="M 1250 490 L 1265 495 L 1260 505 L 1245 500 Z" />
+                <polygon class="eye-glow" points="1272,468 1280,470 1276,476" />
+            </g>
+        </svg>
+    </div>
 
     <script src="script.js"></script>
 </body>

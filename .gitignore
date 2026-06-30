@@ -1,6 +1,4 @@
 extra/games/tools
-resourcemaker.py
-extra/animanga/assets/animemakecover.py
-extra/animanga/assets/mangamakecover.py
-extra/animanga/assets/animemakebanner.py
-extra/animanga/assets/mangamakebanner.py
+extra/animanga/assets/tools
+tools
+.vscode
