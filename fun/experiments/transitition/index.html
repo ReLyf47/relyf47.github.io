@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persona UI Experiments</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" id="theme-link" href="p3r.css">
+</head>
+<body class="theme-p3">
+
+<!-- ════════════════════════════════════════════
+     WIPE LAYERS
+════════════════════════════════════════════ -->
+<div class="wipe-wrap" aria-hidden="true">
+    <div class="wipe wipe-a"></div>
+    <div class="wipe wipe-b"></div>
+    <div class="wipe wipe-c"></div>
+</div>
+
+<!-- ════════════════════════════════════════════
+     P3R — BACKGROUNDS
+════════════════════════════════════════════ -->
+<div class="p3-bg" aria-hidden="true">
+    <div class="p3-caustic"></div>
+    <div class="p3-bubble bbl-1"></div>
+    <div class="p3-bubble bbl-2"></div>
+    <div class="p3-bubble bbl-3"></div>
+    <div class="p3-bubble bbl-4"></div>
+    <div class="p3-nameplate">YUKARI</div>
+</div>
+
+<!-- ════════════════════════════════════════════
+     P5R — BACKGROUNDS
+════════════════════════════════════════════ -->
+<div class="p5-bg" aria-hidden="true"></div>
+
+<!-- ════════════════════════════════════════════
+     CHARACTER ART
+════════════════════════════════════════════ -->
+<div class="char-wrap p3-chars" aria-hidden="true">
+    <img src="backdrop.png"   class="char-back" alt="">
+    <img src="foreground.png" class="char-fore" alt="">
+</div>
+<div class="char-wrap p5-chars" aria-hidden="true">
+    <img src="P5RBg.webp" class="char-fore" alt="">
+</div>
+
+<!-- ════════════════════════════════════════════
+     P3R — HUD
+════════════════════════════════════════════ -->
+<div class="p3-wallet p3-elem">
+    <span class="p3-wallet-val">¥47,407</span>
+    <span class="p3-wallet-lbl">current wallet</span>
+</div>
+
+<div class="p3-hud p3-elem">
+    <div class="p3-hud-desc" id="p3-desc">Use a Skill</div>
+    <div class="p3-hud-cmd">Command</div>
+    <div class="p3-hud-btns">
+        <span>⓪ Confirm</span>
+        <span>Ⓑ Close</span>
+    </div>
+</div>
+
+<!-- ════════════════════════════════════════════
+     P3R — MENU
+════════════════════════════════════════════ -->
+<nav id="p3-menu" class="p3-menu p3-elem" aria-label="P3R Menu">
+    <ul class="p3-list">
+
+        <li class="p3-item" data-key="skill">
+            <div class="p3-wedge"></div>
+            <span class="p3-lbl">SKILL</span>
+            <div class="p3-sub">
+                <div class="p3-sub-placeholder">— Skill list placeholder —</div>
+            </div>
+        </li>
+
+        <li class="p3-item" data-key="item">
+            <div class="p3-wedge"></div>
+            <span class="p3-lbl">ITEM</span>
+            <div class="p3-sub">
+                <div class="p3-sub-placeholder">— Item list placeholder —</div>
+            </div>
+        </li>
+
+        <li class="p3-item" data-key="equip">
+            <div class="p3-wedge"></div>
+            <span class="p3-lbl">EQUIP</span>
+            <div class="p3-sub">
+                <div class="p3-sub-placeholder">— Equipment placeholder —</div>
+            </div>
+        </li>
+
+        <li class="p3-item" data-key="persona">
+            <div class="p3-wedge"></div>
+            <span class="p3-lbl">PERSONA</span>
+            <div class="p3-sub">
+                <div class="p3-sub-placeholder">— Persona list placeholder —</div>
+            </div>
+        </li>
+
+        <li class="p3-item" data-key="stats">
+            <div class="p3-wedge"></div>
+            <span class="p3-lbl">STATS</span>
+            <div class="p3-sub">
+                <div class="p3-sub-placeholder">— Stats placeholder —</div>
+            </div>
+        </li>
+
+        <li class="p3-item" data-key="quest">
+            <div class="p3-wedge"></div>
+            <span class="p3-lbl">QUEST</span>
+            <div class="p3-sub">
+                <div class="p3-sub-placeholder">— Quest log placeholder —</div>
+            </div>
+        </li>
+
+        <li class="p3-item" data-key="sociallink">
+            <div class="p3-wedge"></div>
+            <span class="p3-lbl">SOCIAL LINK</span>
+            <div class="p3-sub">
+                <div class="p3-sub-placeholder">— Social links placeholder —</div>
+            </div>
+        </li>
+
+        <li class="p3-item" data-key="calendar">
+            <div class="p3-wedge"></div>
+            <span class="p3-lbl">CALENDAR</span>
+            <div class="p3-sub">
+                <div class="cal">
+                    <div class="cal-header">
+                        <span class="cal-month">OCTOBER 2009</span>
+                    </div>
+                    <div class="cal-grid">
+                        <span class="cal-dow">SUN</span><span class="cal-dow">MON</span><span class="cal-dow">TUE</span><span class="cal-dow">WED</span><span class="cal-dow">THU</span><span class="cal-dow">FRI</span><span class="cal-dow">SAT</span>
+                        <span class="cal-empty"></span><span class="cal-empty"></span><span class="cal-empty"></span><span>1</span><span>2</span><span>3</span><span>4</span>
+                        <span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span>
+                        <span>12</span><span>13</span><span>14</span><span class="cal-today">15</span><span>16</span><span>17</span><span>18</span>
+                        <span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span>
+                        <span>26</span><span>27</span><span>28</span><span>29</span><span>30</span><span>31</span><span class="cal-empty"></span>
+                    </div>
+                    <div class="cal-event">🌙 Full Moon Operation</div>
+                </div>
+            </div>
+        </li>
+
+        <li class="p3-item" data-key="system">
+            <div class="p3-wedge"></div>
+            <span class="p3-lbl">SYSTEM</span>
+            <div class="p3-sub">
+                <button class="p3-back-btn" id="p3-back">Go Back</button>
+            </div>
+        </li>
+
+    </ul>
+</nav>
+
+<!-- ════════════════════════════════════════════
+     P5R — FULL UI
+════════════════════════════════════════════ -->
+<div id="p5-root" class="p5-elem" aria-hidden="false">
+
+    <!-- Warping polygon selector (Snap.svg) -->
+    <svg class="p5-sel" viewBox="0 0 100 50" preserveAspectRatio="none" aria-hidden="true">
+        <polygon class="p5-sel-red"  points="10,20 80,20 80,30 20,30"></polygon>
+        <polygon class="p5-sel-blue" points="30,10 90,30 100,35 20,50"></polygon>
+    </svg>
+
+    <!-- Menu -->
+    <nav class="p5-menu" aria-label="P5R Menu">
+        <ul class="p5-list">
+
+            <li class="p5-item" data-key="skill">
+                <div class="p5-tiles"><span>S</span><span>K</span><span>I</span><span>L</span><span>L</span></div>
+                <div class="p5-sub"><div class="p5-sub-placeholder">— Skill placeholder —</div></div>
+            </li>
+
+            <li class="p5-item" data-key="item">
+                <div class="p5-tiles"><span>I</span><span>T</span><span>E</span><span>M</span></div>
+                <div class="p5-sub"><div class="p5-sub-placeholder">— Item placeholder —</div></div>
+            </li>
+
+            <li class="p5-item" data-key="equip">
+                <div class="p5-tiles"><span>E</span><span>Q</span><span>U</span><span>I</span><span>P</span></div>
+                <div class="p5-sub"><div class="p5-sub-placeholder">— Equip placeholder —</div></div>
+            </li>
+
+            <li class="p5-item" data-key="persona">
+                <div class="p5-tiles"><span>P</span><span>E</span><span>R</span><span>S</span><span>O</span><span>N</span><span>A</span></div>
+                <div class="p5-sub"><div class="p5-sub-placeholder">— Persona placeholder —</div></div>
+            </li>
+
+            <li class="p5-item" data-key="stats">
+                <div class="p5-tiles"><span>S</span><span>T</span><span>A</span><span>T</span><span>S</span></div>
+                <div class="p5-sub"><div class="p5-sub-placeholder">— Stats placeholder —</div></div>
+            </li>
+
+            <li class="p5-item" data-key="confidant">
+                <div class="p5-tiles"><span>C</span><span>O</span><span>N</span><span>F</span><span>I</span><span>D</span><span>A</span><span>N</span><span>T</span></div>
+                <div class="p5-sub"><div class="p5-sub-placeholder">— Confidant placeholder —</div></div>
+            </li>
+
+            <li class="p5-item" data-key="request">
+                <div class="p5-tiles"><span>R</span><span>E</span><span>Q</span><span>U</span><span>E</span><span>S</span><span>T</span></div>
+                <div class="p5-sub"><div class="p5-sub-placeholder">— Request placeholder —</div></div>
+            </li>
+
+            <li class="p5-item" data-key="calendar">
+                <div class="p5-tiles"><span>C</span><span>A</span><span>L</span><span>E</span><span>N</span><span>D</span><span>A</span><span>R</span></div>
+                <div class="p5-sub">
+                    <div class="cal cal--p5">
+                        <div class="cal-header">
+                            <span class="cal-month">OCTOBER 2016</span>
+                        </div>
+                        <div class="cal-grid">
+                            <span class="cal-dow">SUN</span><span class="cal-dow">MON</span><span class="cal-dow">TUE</span><span class="cal-dow">WED</span><span class="cal-dow">THU</span><span class="cal-dow">FRI</span><span class="cal-dow">SAT</span>
+                            <span class="cal-empty"></span><span class="cal-empty"></span><span class="cal-empty"></span><span class="cal-empty"></span><span class="cal-empty"></span><span class="cal-empty"></span><span>1</span>
+                            <span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span>
+                            <span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span>
+                            <span>16</span><span>17</span><span>18</span><span>19</span><span class="cal-today">20</span><span>21</span><span>22</span>
+                            <span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span>
+                            <span>30</span><span>31</span><span class="cal-empty"></span><span class="cal-empty"></span><span class="cal-empty"></span><span class="cal-empty"></span><span class="cal-empty"></span>
+                        </div>
+                        <div class="cal-event">🃏 Phantom Thieves Operation</div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="p5-item" data-key="system">
+                <div class="p5-tiles"><span>S</span><span>Y</span><span>S</span><span>T</span><span>E</span><span>M</span></div>
+                <div class="p5-sub">
+                    <button class="p5-back-btn" id="p5-back">Go Back</button>
+                </div>
+            </li>
+
+        </ul>
+    </nav>
+
+    <!-- Watermarks -->
+    <div class="p5-cmd-wm"  aria-hidden="true">CoMMaND</div>
+    <div class="p5-use-lbl" aria-hidden="true" id="p5-use-lbl">Use a Skill</div>
+
+    <!-- Wallet -->
+    <div class="p5-wallet">
+        <span class="p5-wallet-val">¥191,576</span>
+    </div>
+
+    <!-- Right panel -->
+    <aside class="p5-panel">
+        <div class="p5-tag p5-tag-sm">Don't Look at Me Like That</div>
+        <div class="p5-tag p5-tag-lg">The Phantoms</div>
+        <div class="p5-tag p5-tag-cmd">
+            <div class="p5-tag-title" id="p5-tag-title">MeNu: MaIn</div>
+            <div class="p5-tag-sub">SeLeCt a CoMmaND</div>
+        </div>
+        <div class="p5-stats">
+            <div class="p5-stat">
+                <span class="p5-stat-name">JOKER</span>
+                <div class="p5-stat-row"><span>HP 540/540</span><div class="p5-bar"><div class="p5-bar-hp"></div></div></div>
+                <div class="p5-stat-row"><span>SP 280/280</span><div class="p5-bar"><div class="p5-bar-sp"></div></div></div>
+            </div>
+            <div class="p5-stat">
+                <span class="p5-stat-name">MONA</span>
+                <div class="p5-stat-row"><span>HP 380/380</span><div class="p5-bar"><div class="p5-bar-hp"></div></div></div>
+                <div class="p5-stat-row"><span>SP 350/350</span><div class="p5-bar"><div class="p5-bar-sp"></div></div></div>
+            </div>
+            <div class="p5-stat">
+                <span class="p5-stat-name">SKULL</span>
+                <div class="p5-stat-row"><span>HP 590/590</span><div class="p5-bar"><div class="p5-bar-hp"></div></div></div>
+                <div class="p5-stat-row"><span>SP 210/210</span><div class="p5-bar"><div class="p5-bar-sp"></div></div></div>
+            </div>
+            <div class="p5-stat">
+                <span class="p5-stat-name">PANTHER</span>
+                <div class="p5-stat-row"><span>HP 420/420</span><div class="p5-bar"><div class="p5-bar-hp"></div></div></div>
+                <div class="p5-stat-row"><span>SP 310/310</span><div class="p5-bar"><div class="p5-bar-sp"></div></div></div>
+            </div>
+        </div>
+        <div class="p5-legend">
+            <span>◯ Close</span>
+            <span>✖ Confirm</span>
+        </div>
+    </aside>
+
+</div><!-- #p5-root -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

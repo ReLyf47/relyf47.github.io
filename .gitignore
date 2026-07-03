@@ -2,3 +2,7 @@ extra/games/tools
 extra/animanga/assets/tools
 tools
 .vscode
+package*
+*.mjs
+p5r_*
+node_modules

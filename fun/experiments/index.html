@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@400;600;700;800&family=Geist:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
     <!-- Retro Scanlines & Mesh Grid Overlay -->
@@ -39,108 +39,10 @@
         </section>
 
         <!-- Dashboard Card Grid -->
-        <section class="grid-container">
-            <!-- Studio Void Card -->
-            <a href="../experiments/designer-clothing/" class="card blog-card">
-                <div class="card-glow"></div>
-                <span class="card-badge">STUDIO-001</span>
-                <div class="card-graphic-wrapper">
-                    <div class="terminal-graphic">
-                        <div class="terminal-header">
-                            <span class="terminal-dot red"></span>
-                            <span class="terminal-dot yellow"></span>
-                            <span class="terminal-dot green"></span>
-                            <span class="terminal-title">studio_void.sh</span>
-                        </div>
-                        <div class="terminal-body">
-                            <div class="terminal-line"><span class="prompt">$</span> cd studio_void</div>
-                            <div class="terminal-line output">> Design Studies — Vol. 01</div>
-                            <div class="terminal-line output">> 6 compositions loaded</div>
-                            <div class="terminal-line"><span class="prompt">$</span> view --manifesto</div>
-                            <div class="terminal-line success">[SUCCESS] Silent design system.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <h2 class="card-title">STUDIO VOID</h2>
-                    <p class="card-subtitle">Design Composition Showcase</p>
-                    <p class="card-desc">
-                        A scroll-only digital showcase exploring screen space, typography, and motion. Features adaptive grids, relative scaling, and mouse-controlled parallax depth.
-                    </p>
-                </div>
-                <div class="card-footer">
-                    <span class="action-btn">RUN STUDIES</span>
-                    <span class="action-arrow">→</span>
-                </div>
-            </a>
-
-            <!-- Mosaic Card -->
-            <a href="../experiments/mosaic/" class="card mosaic-card">
-                <div class="card-glow"></div>
-                <span class="card-badge">SANDBOX-002</span>
-                <div class="card-graphic-wrapper">
-                    <div class="shard-graphic">
-                        <div class="shard shard-1"></div>
-                        <div class="shard shard-2"></div>
-                        <div class="shard shard-3"></div>
-                        <div class="shard shard-4"></div>
-                        <div class="shard shard-5"></div>
-                        <div class="shard shard-6"></div>
-                        <div class="shard-grid"></div>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <h2 class="card-title">MOSAIC SANDBOX</h2>
-                    <p class="card-subtitle">Triangular Grid</p>
-                    <p class="card-desc">
-                        An interactive grid of CSS triangles that dynamically shift colors in response to mouse movement.
-                    </p>
-                </div>
-                <div class="card-footer">
-                    <span class="action-btn">RUN SANDBOX</span>
-                    <span class="action-arrow">→</span>
-                </div>
-            </a>
-
-            <!-- Limits Card -->
-            <a href="../experiments/limits/" class="card limits-card">
-                <div class="card-glow"></div>
-                <span class="card-badge">SHADER-003</span>
-                <div class="card-graphic-wrapper">
-                    <div class="shader-graphic">
-                        <div class="shader-viewport">
-                            <div class="shader-ring ring-1"></div>
-                            <div class="shader-ring ring-2"></div>
-                            <div class="shader-ring ring-3"></div>
-                            <div class="shader-ring ring-4"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <h2 class="card-title">LIMITS</h2>
-                    <p class="card-subtitle">Raymarching Engine</p>
-                    <p class="card-desc">
-                        A real-time raymarching engine rendering complex fractal geometry (Mandelbox, Mandelbulb, Menger sponge) via fragment shaders. Features custom palettes and audio synthesis.
-                    </p>
-                </div>
-                <div class="card-footer">
-                    <span class="action-btn">RUN SHADER</span>
-                    <span class="action-arrow">→</span>
-                </div>
-            </a>
+        <section class="grid-container" id="experiments-grid">
+            <!-- Cards will be dynamically injected here via JS -->
         </section>
     </main>
-
-    <!-- Back Button Dynamic Behavior -->
-    <script>
-        document.getElementById("back-btn").addEventListener("click", (e) => {
-            e.preventDefault();
-            if (document.referrer && new URL(document.referrer).origin === location.origin) {
-                history.back();
-            } else {
-                location.href = "../";
-            }
-        });
-    </script>
+    <script src="scripts.js?v=2"></script>
 </body>
 </html>

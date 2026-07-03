@@ -110,7 +110,8 @@ function showHelp(on){
 $('start').addEventListener('click', () => {
   showHelp(false);
   if(!state.audioOn) toggleAudio();
-});
+  startRenderer();
+}, { once: true });
 
 function toggleFs(){
   if(!document.fullscreenElement) document.documentElement.requestFullscreen?.();
@@ -236,7 +237,7 @@ async function initWebGPU(canvas) {
   // ── resize ──
   let W = 0, H = 0, DPR = 1;
   function resize() {
-    DPR = Math.min(window.devicePixelRatio || 1, 1.0);
+    DPR = Math.min(window.devicePixelRatio || 1, 0.5); // Optimization: render at half resolution to boost FPS
     W = Math.floor(window.innerWidth  * DPR);
     H = Math.floor(window.innerHeight * DPR);
     canvas.width = W; canvas.height = H;
@@ -297,7 +298,7 @@ async function initWebGPU(canvas) {
       fpsEl.textContent = fpsEMA.toFixed(0);
       msEl.textContent  = (1000 / Math.max(1, fpsEMA)).toFixed(1);
       itsEl.textContent = (fpsEMA * 90 * state.quality).toFixed(0);
-      qualEl.textContent = state.quality.toFixed(2);
+      if (qualEl) qualEl.textContent = state.quality.toFixed(2);
       acc = 0; frames = 0;
     }
 
@@ -312,8 +313,8 @@ async function initWebGPU(canvas) {
     const lvl = state.audioOn ? readAudio() : 0;
     state.audioLevel = smooth(state.audioLevel, lvl, 0.12);
 
-    if(fpsEMA < 20) state.quality = clamp(state.quality - 0.05, 0.5, 1.0);
-    else if(fpsEMA > 45) state.quality = clamp(state.quality + 0.02, 0.5, 1.0);
+    if(fpsEMA < 30) state.quality = clamp(state.quality - 0.1, 0.35, 1.0);
+    else if(fpsEMA > 50) state.quality = clamp(state.quality + 0.02, 0.35, 1.0);
 
     // fill uniforms
     uniformArray[0] = W;
@@ -349,7 +350,11 @@ async function initWebGPU(canvas) {
 
     stepGrain();
 
-    animFrameId = requestAnimationFrame(frame);
+    if (window.self !== window.top) {
+      setTimeout(() => { animFrameId = requestAnimationFrame(frame); }, 100);
+    } else {
+      animFrameId = requestAnimationFrame(frame);
+    }
   }
 
   animFrameId = requestAnimationFrame(frame);
@@ -490,19 +495,19 @@ fn deMenger(p_: vec3<f32>) -> f32 {
   var p = p_;
   var d = max(abs(p.x) - 1.0, max(abs(p.y) - 1.0, abs(p.z) - 1.0));
   var s = 1.0;
-  for (var i = 0; i < 5; i++) {
-    let a = mod(p * s, 2.0) - 1.0;
-    let r2 = abs(1.0 - 3.0 * abs(a));
-    let c = max(r2.x, max(r2.y, r2.z)) / s;
-    d = max(d, c);
+  for (var i = 0; i < 4; i++) {
+    let a = (p * s) - 2.0 * floor((p * s) / 2.0) - 1.0;
     s *= 3.0;
+    let r = abs(1.0 - 3.0 * abs(a));
+    let c = (min(max(r.x, r.y), min(max(r.y, r.z), max(r.z, r.x))) - 1.0) / s;
+    d = max(d, c);
   }
   return d;
 }
 
 fn deTunnel(p_: vec3<f32>) -> f32 {
   let q = p_.xy + 0.3 * vec2<f32>(sin(p_.z * 0.6 + u.time), cos(p_.z * 0.6 - u.time));
-  var d = 1.5 - length(q);
+  var d = abs(length(q) - 1.25) - 0.25;
   d = max(d, abs(p_.z) - 12.0);
   return d;
 }
@@ -778,18 +783,18 @@ float deKaleido(vec3 p){
 float deMenger(vec3 p){
   float d = max(abs(p.x)-1.0, max(abs(p.y)-1.0, abs(p.z)-1.0));
   float s = 1.0;
-  for(int i=0;i<5;i++){
+  for(int i=0;i<4;i++){
     vec3 a = mod(p*s, 2.0) - 1.0;
-    vec3 r = abs(1.0 - 3.0*abs(a));
-    float c = max(r.x, max(r.y, r.z)) / s;
-    d = max(d, c);
     s *= 3.0;
+    vec3 r = abs(1.0 - 3.0*abs(a));
+    float c = (min(max(r.x, r.y), min(max(r.y, r.z), max(r.z, r.x))) - 1.0) / s;
+    d = max(d, c);
   }
   return d;
 }
 float deTunnel(vec3 p){
   vec2 q = p.xy + 0.3*vec2(sin(p.z*0.6 + u_time), cos(p.z*0.6 - u_time));
-  float d = 1.5 - length(q);
+  float d = abs(length(q) - 1.25) - 0.25;
   d = max(d, abs(p.z) - 12.0);
   return d;
 }
@@ -997,7 +1002,7 @@ void main(){
 
   let W = 0, H = 0, DPR = 1;
   function resize() {
-    DPR = Math.min(window.devicePixelRatio || 1, 1.0);
+    DPR = Math.min(window.devicePixelRatio || 1, 0.5); // Optimization: render at half resolution to boost FPS
     W = Math.floor(window.innerWidth  * DPR);
     H = Math.floor(window.innerHeight * DPR);
     canvas.width = W; canvas.height = H;
@@ -1020,7 +1025,7 @@ void main(){
       fpsEl.textContent = fpsEMA.toFixed(0);
       msEl.textContent  = (1000 / Math.max(1, fpsEMA)).toFixed(1);
       itsEl.textContent = (fpsEMA * 90 * state.quality).toFixed(0);
-      qualEl.textContent = state.quality.toFixed(2);
+      if (qualEl) qualEl.textContent = state.quality.toFixed(2);
       acc = 0; frames = 0;
     }
 
@@ -1035,8 +1040,8 @@ void main(){
     const lvl = state.audioOn ? readAudio() : 0;
     state.audioLevel = smooth(state.audioLevel, lvl, 0.12);
 
-    if(fpsEMA < 20) state.quality = clamp(state.quality - 0.05, 0.5, 1.0);
-    else if(fpsEMA > 45) state.quality = clamp(state.quality + 0.02, 0.5, 1.0);
+    if(fpsEMA < 30) state.quality = clamp(state.quality - 0.1, 0.35, 1.0);
+    else if(fpsEMA > 50) state.quality = clamp(state.quality + 0.02, 0.35, 1.0);
 
     gl.uniform1f(uLocs.time,  now * 0.001);
     gl.uniform1f(uLocs.zoom,  state.zoom);
@@ -1051,7 +1056,11 @@ void main(){
 
     stepGrain();
 
-    animFrameId = requestAnimationFrame(frame);
+    if (window.self !== window.top) {
+      setTimeout(() => { animFrameId = requestAnimationFrame(frame); }, 100);
+    } else {
+      animFrameId = requestAnimationFrame(frame);
+    }
   }
 
   animFrameId = requestAnimationFrame(frame);
@@ -1064,7 +1073,7 @@ void main(){
 const canvas = $('c');
 setupControls(canvas);
 
-(async () => {
+async function startRenderer() {
   let ok = false;
 
   // WebGPU first — maps to Vulkan/D3D12/Metal = REAL GPU, not WebGL software fallback
@@ -1088,7 +1097,7 @@ setupControls(canvas);
       'this scene needs WebGPU or WebGL 2.0. your browser/device does not have either.</div>';
     throw new Error('no render path available');
   }
-})();
+}
 
 setScene(0);
 

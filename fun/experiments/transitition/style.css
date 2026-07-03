@@ -1,0 +1,69 @@
+/* ── RESET ─────────────────────────────────────────── */
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+ul { list-style:none; }
+button { font-family:inherit; cursor:none; }
+
+body {
+    width:100vw; height:100vh;
+    overflow:hidden; color:#fff;
+    position:relative;
+    cursor:none !important;
+}
+*, *:hover, *:active { cursor:none !important; }
+
+/* ── THEME SHOW/HIDE ───────────────────────────────── */
+.p3-elem  { display:none; }
+.p5-elem  { display:none; }
+.p3-bg    { display:none; }
+.p5-bg    { display:none; }
+.p3-chars { display:none; }
+.p5-chars { display:none; }
+
+body.theme-p3 .p3-elem  { display:block; }
+body.theme-p3 .p3-bg    { display:block; }
+body.theme-p3 .p3-chars { display:block; }
+
+body.theme-p5 .p5-elem  { display:block; }
+body.theme-p5 .p5-bg    { display:block; }
+body.theme-p5 .p5-chars { display:block; }
+
+/* sub-panels hidden by default, shown by JS */
+.p3-sub  { display:none; }
+.p5-sub  { display:none; }
+
+/* ── WIPE ──────────────────────────────────────────── */
+.wipe-wrap {
+    position:fixed; inset:0;
+    z-index:9999; pointer-events:none;
+}
+.wipe {
+    position:absolute; top:0; left:0;
+    width:120%; height:100%;
+    clip-path:polygon(0 0,0 0,-20% 100%,-20% 100%);
+    transform:skewX(-15deg);
+}
+body.theme-p3 .wipe-a { background:#1cfeff; }
+body.theme-p3 .wipe-b { background:#0308be; }
+body.theme-p3 .wipe-c { background:#fff; }
+body.theme-p5 .wipe-a { background:#fff; }
+body.theme-p5 .wipe-b { background:#000; }
+body.theme-p5 .wipe-c { background:#ff0022; }
+
+/* ── CHARACTER LAYERS ─────────────────────────────── */
+.char-wrap {
+    position:absolute; inset:0;
+    pointer-events:none; z-index:1;
+}
+.p3-chars .char-back {
+    position:absolute; left:-6vw; bottom:-6vh;
+    height:112%; width:auto;
+    opacity:.2; mix-blend-mode:screen;
+}
+.p3-chars .char-fore {
+    position:absolute; left:-4vw; bottom:0;
+    height:100%; width:auto; z-index:2;
+}
+.p5-chars .char-fore {
+    position:absolute; right:37%; bottom:0;
+    height:95%; width:auto; z-index:2;
+}

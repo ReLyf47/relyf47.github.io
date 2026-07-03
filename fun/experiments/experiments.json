@@ -1,0 +1,34 @@
+[
+  {
+    "id": "designer-clothing",
+    "title": "STUDIO VOID",
+    "subtitle": "Design Composition Showcase",
+    "description": "A scroll-only digital showcase exploring screen space, typography, and motion. Features adaptive grids, relative scaling, and mouse-controlled parallax depth.",
+    "badge": "STUDIO-001",
+    "colorClass": "blog-card"
+  },
+  {
+    "id": "mosaic",
+    "title": "MOSAIC SANDBOX",
+    "subtitle": "Triangular Grid",
+    "description": "An interactive grid of CSS triangles that dynamically shift colors in response to mouse movement.",
+    "badge": "SANDBOX-002",
+    "colorClass": "mosaic-card"
+  },
+  {
+    "id": "limits",
+    "title": "LIMITS",
+    "subtitle": "Raymarching Engine",
+    "description": "A real-time raymarching engine rendering complex fractal geometry (Mandelbox, Mandelbulb, Menger sponge) via fragment shaders. Features custom palettes and audio synthesis.",
+    "badge": "SHADER-003",
+    "colorClass": "limits-card"
+  },
+  {
+    "id": "transitition",
+    "title": "PERSONA UI",
+    "subtitle": "Stylized Interface Recreation",
+    "description": "A dynamic recreation of highly stylized video game menus. Features bold high-contrast typography, angular layouts, and snappy micro-animations.",
+    "badge": "UI-004",
+    "colorClass": "transitition-card"
+  }
+]
