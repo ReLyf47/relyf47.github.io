@@ -988,16 +988,50 @@
 
   function closeCircleDetail() {
     if (typeof theaterResetZoom === 'function') theaterResetZoom(false);
+    
+    // Explicitly reset theater image transform and state
+    const theaterImg = document.getElementById('detailTheaterImg');
+    if (theaterImg) {
+      theaterImg.style.transform = '';
+      theaterImg.style.transition = 'none';
+    }
+    const resetPill = document.getElementById('stageZoomResetPill');
+    if (resetPill) {
+      resetPill.style.display = 'none';
+    }
+    if (typeof activeTheaterPointers !== 'undefined') {
+      activeTheaterPointers.clear();
+      isTheaterDragging = false;
+    }
+
     const modal = document.getElementById('circleDetailModal');
-    if (!modal) return;
-    modal.classList.remove('open');
+    if (modal) {
+      modal.classList.remove('open');
+    }
     document.body.style.overflow = '';
+
+    // Clear URL parameters (?circle=, ?booth=, ?c=) so closing does not leave stuck links
+    try {
+      const url = new URL(window.location.href);
+      if (url.searchParams.has('circle') || url.searchParams.has('booth') || url.searchParams.has('c')) {
+        url.searchParams.delete('circle');
+        url.searchParams.delete('booth');
+        url.searchParams.delete('c');
+        const newSearch = url.searchParams.toString();
+        const newUrl = url.pathname + (newSearch ? '?' + newSearch : '') + (url.hash || '');
+        window.history.replaceState(null, '', newUrl);
+      }
+    } catch(e) {}
+
+    window._pendingBooth = null;
+    window._currentOpenCircle = null;
+    currentDetailBooth = null;
 
     // Move map wrapper back to root
     const mapWrapper = document.getElementById('mapViewWrapper');
     if (mapWrapper && mapWrapper.parentElement !== document.body) {
       document.body.appendChild(mapWrapper);
-      mapWrapper.classList.remove('detail-minimap-mode');
+      mapWrapper.classList.remove('detail-minimap-mode', 'active', 'spotlight-mode');
       window.dispatchEvent(new Event('resize'));
     }
   }
@@ -1717,6 +1751,7 @@
   function closeIgPostModal() {
     const modal = document.getElementById('igPostModal');
     if (modal) modal.classList.remove('open');
+    document.body.style.overflow = '';
   }
 
   function handleIgBackdropClick(e) {
@@ -1745,6 +1780,7 @@
   function dismissWelcomeModal() {
     const m = document.getElementById('welcomeModal');
     if (m) m.classList.remove('open');
+    document.body.style.overflow = '';
     const chk = document.getElementById('dontShowAgainCheck');
     if (!chk || chk.checked) {
       try {
