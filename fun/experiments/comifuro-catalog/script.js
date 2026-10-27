@@ -136,6 +136,7 @@
     updateWishlistBadge();
     applyFilters();
     setupInfiniteScroll();
+    setupTheaterZoomPan();
 
     // Check URL query parameters for deep linking (?circle=11286 or ?circle=ichigowarano or ?booth=AA-01)
     const urlParams = new URLSearchParams(window.location.search);
@@ -170,10 +171,66 @@
       });
     }
 
-    // Keyboard shortcuts: '/' to search, 'Escape' to close, Arrows for theater navigation
+    // Keyboard shortcuts: '/' to search, 'Escape' to close, Arrows for theater navigation & Pan, +/- for Zoom
     document.addEventListener('keydown', (e) => {
       const detailModal = document.getElementById('circleDetailModal');
       if (detailModal && detailModal.classList.contains('open')) {
+        // Zoom shortcuts
+        if (e.key === '+' || e.key === '=' || e.code === 'NumpadAdd') {
+          e.preventDefault();
+          e.stopPropagation();
+          e.stopImmediatePropagation();
+          theaterZoomStep(0.3);
+          return;
+        }
+        if (e.key === '-' || e.key === '_' || e.code === 'NumpadSubtract') {
+          e.preventDefault();
+          e.stopPropagation();
+          e.stopImmediatePropagation();
+          theaterZoomStep(-0.3);
+          return;
+        }
+        if (e.key === '0' || e.key === 'r' || e.key === 'R') {
+          e.preventDefault();
+          e.stopPropagation();
+          e.stopImmediatePropagation();
+          theaterResetZoom(true);
+          return;
+        }
+
+        // When zoomed in, arrow keys pan the image
+        if (theaterZoomScale > 1.2) {
+          const PAN_STEP = 60;
+          if (e.key === 'ArrowLeft' || e.key === 'Left') {
+            e.preventDefault();
+            e.stopPropagation();
+            theaterPanX += PAN_STEP;
+            applyTheaterTransform(false);
+            return;
+          }
+          if (e.key === 'ArrowRight' || e.key === 'Right') {
+            e.preventDefault();
+            e.stopPropagation();
+            theaterPanX -= PAN_STEP;
+            applyTheaterTransform(false);
+            return;
+          }
+          if (e.key === 'ArrowUp' || e.key === 'Up') {
+            e.preventDefault();
+            e.stopPropagation();
+            theaterPanY += PAN_STEP;
+            applyTheaterTransform(false);
+            return;
+          }
+          if (e.key === 'ArrowDown' || e.key === 'Down') {
+            e.preventDefault();
+            e.stopPropagation();
+            theaterPanY -= PAN_STEP;
+            applyTheaterTransform(false);
+            return;
+          }
+        }
+
         if (e.key === 'ArrowLeft' || e.key === 'Left' || e.key === 'a' || e.key === 'A') {
           e.preventDefault();
           e.stopPropagation();
@@ -652,6 +709,7 @@
     }
     if (!b) return;
     currentDetailBooth = b;
+    if (typeof theaterResetZoom === 'function') theaterResetZoom(false);
 
     const sData = samplesByName[b.name.toLowerCase()] || {};
     const samples = (sData.sampleworks && sData.sampleworks.length > 0) ? sData.sampleworks : (b.sampleworks_images || []);
@@ -909,23 +967,27 @@
 
   function detailTheaterPrev() {
     if (!currentDetailSamples || currentDetailSamples.length <= 1) return;
+    if (typeof theaterResetZoom === 'function') theaterResetZoom(false);
     currentDetailSampleIndex = (currentDetailSampleIndex - 1 + currentDetailSamples.length) % currentDetailSamples.length;
     renderDetailTheater();
   }
 
   function detailTheaterNext() {
     if (!currentDetailSamples || currentDetailSamples.length <= 1) return;
+    if (typeof theaterResetZoom === 'function') theaterResetZoom(false);
     currentDetailSampleIndex = (currentDetailSampleIndex + 1) % currentDetailSamples.length;
     renderDetailTheater();
   }
 
   function goToDetailSample(idx) {
     if (!currentDetailSamples || idx < 0 || idx >= currentDetailSamples.length) return;
+    if (typeof theaterResetZoom === 'function') theaterResetZoom(false);
     currentDetailSampleIndex = idx;
     renderDetailTheater();
   }
 
   function closeCircleDetail() {
+    if (typeof theaterResetZoom === 'function') theaterResetZoom(false);
     const modal = document.getElementById('circleDetailModal');
     if (!modal) return;
     modal.classList.remove('open');
@@ -939,6 +1001,222 @@
       window.dispatchEvent(new Event('resize'));
     }
   }
+
+  // -----------------------------------------------------------------
+  // 5.5 THEATER IMAGE ZOOM & PAN ENGINE
+  // -----------------------------------------------------------------
+  let theaterZoomScale = 1;
+  let theaterPanX = 0;
+  let theaterPanY = 0;
+  let isTheaterDragging = false;
+  let theaterDragStartX = 0;
+  let theaterDragStartY = 0;
+  let theaterInitialPanX = 0;
+  let theaterInitialPanY = 0;
+  const activeTheaterPointers = new Map();
+  let initialPinchDist = 0;
+  let initialPinchScale = 1;
+
+  function applyTheaterTransform(animate = false) {
+    const imgEl = document.getElementById('detailTheaterImg');
+    const badgeEl = document.getElementById('theaterZoomBadge');
+    const resetPill = document.getElementById('stageZoomResetPill');
+    const stage = document.getElementById('detailTheaterStage');
+    if (!imgEl) return;
+
+    if (animate) {
+      imgEl.style.transition = 'transform 0.22s cubic-bezier(0.16, 1, 0.3, 1)';
+    } else {
+      imgEl.style.transition = 'none';
+    }
+
+    imgEl.style.transform = `translate3d(${theaterPanX}px, ${theaterPanY}px, 0) scale(${theaterZoomScale})`;
+
+    if (badgeEl) {
+      badgeEl.textContent = `${Math.round(theaterZoomScale * 100)}%`;
+      badgeEl.classList.toggle('is-zoomed', theaterZoomScale > 1.01);
+    }
+    if (resetPill) {
+      resetPill.style.display = theaterZoomScale > 1.05 ? 'inline-flex' : 'none';
+    }
+
+    if (stage) {
+      if (theaterZoomScale > 1.01) {
+        stage.style.cursor = isTheaterDragging ? 'grabbing' : 'grab';
+      } else {
+        stage.style.cursor = 'zoom-in';
+      }
+    }
+  }
+
+  function theaterResetZoom(animate = true) {
+    theaterZoomScale = 1;
+    theaterPanX = 0;
+    theaterPanY = 0;
+    applyTheaterTransform(animate);
+  }
+
+  function theaterZoomStep(delta) {
+    const stage = document.getElementById('detailTheaterStage');
+    const stageRect = stage ? stage.getBoundingClientRect() : null;
+    const cx = stageRect ? stageRect.width / 2 : 0;
+    const cy = stageRect ? stageRect.height / 2 : 0;
+    zoomAtPoint(cx, cy, theaterZoomScale + delta, true);
+  }
+
+  function zoomAtPoint(stageX, stageY, targetScale, animate = false) {
+    const stage = document.getElementById('detailTheaterStage');
+    const imgEl = document.getElementById('detailTheaterImg');
+    if (!stage || !imgEl) return;
+    const stageRect = stage.getBoundingClientRect();
+
+    const minScale = 1;
+    const maxScale = 6;
+    const newScale = Math.min(Math.max(targetScale, minScale), maxScale);
+
+    if (newScale <= 1.01) {
+      theaterResetZoom(animate);
+      return;
+    }
+
+    // Coordinates relative to stage center
+    const mx = stageX - stageRect.width / 2;
+    const my = stageY - stageRect.height / 2;
+
+    theaterPanX = mx - (mx - theaterPanX) * (newScale / theaterZoomScale);
+    theaterPanY = my - (my - theaterPanY) * (newScale / theaterZoomScale);
+    theaterZoomScale = newScale;
+
+    // Constrain pan within boundaries
+    const baseW = imgEl.clientWidth || (stageRect.width * 0.9);
+    const baseH = imgEl.clientHeight || (stageRect.height * 0.9);
+    const scaledW = baseW * theaterZoomScale;
+    const scaledH = baseH * theaterZoomScale;
+    const maxPanX = Math.max((scaledW - stageRect.width) / 2 + 120, 120);
+    const maxPanY = Math.max((scaledH - stageRect.height) / 2 + 120, 120);
+    theaterPanX = Math.max(Math.min(theaterPanX, maxPanX), -maxPanX);
+    theaterPanY = Math.max(Math.min(theaterPanY, maxPanY), -maxPanY);
+
+    applyTheaterTransform(animate);
+  }
+
+  function setupTheaterZoomPan() {
+    const stage = document.getElementById('detailTheaterStage');
+    const imgEl = document.getElementById('detailTheaterImg');
+    if (!stage || !imgEl) return;
+
+    imgEl.setAttribute('draggable', 'false');
+    imgEl.addEventListener('dragstart', (e) => e.preventDefault());
+
+    // Wheel event with { passive: false } to PREVENT background scrolling
+    stage.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+
+      const stageRect = stage.getBoundingClientRect();
+      const pointerX = e.clientX - stageRect.left;
+      const pointerY = e.clientY - stageRect.top;
+
+      const zoomFactor = e.deltaY < 0 ? 1.18 : (1 / 1.18);
+      zoomAtPoint(pointerX, pointerY, theaterZoomScale * zoomFactor, false);
+    }, { passive: false });
+
+    // Double-click toggle
+    stage.addEventListener('dblclick', (e) => {
+      if (e.target.closest('.theater-arrow') || e.target.closest('button')) return;
+      e.preventDefault();
+      if (theaterZoomScale > 1.15) {
+        theaterResetZoom(true);
+      } else {
+        const stageRect = stage.getBoundingClientRect();
+        zoomAtPoint(e.clientX - stageRect.left, e.clientY - stageRect.top, 2.5, true);
+      }
+    });
+
+    // Pointer events
+    stage.addEventListener('pointerdown', (e) => {
+      if (e.target.closest('.theater-arrow') || e.target.closest('button')) return;
+
+      activeTheaterPointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+
+      if (activeTheaterPointers.size === 1) {
+        isTheaterDragging = true;
+        theaterDragStartX = e.clientX;
+        theaterDragStartY = e.clientY;
+        theaterInitialPanX = theaterPanX;
+        theaterInitialPanY = theaterPanY;
+
+        try { stage.setPointerCapture(e.pointerId); } catch(err) {}
+        applyTheaterTransform(false);
+      } else if (activeTheaterPointers.size === 2) {
+        isTheaterDragging = false;
+        const pts = Array.from(activeTheaterPointers.values());
+        initialPinchDist = Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y);
+        initialPinchScale = theaterZoomScale;
+      }
+    });
+
+    stage.addEventListener('pointermove', (e) => {
+      if (!activeTheaterPointers.has(e.pointerId)) return;
+      activeTheaterPointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+
+      if (activeTheaterPointers.size === 1 && isTheaterDragging) {
+        e.preventDefault();
+        const dx = e.clientX - theaterDragStartX;
+        const dy = e.clientY - theaterDragStartY;
+
+        if (theaterZoomScale > 1.01) {
+          theaterPanX = theaterInitialPanX + dx;
+          theaterPanY = theaterInitialPanY + dy;
+          applyTheaterTransform(false);
+        } else {
+          theaterPanX = dx * 0.25;
+          theaterPanY = dy * 0.25;
+          applyTheaterTransform(false);
+        }
+      } else if (activeTheaterPointers.size === 2 && initialPinchDist > 0) {
+        e.preventDefault();
+        const pts = Array.from(activeTheaterPointers.values());
+        const currentDist = Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y);
+        const ratio = currentDist / initialPinchDist;
+        const stageRect = stage.getBoundingClientRect();
+        const midX = ((pts[0].x + pts[1].x) / 2) - stageRect.left;
+        const midY = ((pts[0].y + pts[1].y) / 2) - stageRect.top;
+
+        zoomAtPoint(midX, midY, initialPinchScale * ratio, false);
+      }
+    });
+
+    const endPointer = (e) => {
+      if (activeTheaterPointers.has(e.pointerId)) {
+        activeTheaterPointers.delete(e.pointerId);
+        try { stage.releasePointerCapture(e.pointerId); } catch(err) {}
+      }
+      if (activeTheaterPointers.size === 0) {
+        isTheaterDragging = false;
+        initialPinchDist = 0;
+        if (theaterZoomScale <= 1.01) {
+          theaterResetZoom(true);
+        } else {
+          applyTheaterTransform(false);
+        }
+      } else if (activeTheaterPointers.size === 1) {
+        const remaining = Array.from(activeTheaterPointers.values())[0];
+        isTheaterDragging = true;
+        theaterDragStartX = remaining.x;
+        theaterDragStartY = remaining.y;
+        theaterInitialPanX = theaterPanX;
+        theaterInitialPanY = theaterPanY;
+      }
+    };
+
+    stage.addEventListener('pointerup', endPointer);
+    stage.addEventListener('pointercancel', endPointer);
+  }
+
+  // Expose to window for inline onclick handlers
+  window.theaterZoomStep = theaterZoomStep;
+  window.theaterResetZoom = theaterResetZoom;
 
   function handleDetailBackdropClick(e) {
     if (e.target.id === 'circleDetailModal') {

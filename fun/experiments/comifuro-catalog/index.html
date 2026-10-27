@@ -396,14 +396,31 @@
       
       <!-- Top Bar: Counter & Controls -->
       <div class="detail-theater-topbar">
-        <div class="detail-theater-counter" id="detailTheaterCounter">Karya 1 / 1</div>
+        <div class="theater-topbar-left">
+          <div class="detail-theater-counter" id="detailTheaterCounter">Karya 1 / 1</div>
+          
+          <!-- Zoom Controls -->
+          <div class="theater-zoom-controls" id="theaterZoomControls">
+            <button type="button" class="theater-zoom-btn" id="theaterZoomOutBtn" onclick="theaterZoomStep(-0.3)" title="Perkecil (Zoom Out)" aria-label="Perkecil">－</button>
+            <button type="button" class="theater-zoom-badge" id="theaterZoomBadge" onclick="theaterResetZoom(true)" title="Klik untuk Reset Zoom (100%)" aria-label="Reset Zoom">100%</button>
+            <button type="button" class="theater-zoom-btn" id="theaterZoomInBtn" onclick="theaterZoomStep(0.3)" title="Perbesar (Zoom In)" aria-label="Perbesar">＋</button>
+            <button type="button" class="theater-zoom-btn theater-reset-btn" id="theaterZoomResetBtn" onclick="theaterResetZoom(true)" title="Kembalikan Ukuran Normal" aria-label="Fit to screen">⟲ Fit</button>
+          </div>
+        </div>
+
         <div class="detail-theater-shortcuts">
-          <span class="theater-key-hint">◀ ▶ Navigasi · [Esc] Tutup</span>
+          <span class="theater-key-hint">Scroll / Drag untuk Zoom &amp; Geser · [Esc] Tutup</span>
         </div>
       </div>
 
       <!-- Main Media Stage -->
       <div class="detail-theater-stage" id="detailTheaterStage">
+        <!-- Floating Reset Pill when zoomed -->
+        <button type="button" class="stage-zoom-reset-pill" id="stageZoomResetPill" onclick="theaterResetZoom(true)" style="display:none;" title="Kembalikan Ukuran Normal (100%)">
+          <span>⟲</span>
+          <span>Reset Zoom (100%)</span>
+        </button>
+
         <!-- Loader Spinner -->
         <div class="detail-theater-loader" id="detailTheaterLoader">
           <div class="ig-spinner"></div>
@@ -414,7 +431,7 @@
         <button class="theater-arrow theater-arrow-prev" id="detailTheaterPrevBtn" onclick="detailTheaterPrev()" aria-label="Gambar Sebelumnya (ArrowLeft)">‹</button>
 
         <!-- Main Big Image -->
-        <img id="detailTheaterImg" src="" alt="Sample Work Preview" />
+        <img id="detailTheaterImg" src="" alt="Sample Work Preview" draggable="false" />
 
         <!-- Next Arrow -->
         <button class="theater-arrow theater-arrow-next" id="detailTheaterNextBtn" onclick="detailTheaterNext()" aria-label="Gambar Selanjutnya (ArrowRight)">›</button>
