@@ -1,6 +1,7 @@
 [
   {
     "id": "designer-clothing",
+    "theme": "studio",
     "title": "STUDIO VOID",
     "subtitle": "Design Composition Showcase",
     "description": "A scroll-only digital showcase exploring screen space, typography, and motion. Features adaptive grids, relative scaling, and mouse-controlled parallax depth.",
@@ -9,6 +10,7 @@
   },
   {
     "id": "mosaic",
+    "theme": "mosaic",
     "title": "MOSAIC SANDBOX",
     "subtitle": "Triangular Grid",
     "description": "An interactive grid of CSS triangles that dynamically shift colors in response to mouse movement.",
@@ -17,6 +19,7 @@
   },
   {
     "id": "limits",
+    "theme": "limits",
     "title": "LIMITS",
     "subtitle": "Raymarching Engine",
     "description": "A real-time raymarching engine rendering complex fractal geometry (Mandelbox, Mandelbulb, Menger sponge) via fragment shaders. Features custom palettes and audio synthesis.",
@@ -25,10 +28,20 @@
   },
   {
     "id": "transitition",
+    "theme": "persona",
     "title": "PERSONA UI",
     "subtitle": "Stylized Interface Recreation",
     "description": "A dynamic recreation of highly stylized video game menus. Features bold high-contrast typography, angular layouts, and snappy micro-animations.",
     "badge": "UI-004",
     "colorClass": "transitition-card"
+  },
+  {
+    "id": "comifuro-catalog",
+    "theme": "comifuro",
+    "title": "COMIFURO CATALOG",
+    "subtitle": "Interactive Circle Archive & Floor Map",
+    "description": "An interactive catalog and vector floor map archiving 1,957 creative circles across ICE BSD Halls 5–6. Features multi-criteria filtering, content rating segmentation, and live booth location mapping.",
+    "badge": "MARKET-005",
+    "colorClass": "comifuro-card"
   }
 ]

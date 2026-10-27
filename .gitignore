@@ -6,3 +6,5 @@ package*
 *.mjs
 p5r_*
 node_modules
+*-lock*
+graphify*
