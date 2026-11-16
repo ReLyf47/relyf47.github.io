@@ -3,6 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ReLyf">
+    <meta property="og:title" content="The Vault — Curated Exhibitions — ReLyf">
+    <meta property="og:description" content="Five creative coding studies: editorial typography, a kinetic tile wall, GPU fractal raymarching, Persona game menus and a convention floor map.">
+    <meta property="og:url" content="https://relyf47.github.io/fun/experiments/">
+    <meta property="og:image" content="https://relyf47.github.io/resources/og/vault.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Vault — Curated Exhibitions — ReLyf">
+    <meta name="twitter:description" content="Five creative coding studies: editorial typography, a kinetic tile wall, GPU fractal raymarching, Persona game menus and a convention floor map.">
+    <meta name="twitter:image" content="https://relyf47.github.io/resources/og/vault.jpg">
     <meta name="description" content="The Vault — Curated exhibition of creative coding works by ReLyf. Studies in spatial UI, WebGL raymarching, generative mathematics, and video game interface design.">
     <meta name="theme-color" content="#f8f6f0">
     <title>The Vault — Curated Exhibitions — ReLyf</title>
@@ -177,35 +190,35 @@
                 </div>
             </section>
 
-            <!-- 02. MOSAIC SANDBOX — the slide itself is a shard field -->
+            <!-- 02. MOSAIC SANDBOX — the slide itself is a tile wall -->
             <section class="slide slide-mosaic" id="slide-mosaic" data-index="2" data-theme="mosaic" aria-labelledby="title-mosaic">
                 <canvas class="shard-field" id="shard-field" aria-hidden="true"></canvas>
 
                 <div class="slide-inner mosaic-inner">
                     <div class="mosaic-card" data-enter>
-                        <p class="mosaic-tag"><span class="tri" aria-hidden="true"></span>SANDBOX-002 · ACCESSION 2026.02</p>
+                        <p class="mosaic-tag"><span class="sq" aria-hidden="true"></span>SANDBOX-002 · ACCESSION 2026.02</p>
                         <h2 class="mosaic-title" id="title-mosaic">Mosaic<br>Sandbox</h2>
-                        <p class="mosaic-lede">A wall of CSS-border triangles in charcoal greys that reshuffles with every move of the mouse. No canvas, no library — just a grid of 50px shards.</p>
+                        <p class="mosaic-lede">A wall of 50px charcoal tiles that reshuffles its greys with every move of the mouse. No canvas, no library: just a DOM grid of squares.</p>
                         <dl class="mosaic-specs">
                             <div><dt>Cell</dt><dd>50 × 50 px</dd></div>
-                            <div><dt>Shape</dt><dd>Border triangles</dd></div>
+                            <div><dt>Shape</dt><dd>Squares</dd></div>
                             <div><dt>Palette</dt><dd>#1C1C1C → #2A2A2A</dd></div>
                             <div><dt>Input</dt><dd>mousemove</dd></div>
                         </dl>
-                        <a class="mosaic-cta" href="./mosaic/" aria-label="Open Mosaic Sandbox experiment">Launch sandbox <span aria-hidden="true">▲</span></a>
+                        <a class="mosaic-cta" href="./mosaic/" aria-label="Open Mosaic Sandbox experiment">Launch sandbox <span aria-hidden="true">■</span></a>
                         <p class="mosaic-hint">Move your cursor: the wall behind this card shuffles too.</p>
                     </div>
 
                     <div class="mosaic-frame" data-enter>
                         <div class="mosaic-frame-bar">
-                            <span>▲▼ SHARD GRID · LIVE</span>
+                            <span>■ TILE GRID · LIVE</span>
                             <button class="btn-toggle-interact" data-slide="2" title="Click to interact live with the preview">
                                 <span class="interact-indicator"></span>
                                 <span class="interact-label">ENABLE INTERACTION</span>
                             </button>
                         </div>
                         <div class="preview-viewport" data-src="./mosaic/">
-                            <div class="preview-poster poster-mosaic"><span>▲ ▼ ▲ ▼ ▲</span></div>
+                            <div class="preview-poster poster-mosaic"><span>■ ■ ■ ■ ■</span></div>
                             <iframe loading="lazy" src="about:blank" title="Live preview of Mosaic Sandbox experiment" tabindex="-1"></iframe>
                         </div>
                     </div>

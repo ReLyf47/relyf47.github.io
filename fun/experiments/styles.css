@@ -891,8 +891,8 @@ body[data-theme="comifuro"] {
   color: #0a0a0c;
 }
 
-/* ── 09. EXHIBIT 02: MOSAIC SANDBOX — the slide is a shard field ──
-   A live canvas of greyscale triangles fills the ground and reshuffles
+/* ── 09. EXHIBIT 02: MOSAIC SANDBOX — the slide is a tile wall ──
+   A live canvas of greyscale squares fills the ground and reshuffles
    under the cursor (scripts.js §9), echoing the experiment it frames. */
 .slide-mosaic {
   --slide-bg: #f2f1ef;
@@ -924,14 +924,15 @@ body[data-theme="comifuro"] {
   border: 2px solid #1c1a1b;
   box-shadow: 10px 10px 0 rgba(28, 26, 27, 0.14);
 }
-/* notch: one solid shard in the corner */
+/* one solid tile in the corner */
 .mosaic-card::after {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
-  border-top: 34px solid #1c1a1b;
-  border-left: 34px solid transparent;
+  width: 28px;
+  height: 28px;
+  background: #1c1a1b;
 }
 
 .mosaic-tag {
@@ -944,12 +945,10 @@ body[data-theme="comifuro"] {
   letter-spacing: 0.16em;
   color: #5f5b57;
 }
-.tri {
-  width: 0;
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-bottom: 10px solid #1c1a1b;
+.sq {
+  width: 9px;
+  height: 9px;
+  background: #1c1a1b;
 }
 
 .mosaic-title {
@@ -1026,9 +1025,9 @@ body[data-theme="comifuro"] {
   font-size: 0.7rem;
   transition: transform 0.35s var(--ease-out);
 }
-/* ▲ flips to ▼: the experiment's two shard orientations */
+/* the tile turns on hover */
 .mosaic-cta:hover span {
-  transform: rotate(180deg);
+  transform: rotate(90deg);
 }
 
 .mosaic-hint {

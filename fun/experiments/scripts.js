@@ -342,28 +342,21 @@ viewports.forEach(vp => {
 });
 
 // ═══════════════════════════════════════════════════════
-// 8b. MOSAIC SHARD FIELD — the exhibit's ground echoes the experiment:
-//     a lattice of greyscale triangles that reshuffles under the cursor
+// 8b. MOSAIC TILE WALL — the exhibit's ground echoes the experiment:
+//     a grid of 50px greyscale squares that reshuffles under the cursor
 // ═══════════════════════════════════════════════════════
 const shardCanvas = document.getElementById('shard-field');
 if (shardCanvas) {
   const ctx = shardCanvas.getContext('2d');
-  const SIDE = 56;
-  const H = SIDE * Math.sqrt(3) / 2;
+  const CELL = 50;
   const RADIUS = 95;
   let shards = [];
   let pending = null;
 
   const shade = () => `hsl(30, 3%, ${(84 + Math.random() * 11).toFixed(1)}%)`;
   const paint = (s) => {
-    ctx.fillStyle = ctx.strokeStyle = s.c; // same-tone stroke hides anti-alias seams
-    ctx.beginPath();
-    ctx.moveTo(s.p[0], s.p[1]);
-    ctx.lineTo(s.p[2], s.p[3]);
-    ctx.lineTo(s.p[4], s.p[5]);
-    ctx.closePath();
-    ctx.fill();
-    ctx.stroke();
+    ctx.fillStyle = s.c;
+    ctx.fillRect(s.x, s.y, CELL, CELL);
   };
 
   const build = () => {
@@ -374,14 +367,9 @@ if (shardCanvas) {
     shardCanvas.height = Math.round(height * dpr);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     shards = [];
-    for (let r = 0; r * H < height; r++) {
-      for (let i = -1; i * SIDE / 2 < width; i++) {
-        const x = i * SIDE / 2;
-        const y = r * H;
-        const up = (i + r) % 2 === 0;
-        const p = up ? [x, y + H, x + SIDE / 2, y, x + SIDE, y + H]
-                     : [x, y, x + SIDE, y, x + SIDE / 2, y + H];
-        shards.push({ p, cx: x + SIDE / 2, cy: y + H / 2, c: shade() });
+    for (let y = 0; y < height; y += CELL) {
+      for (let x = 0; x < width; x += CELL) {
+        shards.push({ x, y, cx: x + CELL / 2, cy: y + CELL / 2, c: shade() });
       }
     }
     shards.forEach(paint);
