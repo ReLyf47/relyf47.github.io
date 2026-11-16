@@ -1,36 +1,38 @@
 function showAdblockWarning() {
+    if (sessionStorage.getItem("adblockWarningDismissed")) return;
+
     const warning = document.createElement("div");
-
+    warning.id = "adblock-warning";
+    warning.setAttribute("role", "status");
     warning.innerHTML = `
-        <div id="adblock-warning">
-            Some features may not work because a content blocker is preventing required resources from loading.
-            <br><br>
-            Please whitelist this site if you want comments and embeds to work.
-        </div>
+        <p>Some features may not work because a content blocker is stopping comments and embeds from loading.
+        Whitelist this site if you want them.</p>
+        <button type="button" aria-label="Dismiss warning">&times;</button>
     `;
-
+    warning.querySelector("button").addEventListener("click", () => {
+        sessionStorage.setItem("adblockWarningDismissed", "1");
+        warning.remove();
+    });
     document.body.appendChild(warning);
+    requestAnimationFrame(() => warning.classList.add("show"));
 }
 
+// Blocked if cosmetic filters hid the bait, or the Disqus script never ran
 function detectAdBlock() {
     const bait = document.getElementById("adblock-test");
-
-    if (
+    const baitHidden =
         !bait ||
         bait.offsetHeight === 0 ||
-        bait.offsetWidth === 0 ||
-        getComputedStyle(bait).display === "none"
-    ) {
-        return true;
-    }
-
-    return false;
+        getComputedStyle(bait).display === "none" ||
+        getComputedStyle(bait).visibility === "hidden";
+    return baitHidden || typeof window.DISQUSWIDGETS === "undefined";
 }
 
+// async scripts finish before "load"; the short delay lets late cosmetic filters apply
 window.addEventListener("load", () => {
-    if (detectAdBlock()) {
-        showAdblockWarning();
-    }
+    setTimeout(() => {
+        if (detectAdBlock()) showAdblockWarning();
+    }, 400);
 });
 
 document.addEventListener("DOMContentLoaded", () => {
