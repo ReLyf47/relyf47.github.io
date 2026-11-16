@@ -537,13 +537,200 @@
     }
   }, { passive: true });
 
+  // Card X Post state & helpers
+  const cardXPostIndices = new Map();
+
+  function extractInstagramAccounts(rawStr) {
+    if (!rawStr || typeof rawStr !== 'string' || rawStr.trim() === '-' || rawStr.trim() === '') return [];
+    const results = [];
+    const seen = new Set();
+
+    // Pattern 1: match full URLs in the string
+    const urlRegex = /(?:https?:\/\/)?(?:www\.)?(?:instagram\.com|instagr\.am|ig\.me\/m)\/([A-Za-z0-9._]+)/gi;
+    let match;
+    let foundAnyUrl = false;
+    while ((match = urlRegex.exec(rawStr)) !== null) {
+      let handle = match[1];
+      if (['p', 'reel', 'reels', 'stories', 'explore', 'direct'].includes(handle.toLowerCase())) continue;
+      handle = handle.replace(/\/+$/, '');
+      const cleanHandle = handle.toLowerCase();
+      if (!seen.has(cleanHandle) && /^[a-z0-9._]{1,30}$/i.test(handle)) {
+        seen.add(cleanHandle);
+        results.push({
+          handle: handle,
+          url: 'https://instagram.com/' + handle
+        });
+        foundAnyUrl = true;
+      }
+    }
+
+    // Pattern 2: handle lists like "@user1, user2"
+    if (!foundAnyUrl) {
+      const parts = rawStr.split(/[\s,;/]+/).map(s => s.trim()).filter(Boolean);
+      for (let part of parts) {
+        part = part.replace(/^@+/, '').replace(/\/+$/, '');
+        if (/^[A-Za-z0-9._]{2,30}$/.test(part) && !['http', 'https', 'www', 'none', 'null', '-', 'instagram'].includes(part.toLowerCase())) {
+          const cleanHandle = part.toLowerCase();
+          if (!seen.has(cleanHandle)) {
+            seen.add(cleanHandle);
+            results.push({
+              handle: part,
+              url: 'https://instagram.com/' + part
+            });
+          }
+        }
+      }
+    }
+
+    // Fallback: custom link
+    if (results.length === 0 && rawStr.trim() && !['-'].includes(rawStr.trim())) {
+      const val = rawStr.trim();
+      if (val.startsWith('http://') || val.startsWith('https://')) {
+        results.push({ handle: null, url: val });
+      }
+    }
+
+    return results;
+  }
+
+  function renderSampleStripHtml(b, samples) {
+    const displaySamples = samples.slice(0, 4);
+    const remaining = samples.length - displaySamples.length;
+    return `
+      <div class="sampleworks-strip">
+        ${displaySamples.map((url, i) => `
+          <div class="sample-thumb-item" onclick="openSampleLightbox('${escapeJs(url)}', '${escapeJs(b.name)}', ${i+1}, ${samples.length})" title="Perbesar karya ${i+1}">
+            <img src="${escapeHtml(url)}" loading="lazy" alt="Sample Work ${i+1}">
+            ${(i === displaySamples.length - 1 && remaining > 0) ? `<div class="sample-more-overlay">+${remaining}</div>` : ''}
+          </div>
+        `).join('')}
+      </div>
+    `;
+  }
+
+  function renderCardXPostHtml(b, posts) {
+    if (!posts || posts.length === 0) return '';
+    const curIdx = cardXPostIndices.get(b.id) || 0;
+    const safeIdx = Math.min(Math.max(0, curIdx), posts.length - 1);
+    const p = posts[safeIdx];
+    const isMulti = posts.length > 1;
+
+    const isIg = p.url && p.url.includes('instagram.com');
+    const badgeIcon = isIg 
+      ? `<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>`
+      : `<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>`;
+    const badgeLabel = isIg ? 'POSTINGAN INSTAGRAM' : 'DARI POSTINGAN X';
+
+    return `
+      <div class="x-post-fallback-card" id="cardXBox_${b.id}">
+        <div class="x-post-header">
+          <span class="badge-x" id="cardXBadge_${b.id}">
+            ${badgeIcon}
+            <span>${badgeLabel}</span>
+          </span>
+          ${isMulti ? `
+            <div class="card-x-nav" onclick="event.stopPropagation()">
+              <button type="button" class="card-x-nav-btn card-x-prev" onclick="stepCardXPost(${b.id}, -1, event)" title="Post Sebelumnya" aria-label="Post Sebelumnya">‹</button>
+              <span class="card-x-counter" id="cardXCounter_${b.id}">${safeIdx + 1} / ${posts.length}</span>
+              <button type="button" class="card-x-nav-btn card-x-next" onclick="stepCardXPost(${b.id}, 1, event)" title="Post Selanjutnya" aria-label="Post Selanjutnya">›</button>
+            </div>
+          ` : ''}
+        </div>
+        <div class="x-post-quote" id="cardXQuote_${b.id}">"${escapeHtml(p.text)}"</div>
+        <div class="x-post-links" id="cardXLinks_${b.id}">
+          ${p.author ? `<span class="x-post-author">@${escapeHtml(p.author)}</span>` : ''}
+          ${p.url ? `<a href="${escapeHtml(p.url)}" target="_blank" rel="noopener noreferrer" class="x-link-btn" onclick="event.stopPropagation()">${isIg ? 'Buka di IG ↗' : 'Lihat Post di X ↗'}</a>` : ''}
+          ${p.po_link ? `<a href="${escapeHtml(p.po_link)}" target="_blank" rel="noopener noreferrer" class="x-link-btn x-po-btn" onclick="event.stopPropagation()" style="color:#a5b4fc;">📋 Pre-Order ↗</a>` : ''}
+        </div>
+      </div>
+    `;
+  }
+
+  function stepCardXPost(boothId, delta, e) {
+    if (e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    const b = allBooths.find(item => item.id === boothId);
+    if (!b) return;
+    const sData = samplesByName[b.name.toLowerCase()] || {};
+    const posts = (Array.isArray(sData.x_posts) && sData.x_posts.length > 0)
+      ? sData.x_posts
+      : (sData.x_post && sData.x_post.text ? [sData.x_post] : []);
+    if (posts.length <= 1) return;
+
+    let curIdx = cardXPostIndices.get(boothId) || 0;
+    curIdx = (curIdx + delta + posts.length) % posts.length;
+    cardXPostIndices.set(boothId, curIdx);
+
+    const p = posts[curIdx];
+    const quoteEl = document.getElementById(`cardXQuote_${boothId}`);
+    const counterEl = document.getElementById(`cardXCounter_${boothId}`);
+    const linksContainer = document.getElementById(`cardXLinks_${boothId}`);
+    const badgeEl = document.getElementById(`cardXBadge_${boothId}`);
+
+    if (quoteEl) {
+      quoteEl.textContent = `"${p.text}"`;
+    }
+    if (counterEl) {
+      counterEl.textContent = `${curIdx + 1} / ${posts.length}`;
+    }
+    if (badgeEl) {
+      const isIg = p.url && p.url.includes('instagram.com');
+      const badgeIcon = isIg 
+        ? `<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>`
+        : `<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>`;
+      const badgeLabel = isIg ? 'POSTINGAN INSTAGRAM' : 'DARI POSTINGAN X';
+      badgeEl.innerHTML = `${badgeIcon}<span>${badgeLabel}</span>`;
+    }
+    if (linksContainer) {
+      let linksHtml = '';
+      if (p.author) {
+        linksHtml += `<span class="x-post-author">@${escapeHtml(p.author)}</span>`;
+      }
+      if (p.url) {
+        const isIg = p.url.includes('instagram.com');
+        linksHtml += `<a href="${escapeHtml(p.url)}" target="_blank" rel="noopener noreferrer" class="x-link-btn" onclick="event.stopPropagation()">${isIg ? 'Buka di IG ↗' : 'Lihat Post di X ↗'}</a>`;
+      }
+      if (p.po_link) {
+        linksHtml += `<a href="${escapeHtml(p.po_link)}" target="_blank" rel="noopener noreferrer" class="x-link-btn x-po-btn" onclick="event.stopPropagation()" style="color:#a5b4fc;">📋 Pre-Order ↗</a>`;
+      }
+      linksContainer.innerHTML = linksHtml;
+    }
+  }
+
+  function toggleCardMediaTab(boothId, tab, e) {
+    if (e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    const cardEl = e ? e.target.closest('.booth-card') : document.querySelector(`[data-booth-id="${boothId}"]`);
+    if (!cardEl) return;
+    const tabBtns = cardEl.querySelectorAll('.card-media-tab-btn');
+    tabBtns.forEach(btn => {
+      btn.classList.toggle('active', btn.getAttribute('data-tab') === tab);
+    });
+    const samplesWrap = cardEl.querySelector(`#cardSamples_${boothId}`);
+    const postsWrap = cardEl.querySelector(`#cardPosts_${boothId}`);
+    if (samplesWrap) samplesWrap.style.display = tab === 'samples' ? 'flex' : 'none';
+    if (postsWrap) postsWrap.style.display = tab === 'posts' ? 'flex' : 'none';
+  }
+
+  window.stepCardXPost = stepCardXPost;
+  window.toggleCardMediaTab = toggleCardMediaTab;
+
   function createBoothCard(b) {
     const card = document.createElement('div');
     card.className = 'booth-card';
+    card.dataset.boothId = b.id;
 
     const sData = samplesByName[b.name.toLowerCase()] || {};
     const samples = (sData.sampleworks && sData.sampleworks.length > 0) ? sData.sampleworks : (b.sampleworks_images || []);
     const hasSamples = samples.length > 0;
+    const posts = (Array.isArray(sData.x_posts) && sData.x_posts.length > 0)
+      ? sData.x_posts
+      : (sData.x_post && sData.x_post.text ? [sData.x_post] : []);
+    const hasPosts = posts.length > 0;
     const isBookmarked = wishlist.has(b.id);
     const mapCode = sData.map_code || resolveMapCode(b.circle_code);
 
@@ -569,34 +756,29 @@
     // Works
     const worksList = sData.works || [];
 
-    // Media HTML
+    // Media HTML (supports switching between Samples & Postingan X, plus multi-post switching)
     let mediaHtml = '';
-    if (hasSamples) {
-      const displaySamples = samples.slice(0, 4);
-      const remaining = samples.length - displaySamples.length;
+    if (hasSamples && hasPosts) {
       mediaHtml = `
-        <div class="sampleworks-strip">
-          ${displaySamples.map((url, i) => `
-            <div class="sample-thumb-item" onclick="openSampleLightbox('${escapeJs(url)}', '${escapeJs(b.name)}', ${i+1}, ${samples.length})" title="Perbesar karya ${i+1}">
-              <img src="${escapeHtml(url)}" loading="lazy" alt="Sample Work ${i+1}">
-              ${(i === displaySamples.length - 1 && remaining > 0) ? `<div class="sample-more-overlay">+${remaining}</div>` : ''}
-            </div>
-          `).join('')}
+        <div class="card-media-tabs" onclick="event.stopPropagation()">
+          <button type="button" class="card-media-tab-btn active" data-tab="samples" onclick="toggleCardMediaTab(${b.id}, 'samples', event)">
+            📸 ${samples.length} Karya
+          </button>
+          <button type="button" class="card-media-tab-btn" data-tab="posts" onclick="toggleCardMediaTab(${b.id}, 'posts', event)">
+            𝕏 ${posts.length > 1 ? `${posts.length} Post` : 'Postingan'}
+          </button>
+        </div>
+        <div class="card-tab-content card-samples-wrap" id="cardSamples_${b.id}">
+          ${renderSampleStripHtml(b, samples)}
+        </div>
+        <div class="card-tab-content card-posts-wrap" id="cardPosts_${b.id}" style="display:none;">
+          ${renderCardXPostHtml(b, posts)}
         </div>
       `;
-    } else if (sData.x_post && sData.x_post.text) {
-      mediaHtml = `
-        <div class="x-post-fallback-card">
-          <div class="x-post-header">
-            <span class="badge-x"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg> DARI POSTINGAN X CIRCLE</span>
-          </div>
-          <div class="x-post-quote">"${escapeHtml(sData.x_post.text)}"</div>
-          <div class="x-post-links">
-            ${sData.x_post.url ? `<a href="${escapeHtml(sData.x_post.url)}" target="_blank" rel="noopener noreferrer" class="x-link-btn">Lihat Post di X ↗</a>` : ''}
-            ${sData.x_post.po_link ? `<a href="${escapeHtml(sData.x_post.po_link)}" target="_blank" rel="noopener noreferrer" class="x-link-btn" style="color:#a5b4fc;">Form Pre-Order ↗</a>` : ''}
-          </div>
-        </div>
-      `;
+    } else if (hasSamples) {
+      mediaHtml = renderSampleStripHtml(b, samples);
+    } else if (hasPosts) {
+      mediaHtml = renderCardXPostHtml(b, posts);
     } else {
       mediaHtml = `
         <div style="font-size:0.78rem; color:#64748b; text-align:center; padding:0.5rem;">
@@ -798,10 +980,43 @@
     const seenUrls = new Set();
     const normalizeSocialUrl = (u) => (u || '').toLowerCase().trim().replace(/^https?:\/\/(?:www\.)?/, '').replace(/\/+$/, '');
 
-    if (b.circle_instagram && b.circle_instagram !== '-') {
-      seenUrls.add(normalizeSocialUrl(b.circle_instagram));
-      socialLinks.push(`<a href="${escapeHtml(b.circle_instagram)}" target="_blank" rel="noopener noreferrer" class="detail-social-btn ig-btn">📷 Instagram</a>`);
+    // Instagram accounts (with actual @username handles)
+    const igAccounts = [];
+    const seenIgKeys = new Set();
+
+    function registerIgAccounts(rawStr) {
+      if (!rawStr || typeof rawStr !== 'string' || rawStr.trim() === '-' || rawStr.trim() === '') return;
+      const parsedList = extractInstagramAccounts(rawStr);
+      for (const item of parsedList) {
+        const key = item.handle ? item.handle.toLowerCase() : normalizeSocialUrl(item.url);
+        if (!seenIgKeys.has(key)) {
+          seenIgKeys.add(key);
+          igAccounts.push(item);
+        }
+      }
     }
+
+    if (b.circle_instagram && b.circle_instagram !== '-') {
+      registerIgAccounts(b.circle_instagram);
+    }
+    if (Array.isArray(sData.extra_socials)) {
+      for (const es of sData.extra_socials) {
+        if (!es) continue;
+        const u = typeof es === 'string' ? es : es.url;
+        const t = typeof es === 'object' && es.type ? es.type : '';
+        if (!u) continue;
+        if (t.toLowerCase().includes('insta') || u.toLowerCase().includes('instagram.com') || u.toLowerCase().includes('instagr.am')) {
+          registerIgAccounts(u);
+        }
+      }
+    }
+
+    for (const acc of igAccounts) {
+      seenUrls.add(normalizeSocialUrl(acc.url));
+      const label = acc.handle ? `@${escapeHtml(acc.handle)}` : 'Instagram';
+      socialLinks.push(`<a href="${escapeHtml(acc.url)}" target="_blank" rel="noopener noreferrer" class="detail-social-btn ig-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg> ${label}</a>`);
+    }
+
     if (b.circle_facebook && b.circle_facebook !== '-') {
       seenUrls.add(normalizeSocialUrl(b.circle_facebook));
       socialLinks.push(`<a href="${escapeHtml(b.circle_facebook)}" target="_blank" rel="noopener noreferrer" class="detail-social-btn">📘 Facebook</a>`);

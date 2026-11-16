@@ -1031,6 +1031,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 0.5rem;
   }
   .badge-x {
     font-size: 0.7rem;
@@ -1040,6 +1041,73 @@
     display: flex;
     align-items: center;
     gap: 0.35rem;
+  }
+
+  .card-x-nav {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    background: var(--memphis-surface);
+    border: 1.5px solid var(--memphis-black);
+    box-shadow: 1.5px 1.5px 0px var(--memphis-black);
+    padding: 0.1rem 0.4rem;
+    border-radius: 6px;
+    user-select: none;
+  }
+  .card-x-nav-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 0.2rem;
+    font-size: 0.85rem;
+    font-weight: 900;
+    color: var(--text-primary);
+    transition: transform 0.1s, color 0.1s;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-x-nav-btn:hover {
+    transform: scale(1.25);
+    color: var(--memphis-pink);
+  }
+  .card-x-counter {
+    color: var(--text-primary);
+    font-family: monospace;
+    font-size: 0.72rem;
+    font-weight: 800;
+    min-width: 2.8rem;
+    text-align: center;
+  }
+
+  .card-media-tabs {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-bottom: 0.45rem;
+  }
+  .card-media-tab-btn {
+    background: var(--memphis-surface);
+    border: 1.5px solid var(--memphis-black);
+    box-shadow: 1.5px 1.5px 0px var(--memphis-black);
+    border-radius: 6px;
+    padding: 0.2rem 0.55rem;
+    font-size: 0.74rem;
+    font-weight: 800;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.15s ease;
+    user-select: none;
+  }
+  .card-media-tab-btn:hover {
+    color: var(--text-primary);
+    background: var(--memphis-surface-subtle);
+  }
+  .card-media-tab-btn.active {
+    background: var(--memphis-yellow);
+    color: #18181B;
+    border-color: var(--memphis-black);
   }
 
   .x-post-quote {
@@ -1057,8 +1125,15 @@
   .x-post-links {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 0.6rem;
     margin-top: 0.2rem;
+    flex-wrap: wrap;
+  }
+  .x-post-author {
+    font-size: 0.74rem;
+    font-weight: 800;
+    color: var(--text-secondary);
+    letter-spacing: -0.01em;
   }
   .x-link-btn {
     font-size: 0.76rem;
@@ -2215,6 +2290,25 @@
     color: #18181B;
     transform: translate(-1px, -1px);
     box-shadow: var(--memphis-shadow);
+  }
+  .detail-social-btn.ig-btn {
+    color: #E1306C;
+  }
+  .detail-social-btn.ig-btn svg {
+    color: #E1306C;
+    transition: color 0.15s ease;
+  }
+  .detail-social-btn.ig-btn:hover {
+    background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: #FFFFFF;
+    border-color: var(--memphis-black);
+  }
+  .detail-social-btn.ig-btn:hover svg {
+    color: #FFFFFF;
+  }
+  .detail-social-btn.x-btn:hover {
+    background: #000000;
+    color: #FFFFFF;
   }
 
   /* X Post Box */
