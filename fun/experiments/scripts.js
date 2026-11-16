@@ -4,7 +4,6 @@ import { animate, createTimeline, stagger } from './anime.esm.min.js';
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 const deck = document.getElementById('deck');
-const viewport = document.getElementById('deck-viewport');
 const slides = [...document.querySelectorAll('.slide')];
 const navHeader = document.querySelector('.nav');
 const regStatus = document.getElementById('registry-status');
@@ -23,6 +22,22 @@ const SLIDE_METAS = [
   { theme: 'persona', title: '● 04 PERSONA UI' },
   { theme: 'comifuro', title: '● 05 COMIFURO CATALOG' }
 ];
+
+// Each exhibit arrives in its own idiom; targets are the slide's [data-enter] blocks
+const flicker = t => (t < 0.18 ? t / 0.18 : t < 0.3 ? 0.2 : t < 0.42 ? 1 : t < 0.5 ? 0.5 : 1);
+const ENTRANCES = {
+  hero:     () => ({ opacity: [0, 1], translateY: [30, 0], duration: 650, ease: 'out(3)' }),
+  // atelier: a slow, quiet fade, nothing snaps
+  studio:   () => ({ opacity: [0, 1], translateY: [18, 0], duration: 1100, ease: 'out(2)', delay: stagger(180, { start: 200 }) }),
+  // shards: tip in and settle into their cells
+  mosaic:   () => ({ opacity: [0, 1], rotate: [-5, 0], scale: [0.94, 1], duration: 560, ease: 'out(3)', delay: stagger(110, { start: 120 }) }),
+  // CRT: the console flickers on
+  limits:   () => ({ opacity: [0, 1], duration: 620, ease: flicker, delay: stagger(140, { start: 160 }) }),
+  // comic: slam in from the left on a skew
+  persona:  () => ({ opacity: [0, 1], translateX: [-140, 0], skewX: [-18, 0], duration: 380, ease: 'out(4)', delay: stagger(90, { start: 90 }) }),
+  // stickers: pop with a little overshoot
+  comifuro: () => ({ opacity: [0, 1], scale: [0.7, 1], rotate: [-4, 0], duration: 620, ease: 'outBack(1.7)', delay: stagger(110, { start: 120 }) })
+};
 
 // ═══════════════════════════════════════════════════════
 // 1. ACTIVE IFRAME MANAGER (Ensures 60 FPS, Zero Lag)
@@ -73,19 +88,8 @@ export const goToSlide = (targetIndex, immediate = false) => {
   const targetSlide = slides[targetIndex];
   const meta = SLIDE_METAS[targetIndex] || { theme: 'hero', title: '● ARCHIVE' };
 
-  // Update Body & Nav Theme
+  // Re-tint the fixed chrome (nav + side index); each slide paints its own ground
   document.body.setAttribute('data-theme', meta.theme);
-  if (viewport) {
-    const bgMap = {
-      hero: '#f8f6f0',
-      studio: '#f5f0e6',
-      mosaic: '#eef4fb',
-      limits: '#f7f2ea',
-      persona: '#fdf2f4',
-      comifuro: '#f9f1f4'
-    };
-    viewport.style.backgroundColor = bgMap[meta.theme] || '#f8f6f0';
-  }
   if (regStatus) regStatus.textContent = meta.title;
 
   // Update Side Index Buttons
@@ -134,49 +138,14 @@ export const goToSlide = (targetIndex, immediate = false) => {
     }
   }
 
-  // Incoming Slide Cinematic Motion (Anime.js v4)
+  // Incoming slide: restore its container, then let the exhibit arrive in its own idiom
   const incomingInner = targetSlide.querySelector('.slide-inner');
-  const incomingMeta = targetSlide.querySelectorAll('.curatorial-meta > *');
-  const incomingPlinth = targetSlide.querySelector('.gallery-plinth');
-  const incomingNum = targetSlide.querySelector('.watermark-num');
-
   if (incomingInner) {
-    animate(incomingInner, {
-      opacity: [0, 1],
-      translateY: [40, 0],
-      duration: 650,
-      ease: 'out(3)'
-    });
+    animate(incomingInner, { opacity: [0, 1], translateY: 0, duration: 450, ease: 'out(3)' });
   }
-
-  if (incomingMeta && incomingMeta.length) {
-    animate(incomingMeta, {
-      opacity: [0, 1],
-      translateY: [25, 0],
-      delay: stagger(60, { start: 150 }),
-      duration: 600,
-      ease: 'out(3)'
-    });
-  }
-
-  if (incomingPlinth) {
-    animate(incomingPlinth, {
-      opacity: [0, 1],
-      scale: [0.93, 1],
-      translateY: [35, 0],
-      delay: 200,
-      duration: 750,
-      ease: 'out(3)'
-    });
-  }
-
-  if (incomingNum) {
-    animate(incomingNum, {
-      opacity: [0, 0.035],
-      scale: [1.2, 1],
-      duration: 800,
-      ease: 'out(3)'
-    });
+  const entering = targetSlide.querySelectorAll('[data-enter]');
+  if (entering.length) {
+    animate(entering, (ENTRANCES[meta.theme] || ENTRANCES.hero)());
   }
 };
 
@@ -303,7 +272,7 @@ indexButtons.forEach((btn, idx) => {
   });
 });
 
-// Interactive toggle on vitrines
+// Interactive toggle on previews
 document.querySelectorAll('.btn-toggle-interact').forEach(btn => {
   btn.addEventListener('click', (e) => {
     e.preventDefault();
@@ -326,7 +295,7 @@ document.querySelectorAll('.btn-toggle-interact').forEach(btn => {
 // ═══════════════════════════════════════════════════════
 if (window.matchMedia('(min-width: 960px)').matches && !prefersReducedMotion) {
   slides.forEach(slide => {
-    const plinth = slide.querySelector('.gallery-plinth .vitrine-frame');
+    const plinth = slide.querySelector('[data-tilt]');
     if (!plinth) return;
 
     let rafId = null;
@@ -371,6 +340,74 @@ viewports.forEach(vp => {
   updateScale(vp);
   viewportResizeObserver.observe(vp);
 });
+
+// ═══════════════════════════════════════════════════════
+// 8b. MOSAIC SHARD FIELD — the exhibit's ground echoes the experiment:
+//     a lattice of greyscale triangles that reshuffles under the cursor
+// ═══════════════════════════════════════════════════════
+const shardCanvas = document.getElementById('shard-field');
+if (shardCanvas) {
+  const ctx = shardCanvas.getContext('2d');
+  const SIDE = 56;
+  const H = SIDE * Math.sqrt(3) / 2;
+  const RADIUS = 95;
+  let shards = [];
+  let pending = null;
+
+  const shade = () => `hsl(30, 3%, ${(84 + Math.random() * 11).toFixed(1)}%)`;
+  const paint = (s) => {
+    ctx.fillStyle = ctx.strokeStyle = s.c; // same-tone stroke hides anti-alias seams
+    ctx.beginPath();
+    ctx.moveTo(s.p[0], s.p[1]);
+    ctx.lineTo(s.p[2], s.p[3]);
+    ctx.lineTo(s.p[4], s.p[5]);
+    ctx.closePath();
+    ctx.fill();
+    ctx.stroke();
+  };
+
+  const build = () => {
+    const { width, height } = shardCanvas.getBoundingClientRect();
+    if (!width || !height) return;
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    shardCanvas.width = Math.round(width * dpr);
+    shardCanvas.height = Math.round(height * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    shards = [];
+    for (let r = 0; r * H < height; r++) {
+      for (let i = -1; i * SIDE / 2 < width; i++) {
+        const x = i * SIDE / 2;
+        const y = r * H;
+        const up = (i + r) % 2 === 0;
+        const p = up ? [x, y + H, x + SIDE / 2, y, x + SIDE, y + H]
+                     : [x, y, x + SIDE, y, x + SIDE / 2, y + H];
+        shards.push({ p, cx: x + SIDE / 2, cy: y + H / 2, c: shade() });
+      }
+    }
+    shards.forEach(paint);
+  };
+
+  const reshuffle = () => {
+    const { x, y } = pending;
+    pending = null;
+    for (const s of shards) {
+      if (Math.hypot(s.cx - x, s.cy - y) < RADIUS) {
+        s.c = shade();
+        paint(s);
+      }
+    }
+  };
+
+  new ResizeObserver(build).observe(shardCanvas);
+
+  if (!prefersReducedMotion) {
+    shardCanvas.parentElement.addEventListener('pointermove', (e) => {
+      const rect = shardCanvas.getBoundingClientRect();
+      if (!pending) requestAnimationFrame(reshuffle);
+      pending = { x: e.clientX - rect.left, y: e.clientY - rect.top };
+    });
+  }
+}
 
 // ═══════════════════════════════════════════════════════
 // 9. HERO ENTRANCE CHOREOGRAPHY (Anime.js v4)

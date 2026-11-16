@@ -9,13 +9,13 @@
     <link rel="icon" type="image/png" href="../../resources/favico.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@300;400;500;600;700&family=Nunito+Sans:ital,wght@1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Teko:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=51">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@300;400;500;600;700;800&family=Nunito+Sans:ital,wght@1,800;1,900&family=Plus+Jakarta+Sans:wght@800&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Teko:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=52">
 </head>
 <body data-theme="hero">
     <a href="#deck" class="skip-link">Skip to exhibition</a>
 
-    <!-- Museum Top Navigation -->
+    <!-- Museum Top Navigation (re-tinted per exhibit via body[data-theme]) -->
     <header class="nav" role="banner">
         <div class="nav-inner">
             <a href="../../" class="nav-brand" aria-label="ReLyf Home">
@@ -72,7 +72,7 @@
                 <div class="paper-texture-overlay" aria-hidden="true"></div>
                 <div class="watermark-num" aria-hidden="true">00</div>
                 <div class="slide-inner hero-inner">
-                    <div class="hero-curatorial-block">
+                    <div class="hero-curatorial-block" data-enter>
                         <div class="curatorial-label">
                             <span class="accession-tag">ARCHIVAL REGISTRATION // 2026</span>
                             <span class="sep">—</span>
@@ -103,7 +103,7 @@
                             <a href="#slide-mosaic" class="dir-row" data-goto="2">
                                 <span class="row-num">EXH-02</span>
                                 <span class="row-title">Mosaic Sandbox</span>
-                                <span class="row-medium">Generative Geometry & Vector Shading</span>
+                                <span class="row-medium">Kinetic Greyscale Tessellation</span>
                                 <span class="row-status">VIEW →</span>
                             </a>
                             <a href="#slide-limits" class="dir-row" data-goto="3">
@@ -137,371 +137,205 @@
                 </div>
             </section>
 
-            <!-- 01. STUDIO VOID -->
+            <!-- 01. STUDIO VOID — editorial spread on the golden split -->
             <section class="slide slide-studio" id="slide-studio" data-index="1" data-theme="studio" aria-labelledby="title-studio">
-                <div class="paper-texture-overlay" aria-hidden="true"></div>
-                <div class="watermark-num" aria-hidden="true">01</div>
-                
-                <!-- Studio Running Marquee Ribbon -->
-                <div class="atelier-ticker" aria-hidden="true">
-                    <div class="ticker-track">
-                        <span>STUDIO VOID ✦ FORM FOLLOWS FEELING IN SPACE ✦ ATELIER NOIR ✦ VOL. 01 ✦ VARIABLE FRAUNCES TYPOGRAPHY ✦ SCREEN AS CANVAS ✦</span>
-                        <span>STUDIO VOID ✦ FORM FOLLOWS FEELING IN SPACE ✦ ATELIER NOIR ✦ VOL. 01 ✦ VARIABLE FRAUNCES TYPOGRAPHY ✦ SCREEN AS CANVAS ✦</span>
-                    </div>
-                </div>
+                <div class="studio-guides" aria-hidden="true"></div>
+                <span class="studio-spine" aria-hidden="true">VOL. 01 — ATELIER NOIR — DEPARTMENT OF SPATIAL DESIGN</span>
 
-                <div class="slide-inner">
-                    <div class="curatorial-meta">
-                        <div class="plaque-header">
-                            <span class="plaque-accession">ACCESSION NO. 2026.01</span>
-                            <span class="plaque-dot">●</span>
-                            <span class="plaque-dept">DEPARTMENT OF SPATIAL DESIGN</span>
-                        </div>
-                        <h2 class="exhibit-headline title-studio" id="title-studio">Studio Void</h2>
-                        <p class="exhibit-subheading">Studies in Form, Negative Space & Typographic Tension</p>
-                        <div class="curator-statement">
-                            <p class="statement-quote">“Form follows feeling in space.”</p>
-                            <p class="statement-body">
-                                An architectural lookbook exploring the tension of empty screens, variable Fraunces serif typography, and mouse-controlled parallax depth. Built with complete restraint: zero templates, pure CSS composition.
-                            </p>
-                        </div>
-                        <div class="exhibit-technical-specs">
-                            <div class="tech-spec"><span class="k">MEDIUM</span><span class="v">Variable Typography · CSS Math</span></div>
-                            <div class="tech-spec"><span class="k">PALETTE</span><span class="v">Bone · Raw Brass · Charcoal</span></div>
-                            <div class="tech-spec"><span class="k">PROPORTION</span><span class="v">Golden Ratio (Φ 1.618)</span></div>
-                        </div>
-                        <div class="action-wrap">
-                            <a class="btn-exhibit-action cta-studio" href="./designer-clothing/" aria-label="Open Studio Void experiment">
-                                <span>ENTER ATELIER FULLSCREEN</span>
-                                <span class="action-symbol">→</span>
-                            </a>
-                        </div>
+                <div class="slide-inner studio-inner">
+                    <div class="studio-copy" data-enter>
+                        <p class="studio-folio"><span>No. 01</span><span>Accession 2026.01</span></p>
+                        <h2 class="studio-title" id="title-studio"><span>Studio</span><em>Void</em></h2>
+                        <p class="studio-dek">Studies in form, negative space &amp; typographic tension.</p>
+                        <blockquote class="studio-pull">“Form follows feeling in space.”</blockquote>
+                        <p class="studio-body">An architectural lookbook exploring the tension of empty screens, variable Fraunces serif typography, and mouse-controlled parallax depth. Built with complete restraint: zero templates, pure CSS composition.</p>
+                        <dl class="studio-colophon">
+                            <div><dt>Set in</dt><dd>Fraunces · Inter</dd></div>
+                            <div><dt>Palette</dt><dd>Bone · Brass · Ink</dd></div>
+                            <div><dt>Proportion</dt><dd>Φ 1.618</dd></div>
+                        </dl>
+                        <a class="studio-cta" href="./designer-clothing/" aria-label="Open Studio Void experiment">Enter the atelier <span aria-hidden="true">→</span></a>
                     </div>
 
-                    <!-- Bespoke Atelier Lookbook Vitrine -->
-                    <div class="gallery-plinth plinth-studio">
-                        <div class="vitrine-frame">
-                            <div class="vitrine-header">
-                                <div class="vitrine-label"><span class="brass-pip">◈</span> EXHIBIT 01 — ATELIER NOIR</div>
-                                <div class="vitrine-actions">
-                                    <button class="btn-toggle-interact" data-slide="1" title="Click to interact live with the preview">
-                                        <span class="interact-indicator"></span>
-                                        <span class="interact-label">ENABLE INTERACTION</span>
-                                    </button>
-                                </div>
-                            </div>
+                    <figure class="studio-plate" data-enter>
+                        <div class="studio-mat" data-tilt>
                             <div class="preview-viewport" data-src="./designer-clothing/">
                                 <div class="preview-poster poster-studio">
-                                    <div class="poster-decor">
-                                        <span class="look-tag">STUDY 01 / FORM</span>
-                                        <div class="poster-quote">“Form follows feeling in <em>space</em>.”</div>
-                                        <span class="poster-credit">VOLUME 01 — ATELIER NOIR</span>
-                                    </div>
+                                    <p>“Form follows feeling in <em>space</em>.”</p>
                                 </div>
                                 <iframe loading="lazy" src="about:blank" title="Live preview of Studio Void experiment" tabindex="-1"></iframe>
                             </div>
-                            <div class="vitrine-footer">
-                                <span>ATELIER NOIR · LOOKBOOK SPEC</span>
-                                <span>1920 × 1080 DISPLAY RESOLUTION</span>
-                            </div>
                         </div>
-                    </div>
+                        <figcaption>
+                            <span><b>Plate I.</b> The Atelier Noir lookbook, live.</span>
+                            <button class="btn-toggle-interact" data-slide="1" title="Click to interact live with the preview">
+                                <span class="interact-indicator"></span>
+                                <span class="interact-label">ENABLE INTERACTION</span>
+                            </button>
+                        </figcaption>
+                    </figure>
                 </div>
             </section>
 
-            <!-- 02. MOSAIC SANDBOX -->
+            <!-- 02. MOSAIC SANDBOX — the slide itself is a shard field -->
             <section class="slide slide-mosaic" id="slide-mosaic" data-index="2" data-theme="mosaic" aria-labelledby="title-mosaic">
-                <div class="paper-texture-overlay" aria-hidden="true"></div>
-                <div class="watermark-num" aria-hidden="true">02</div>
-                
-                <!-- Floating Blueprint Shards -->
-                <div class="mosaic-floating-shards" aria-hidden="true">
-                    <div class="blueprint-shard shard-1"></div>
-                    <div class="blueprint-shard shard-2"></div>
-                    <div class="blueprint-shard shard-3"></div>
-                </div>
+                <canvas class="shard-field" id="shard-field" aria-hidden="true"></canvas>
 
-                <div class="slide-inner">
-                    <div class="curatorial-meta">
-                        <div class="plaque-header">
-                            <span class="plaque-accession">ACCESSION NO. 2026.02</span>
-                            <span class="plaque-dot">●</span>
-                            <span class="plaque-dept">MATHEMATICAL COMPUTATION LAB</span>
-                        </div>
-                        <h2 class="exhibit-headline title-mosaic" id="title-mosaic">Mosaic Sandbox</h2>
-                        <p class="exhibit-subheading">Dynamic Triangular Tessellation & Kinetic Color Shifting</p>
-                        <div class="curator-statement">
-                            <p class="statement-quote">“Mathematical refraction through pure DOM geometry.”</p>
-                            <p class="statement-body">
-                                An interactive tessellation of 2,048 CSS triangles calculating Euclidean distance vectors relative to cursor coordinates in real-time. Angles, luminance, and prismatic hues dynamically refract without a canvas.
-                            </p>
-                        </div>
-                        <div class="exhibit-technical-specs">
-                            <div class="tech-spec"><span class="k">MEDIUM</span><span class="v">DOM Triangles · Trigonometric HSL</span></div>
-                            <div class="tech-spec"><span class="k">PALETTE</span><span class="v">Drafting Paper · Cobalt · Indigo</span></div>
-                            <div class="tech-spec"><span class="k">SYSTEM</span><span class="v">64 × 32 Coordinate Matrix</span></div>
-                        </div>
-                        <div class="action-wrap">
-                            <a class="btn-exhibit-action cta-mosaic" href="./mosaic/" aria-label="Open Mosaic Sandbox experiment">
-                                <span>LAUNCH FULLSCREEN SANDBOX</span>
-                                <span class="action-symbol">→</span>
-                            </a>
-                        </div>
+                <div class="slide-inner mosaic-inner">
+                    <div class="mosaic-card" data-enter>
+                        <p class="mosaic-tag"><span class="tri" aria-hidden="true"></span>SANDBOX-002 · ACCESSION 2026.02</p>
+                        <h2 class="mosaic-title" id="title-mosaic">Mosaic<br>Sandbox</h2>
+                        <p class="mosaic-lede">A wall of CSS-border triangles in charcoal greys that reshuffles with every move of the mouse. No canvas, no library — just a grid of 50px shards.</p>
+                        <dl class="mosaic-specs">
+                            <div><dt>Cell</dt><dd>50 × 50 px</dd></div>
+                            <div><dt>Shape</dt><dd>Border triangles</dd></div>
+                            <div><dt>Palette</dt><dd>#1C1C1C → #2A2A2A</dd></div>
+                            <div><dt>Input</dt><dd>mousemove</dd></div>
+                        </dl>
+                        <a class="mosaic-cta" href="./mosaic/" aria-label="Open Mosaic Sandbox experiment">Launch sandbox <span aria-hidden="true">▲</span></a>
+                        <p class="mosaic-hint">Move your cursor: the wall behind this card shuffles too.</p>
                     </div>
 
-                    <!-- Bespoke Drafting CAD Vitrine -->
-                    <div class="gallery-plinth plinth-mosaic">
-                        <div class="vitrine-frame">
-                            <div class="vitrine-header">
-                                <div class="vitrine-label"><span class="blue-pip">◬</span> EXHIBIT 02 — VECTOR FIELD [CAD]</div>
-                                <div class="vitrine-actions">
-                                    <button class="btn-toggle-interact" data-slide="2" title="Click to interact live with the preview">
-                                        <span class="interact-indicator"></span>
-                                        <span class="interact-label">ENABLE INTERACTION</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="preview-viewport" data-src="./mosaic/">
-                                <div class="preview-poster poster-mosaic">
-                                    <div class="poster-decor">
-                                        <div class="cad-crosshair"></div>
-                                        <span class="cad-readout">TESSELLATION: 2,048 TRIANGLES // EUCLIDEAN VECTORS</span>
-                                    </div>
-                                </div>
-                                <iframe loading="lazy" src="about:blank" title="Live preview of Mosaic Sandbox experiment" tabindex="-1"></iframe>
-                            </div>
-                            <div class="vitrine-footer">
-                                <span>EUCLIDEAN VECTOR MAPPING</span>
-                                <span>64 × 32 TRIANGULAR MESH</span>
-                            </div>
+                    <div class="mosaic-frame" data-enter>
+                        <div class="mosaic-frame-bar">
+                            <span>▲▼ SHARD GRID · LIVE</span>
+                            <button class="btn-toggle-interact" data-slide="2" title="Click to interact live with the preview">
+                                <span class="interact-indicator"></span>
+                                <span class="interact-label">ENABLE INTERACTION</span>
+                            </button>
+                        </div>
+                        <div class="preview-viewport" data-src="./mosaic/">
+                            <div class="preview-poster poster-mosaic"><span>▲ ▼ ▲ ▼ ▲</span></div>
+                            <iframe loading="lazy" src="about:blank" title="Live preview of Mosaic Sandbox experiment" tabindex="-1"></iframe>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- 03. LIMITS -->
+            <!-- 03. LIMITS — instrument console around a shader monitor -->
             <section class="slide slide-limits" id="slide-limits" data-index="3" data-theme="limits" aria-labelledby="title-limits">
-                <div class="paper-texture-overlay" aria-hidden="true"></div>
-                <div class="watermark-num" aria-hidden="true">03</div>
-                
-                <!-- Oscilloscope Reticle -->
-                <div class="oscilloscope-reticle" aria-hidden="true">
-                    <div class="reticle-circle r1"></div>
-                    <div class="reticle-circle r2"></div>
-                    <div class="reticle-crosshair-h"></div>
-                    <div class="reticle-crosshair-v"></div>
-                </div>
+                <div class="limits-scan" aria-hidden="true"></div>
+                <div class="limits-rings" aria-hidden="true"><i></i><i></i><i></i></div>
 
-                <div class="slide-inner">
-                    <div class="curatorial-meta">
-                        <div class="plaque-header">
-                            <span class="plaque-accession">ACCESSION NO. 2026.03</span>
-                            <span class="plaque-dot">●</span>
-                            <span class="plaque-dept">GPU SHADER & ACOUSTIC SYNTHESIS</span>
-                        </div>
-                        <h2 class="exhibit-headline title-limits" id="title-limits">Limits</h2>
-                        <p class="exhibit-subheading">Real-Time Fractal Geometry & Signed Distance Fields</p>
-                        <div class="curator-statement">
-                            <p class="statement-quote">“A quiet sort of computational violence.”</p>
-                            <p class="statement-body">
-                                A real-time fragment shader scene rendered every frame into a single quad. GLSL calculates all 3D geometry: raymarching, Mandelbox and Mandelbulb distance fields, ambient occlusion, soft shadows, and synthesized audio.
-                            </p>
-                        </div>
-                        <div class="exhibit-technical-specs">
-                            <div class="tech-spec"><span class="k">MEDIUM</span><span class="v">Fragment Shader (GLSL) · WebAudio</span></div>
-                            <div class="tech-spec"><span class="k">PALETTE</span><span class="v">CRT Laser Vermilion · Charcoal</span></div>
-                            <div class="tech-spec"><span class="k">RENDERER</span><span class="v">Raymarching Engine · 60 FPS</span></div>
-                        </div>
-                        <div class="action-wrap">
-                            <a class="btn-exhibit-action cta-limits" href="./limits/" aria-label="Open Limits Raymarching Engine">
-                                <span>EXECUTE SHADER FULLSCREEN</span>
-                                <span class="action-symbol">→</span>
-                            </a>
-                        </div>
+                <div class="slide-inner limits-inner">
+                    <div class="limits-hud" data-enter>
+                        <p class="limits-ch"><span class="rec" aria-hidden="true"></span>CH-03 · GPU SHADER &amp; ACOUSTIC SYNTHESIS</p>
+                        <h2 class="limits-title" id="title-limits">LIMITS</h2>
+                        <p class="limits-quote">“A quiet sort of computational violence.”</p>
+                        <p class="limits-body">A real-time fragment shader drawn every frame into a single quad. The GPU computes all of the geometry (raymarched Mandelbox, Mandelbulb and Menger distance fields, ambient occlusion, soft shadows) over a synthesized WebAudio drone.</p>
+                        <dl class="limits-readout">
+                            <div><dt>RENDERER</dt><dd>WebGPU → WebGL2</dd></div>
+                            <div><dt>SDF</dt><dd>Mandelbox · Mandelbulb · Menger</dd></div>
+                            <div><dt>AUDIO</dt><dd>WebAudio drone</dd></div>
+                            <div><dt>PALETTE</dt><dd><i class="sw hot"></i>Vermilion <i class="sw cold"></i>Cyan</dd></div>
+                        </dl>
+                        <a class="limits-cta" href="./limits/" aria-label="Open Limits Raymarching Engine">[ EXECUTE SHADER ]</a>
                     </div>
 
-                    <!-- Bespoke CRT Instrument Console Vitrine -->
-                    <div class="gallery-plinth plinth-limits">
-                        <div class="vitrine-frame">
-                            <div class="vitrine-header">
-                                <div class="vitrine-label"><span class="orange-pip">◼</span> EXHIBIT 03 — GLSL RAYMARCHER</div>
-                                <div class="vitrine-actions">
-                                    <button class="btn-toggle-interact" data-slide="3" title="Click to interact live with the preview">
-                                        <span class="interact-indicator"></span>
-                                        <span class="interact-label">ENABLE INTERACTION</span>
-                                    </button>
-                                </div>
+                    <div class="limits-monitor-wrap" data-enter>
+                        <div class="limits-monitor" data-tilt>
+                            <div class="limits-osd">
+                                <span>SIGNAL · 1920×1080</span>
+                                <button class="btn-toggle-interact" data-slide="3" title="Click to interact live with the preview">
+                                    <span class="interact-indicator"></span>
+                                    <span class="interact-label">ENABLE INTERACTION</span>
+                                </button>
                             </div>
                             <div class="preview-viewport" data-src="./limits/">
-                                <div class="preview-poster poster-limits">
-                                    <div class="poster-decor">
-                                        <div class="crt-hud">LIMITS // BUFFER: 1920×1080 // STEP: 128 // SDF: MANDELBOX</div>
-                                        <div class="crt-wave-mock">
-                                            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-                                        </div>
-                                    </div>
-                                </div>
+                                <div class="preview-poster poster-limits"><span>NO SIGNAL</span></div>
                                 <iframe loading="lazy" src="about:blank" title="Live preview of Limits Raymarching Engine experiment" tabindex="-1"></iframe>
                             </div>
-                            <div class="vitrine-footer">
-                                <span>MANDELBOX FRACTAL // AO</span>
-                                <span>PER-PIXEL GPU COMPUTATION</span>
+                            <div class="limits-osd limits-osd-foot">
+                                <span>RAYMARCH · AO · SOFT SHADOWS</span>
+                                <span>IDLE UNTIL YOU PRESS START</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- 04. PERSONA UI -->
+            <!-- 04. PERSONA UI — comic cut-in, split between the two themes -->
             <section class="slide slide-persona" id="slide-persona" data-index="4" data-theme="persona" aria-labelledby="title-persona">
-                <div class="paper-texture-overlay" aria-hidden="true"></div>
-                <div class="watermark-num" aria-hidden="true">04</div>
+                <div class="persona-split" aria-hidden="true"></div>
+                <div class="persona-dots" aria-hidden="true"></div>
 
-                <!-- Comic Angular Cut-In Accents -->
-                <div class="persona-comic-strips" aria-hidden="true">
-                    <div class="c-strip s1"></div>
-                    <div class="c-strip s2"></div>
-                </div>
-
-                <div class="slide-inner">
-                    <div class="curatorial-meta">
-                        <div class="plaque-header">
-                            <span class="plaque-accession">ACCESSION NO. 2026.04</span>
-                            <span class="plaque-dot">●</span>
-                            <span class="plaque-dept">POP ART & GAME INTERFACE DESIGN</span>
+                <div class="slide-inner persona-inner">
+                    <div class="persona-copy" data-enter>
+                        <p class="persona-kicker"><span>UI-004</span>GAME INTERFACE RECONSTRUCTION</p>
+                        <h2 class="persona-title" id="title-persona"><span class="pt-main">PERSONA</span><span class="pt-ui">UI</span></h2>
+                        <p class="persona-sub">Persona 3 Reload &amp; Persona 5 Royal menus, rebuilt in CSS</p>
+                        <div class="persona-bubble">
+                            <p>High-contrast type, angular comic layouts, screentone textures and snappy micro-animations, with a full-screen wipe between the two themes.</p>
                         </div>
-                        <h2 class="exhibit-headline title-persona" id="title-persona">Persona UI</h2>
-                        <p class="exhibit-subheading">Persona 3 Reload & Persona 5 Royal Graphic Reconstruction</p>
-                        <div class="curator-statement">
-                            <p class="statement-quote">“Stylized micro-interactions with comic pop polarity.”</p>
-                            <p class="statement-body">
-                                A dynamic reconstruction of Atlus’ legendary video game menus. High-contrast typography, angular comic layouts, risograph screentone textures, and snappy micro-animations with dual P3R/P5R theme transitions.
-                            </p>
+                        <div class="persona-themes">
+                            <span class="pkey p3"><kbd>1</kbd> P3R · CYAN</span>
+                            <span class="pkey p5"><kbd>3</kbd> P5R · CRIMSON</span>
                         </div>
-                        <div class="exhibit-technical-specs">
-                            <div class="tech-spec"><span class="k">MEDIUM</span><span class="v">CSS 3D Skew · Comic Halftone Art</span></div>
-                            <div class="tech-spec"><span class="k">PALETTE</span><span class="v">Riso Cream · Tokyo Red · Midnight</span></div>
-                            <div class="tech-spec"><span class="k">THEMES</span><span class="v">P3R Cyan · P5R Crimson</span></div>
-                        </div>
-                        <div class="action-wrap">
-                            <a class="btn-exhibit-action cta-persona" href="./transitition/" aria-label="Open Persona UI experiment">
-                                <span>ENTER THE VAULT FULLSCREEN</span>
-                                <span class="action-symbol">→</span>
-                            </a>
-                        </div>
+                        <a class="persona-cta" href="./transitition/" aria-label="Open Persona UI experiment"><span>ENTER FULLSCREEN ▶</span></a>
                     </div>
 
-                    <!-- Bespoke Persona Comic Vitrine -->
-                    <div class="gallery-plinth plinth-persona">
-                        <div class="vitrine-frame">
-                            <div class="vitrine-header">
-                                <div class="vitrine-label"><span class="red-pip">★</span> EXHIBIT 04 — PHANTOM MENU</div>
-                                <div class="vitrine-actions">
-                                    <button class="btn-toggle-interact" data-slide="4" title="Click to interact live with the preview">
-                                        <span class="interact-indicator"></span>
-                                        <span class="interact-label">ENABLE INTERACTION</span>
-                                    </button>
-                                </div>
+                    <div class="persona-panel-wrap" data-enter>
+                        <div class="persona-panel">
+                            <div class="persona-panel-bar">
+                                <span>★ PHANTOM MENU</span>
+                                <button class="btn-toggle-interact" data-slide="4" title="Click to interact live with the preview">
+                                    <span class="interact-indicator"></span>
+                                    <span class="interact-label">ENABLE INTERACTION</span>
+                                </button>
                             </div>
                             <div class="preview-viewport" data-src="./transitition/">
-                                <div class="preview-poster poster-persona">
-                                    <div class="poster-decor">
-                                        <div class="persona-cutin-tag">TAKE YOUR HEART ★</div>
-                                    </div>
-                                </div>
+                                <div class="preview-poster poster-persona"><span class="persona-cutin">TAKE YOUR HEART ★</span></div>
                                 <iframe loading="lazy" src="about:blank" title="Live preview of Persona UI experiment" tabindex="-1"></iframe>
-                            </div>
-                            <div class="vitrine-footer">
-                                <span>ANGULAR COMIC POLARITY</span>
-                                <span>P3R CYAN · P5R CRIMSON</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- 05. COMIFURO CATALOG -->
+            <!-- 05. COMIFURO CATALOG — Memphis sticker sheet + floor plan -->
             <section class="slide slide-comifuro" id="slide-comifuro" data-index="5" data-theme="comifuro" aria-labelledby="title-comifuro">
-                <div class="paper-texture-overlay" aria-hidden="true"></div>
-                <div class="watermark-num" aria-hidden="true">05</div>
-
-                <!-- Decorative Subcultural Grid & Hall Accents -->
-                <div class="comifuro-decor" aria-hidden="true">
-                    <span class="cf-hall-tag h5">HALL 5 // 4,338m²</span>
-                    <span class="cf-hall-tag h6">HALL 6 // 4,278m²</span>
-                    <div class="cf-radar-cross"></div>
+                <div class="memphis-confetti" aria-hidden="true">
+                    <svg class="cf-squiggle" viewBox="0 0 124 30"><path d="M2 15 Q 17 0 32 15 T 62 15 T 92 15 T 122 15"/></svg>
+                    <svg class="cf-zigzag" viewBox="0 0 100 24"><path d="M2 20 L14 4 L26 20 L38 4 L50 20 L62 4 L74 20 L86 4 L98 20"/></svg>
+                    <span class="cf-blob"></span>
+                    <span class="cf-tri"></span>
+                    <span class="cf-ring"></span>
                 </div>
 
-                <div class="slide-inner">
-                    <div class="curatorial-meta">
-                        <div class="plaque-header">
-                            <span class="plaque-accession">ACCESSION NO. 2026.05</span>
-                            <span class="plaque-dot">●</span>
-                            <span class="plaque-dept">CARTOGRAPHY & CULTURAL ARCHIVES</span>
+                <div class="slide-inner comifuro-inner">
+                    <div class="cf-copy" data-enter>
+                        <p class="cf-kicker">MARKET-005 · ICE BSD · HALLS 5–6</p>
+                        <h2 class="cf-title" id="title-comifuro">Comifuro <span>Catalog</span></h2>
+                        <p class="cf-lede">An unofficial catalog and floor map for 1,957 creative circles: search by circle, fandom or booth code, filter by rating, and jump straight to the booth on the map.</p>
+                        <ul class="cf-stickers" aria-label="Circles by content rating">
+                            <li class="st ga"><b>1,107</b> GA</li>
+                            <li class="st pg"><b>700</b> PG</li>
+                            <li class="st m"><b>150</b> M</li>
+                        </ul>
+                        <div class="cf-floor" aria-hidden="true">
+                            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="hot"></i><i></i><i></i><i></i><i></i>
+                            <span class="cf-pin">P-12</span>
                         </div>
-                        <h2 class="exhibit-headline title-comifuro" id="title-comifuro">Comifuro Catalog</h2>
-                        <p class="exhibit-subheading">Interactive Circle Archive & Heavy Vector Floor Map</p>
-                        <div class="curator-statement">
-                            <p class="statement-quote">“Navigating subcultural cartography across two thousand creators.”</p>
-                            <p class="statement-body">
-                                An interactive catalog and heavy vector floor map archiving 1,957 creative circles across ICE BSD Halls 5–6. Built with high-performance tile rendering, instant multi-criteria filtering, content rating segmentation (GA / PG / M), and real-time booth location locator.
-                            </p>
-                        </div>
-                        <div class="exhibit-technical-specs">
-                            <div class="tech-spec"><span class="k">MEDIUM</span><span class="v">Mikira Vector Engine · Heavy Tiles</span></div>
-                            <div class="tech-spec"><span class="k">PALETTE</span><span class="v">Deep Void · Neon Berry · Amber</span></div>
-                            <div class="tech-spec"><span class="k">SCALE</span><span class="v">1,957 Circles · Halls 5 & 6 (ICE BSD)</span></div>
-                        </div>
-                        <div class="action-wrap">
-                            <a class="btn-exhibit-action cta-comifuro" href="./comifuro-catalog/" target="_blank" rel="noopener" aria-label="Open Comifuro Catalog in new tab">
-                                <span>LAUNCH CATALOG FULLSCREEN</span>
-                                <span class="action-symbol">↗</span>
-                            </a>
-                        </div>
+                        <a class="cf-cta" href="./comifuro-catalog/" target="_blank" rel="noopener" aria-label="Open Comifuro Catalog in new tab">Open the catalog <span aria-hidden="true">↗</span></a>
                     </div>
 
-                    <!-- Bespoke Comic Market Vitrine -->
-                    <div class="gallery-plinth plinth-comifuro">
-                        <div class="vitrine-frame">
-                            <div class="vitrine-header">
-                                <div class="vitrine-label"><span class="berry-pip">✦</span> EXHIBIT 05 — CIRCLE CATALOG [CARTOGRAPHY]</div>
-                                <div class="vitrine-actions">
-                                    <button class="btn-toggle-interact" data-slide="5" title="Click to interact live with the preview">
-                                        <span class="interact-indicator"></span>
-                                        <span class="interact-label">ENABLE INTERACTION</span>
-                                    </button>
-                                </div>
+                    <div class="cf-card-wrap" data-enter>
+                        <div class="cf-card" data-tilt>
+                            <div class="cf-card-bar">
+                                <span class="cf-card-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                                <span>CF CATALOG &amp; FLOOR MAP</span>
+                                <button class="btn-toggle-interact" data-slide="5" title="Click to interact live with the preview">
+                                    <span class="interact-indicator"></span>
+                                    <span class="interact-label">ENABLE INTERACTION</span>
+                                </button>
                             </div>
                             <div class="preview-viewport" data-src="./comifuro-catalog/">
                                 <div class="preview-poster poster-comifuro">
-                                    <div class="poster-decor">
-                                        <div class="cf-poster-badge">
-                                            <span class="cf-pip">✦</span>
-                                            <span>EXHIBIT 05 // CARTOGRAPHY ARCHIVE</span>
-                                        </div>
-                                        <div class="cf-poster-heading">
-                                            <span class="cf-hall-chip">ICE BSD · HALLS 5–6</span>
-                                            <div class="cf-big-title">COMIFURO CATALOG</div>
-                                        </div>
-                                        <div class="cf-poster-stats">
-                                            <span class="cf-pill ga"><span class="cf-dot"></span>1,107 GA</span>
-                                            <span class="cf-pill pg"><span class="cf-dot"></span>700 PG</span>
-                                            <span class="cf-pill m"><span class="cf-dot"></span>150 M</span>
-                                        </div>
-                                        <div class="cf-poster-readout">
-                                            <span>1,957 CIRCLES</span>
-                                            <span class="cf-sep">/</span>
-                                            <span>VECTOR MAP</span>
-                                            <span class="cf-sep">/</span>
-                                            <span>LIVE BOOTH LOCATOR</span>
-                                        </div>
-                                    </div>
+                                    <span>COMIFURO</span>
+                                    <small>1,957 circles · one floor map</small>
                                 </div>
-                                <iframe loading="lazy" src="about:blank" title="Live preview of Comifuro Catalog & Floor Map experiment" tabindex="-1"></iframe>
-                            </div>
-                            <div class="vitrine-footer">
-                                <span>VECTOR FLOOR MAP // HEAVY TILES</span>
-                                <span>1,957 CREATOR CIRCLES // LIVE LOCATOR</span>
+                                <iframe loading="lazy" src="about:blank" title="Live preview of Comifuro Catalog &amp; Floor Map experiment" tabindex="-1"></iframe>
                             </div>
                         </div>
                     </div>
@@ -512,6 +346,6 @@
     </div>
 
     <!-- Anime.js v4 module script -->
-    <script type="module" src="scripts.js?v=51"></script>
+    <script type="module" src="scripts.js?v=52"></script>
 </body>
 </html>
