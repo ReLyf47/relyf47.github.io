@@ -10,8 +10,15 @@ let type =
         ? "manga"
         : "anime";
 
-const from =
-    params.get("from") || "/";
+// Back target: only same-origin paths, so ?from= can't redirect off-site or run javascript:
+const from = (() => {
+    try {
+        const u = new URL(params.get("from") || "/", location.origin);
+        return u.origin === location.origin ? u.pathname + u.search + u.hash : "/";
+    } catch {
+        return "/";
+    }
+})();
 
 const body = document.body;
 const pageTransition = document.getElementById("page-transition");

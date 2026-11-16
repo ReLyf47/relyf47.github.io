@@ -47,7 +47,7 @@ function handleImageError(img) {
     'library_capsule_2x.jpg',
     'library_capsule.jpg',
     'library_600x900.jpg',
-    'portrait.png'
+    'portrait.svg'
   ];
   
   if (!img.dataset.fallbackIndex) {
@@ -63,15 +63,16 @@ function handleImageError(img) {
     img.dataset.fallbackIndex = currentIndex.toString();
     
     const nextFilename = fallbacks[currentIndex];
-    if (nextFilename === 'portrait.png') {
-      img.src = 'portrait.png';
+    if (nextFilename === 'portrait.svg') {
+      img.onerror = null; // last resort: never loop if even the local fallback fails
+      img.src = 'portrait.svg';
     } else {
       const srcParts = img.src.split('/');
       srcParts[srcParts.length - 1] = nextFilename;
       img.src = srcParts.join('/');
     }
   } else {
-    img.src = 'portrait.png';
+    img.onerror = null;
   }
 }
 
@@ -803,6 +804,7 @@ function openGameDetails(game) {
 
   const modalImg = document.getElementById('modal-game-image');
   delete modalImg.dataset.fallbackIndex;
+modalImg.onerror = () => handleImageError(modalImg); // re-arm: the chain clears it at the end
   modalImg.src = game.image;
   modalImg.alt = game.name;
   modalImg.parentElement.classList.add('shimmer-loader');

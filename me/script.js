@@ -517,7 +517,7 @@ if (gamesCard) {
                 };
 
                 imgHero.onerror = () => {
-                    setCardImage(portrait);
+                    setCardImage("../extra/games/portrait.svg");
                 };
 
                 imgHero.src = hero;
