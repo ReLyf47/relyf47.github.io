@@ -32,6 +32,13 @@
     --label:       rgba(0, 195, 255, 0.4);
 
     --bg-surface:  #f5f5f3;
+
+    /* SECULAB terminal palette */
+    --sec-bg:      rgb(3, 7, 5);
+    --sec-green:   rgb(0, 255, 65);
+    --sec-text:    rgb(215, 255, 224);
+    --sec-amber:   rgb(255, 176, 0);
+
     --font-display:'Anybody', sans-serif;
     --font-body:   'Geist', sans-serif;
     --font-mono:   'JetBrains Mono', monospace;
@@ -334,6 +341,151 @@ body.is-deep .slide-num { color: var(--label); }
 .role-card p {
     font-size: .8rem; line-height: 1.7;
     color: var(--muted);  /* rgba(200,245,255,.55) — bubble colour */
+}
+
+/* ===========================
+   CURSOR GLOW (dark themes only)
+=========================== */
+#cursor-glow {
+    position: fixed; z-index: 1; pointer-events: none;
+    width: 480px; height: 480px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(0,229,255,.07), transparent 70%);
+    transform: translate(-50%, -50%);
+    transition: left .1s linear, top .1s linear, opacity .8s ease;
+    opacity: 0;
+}
+body.is-deep #cursor-glow { opacity: 1; }
+body.is-sec  #cursor-glow {
+    opacity: 1;
+    background: radial-gradient(circle, rgba(0,255,65,.06), transparent 70%);
+}
+
+/* ===========================
+   SECULAB — TERMINAL THEME
+   Re-points the ocean tokens so the shared
+   lab components (badge, title, photos) turn
+   phosphor-green inside .slide-sec only.
+=========================== */
+.slide-sec {
+    --card:      rgba(12, 19, 14, 0.72);
+    --accent:    var(--sec-green);
+    --glow-col:  var(--sec-green);
+    --foam:      var(--sec-text);
+    --muted:     rgba(215, 255, 224, 0.62);
+    --label:     rgba(0, 255, 65, 0.62);
+    --border:    rgba(0, 255, 65, 0.18);
+    --border-hi: rgba(0, 255, 65, 0.5);
+    --glow:      0 0 18px rgba(0,255,65,.35), 0 0 48px rgba(0,255,65,.12);
+}
+
+body.is-sec {
+    background:
+        radial-gradient(ellipse 90% 55% at 50% -10%, rgba(0,255,65,.10), transparent 70%),
+        linear-gradient(rgba(0,255,65,.035) 1px, transparent 1px) 0 0 / 40px 40px,
+        linear-gradient(90deg, rgba(0,255,65,.035) 1px, transparent 1px) 0 0 / 40px 40px,
+        var(--sec-bg);
+}
+body.is-sec #scan-lines {
+    opacity: 1;
+    background: repeating-linear-gradient(0deg, transparent 0 3px, rgba(0,255,65,.03) 3px 4px);
+}
+body.is-sec #nav {
+    background: rgba(3, 7, 5, 0.88);
+    border-bottom-color: rgba(0, 255, 65, 0.18);
+}
+body.is-sec .nav-logo        { color: var(--sec-text); text-shadow: 0 0 14px rgba(0,255,65,.45); }
+body.is-sec .nav-dot         { border-color: rgba(0, 255, 65, 0.45); }
+body.is-sec .nav-dot.active  { background: var(--sec-green); border-color: var(--sec-green); box-shadow: 0 0 10px rgba(0,255,65,.6); }
+body.is-sec .nav-back        { color: rgba(215, 255, 224, 0.6); }
+body.is-sec .nav-back:hover  { color: var(--sec-text); }
+
+.slide-sec .slide-num  { color: var(--label); }
+.slide-sec .org-badge  { background: rgba(0, 255, 65, 0.07); }
+.slide-sec .lab-title  { text-shadow: 0 0 22px rgba(0,255,65,.22); }
+.slide-sec .photo {
+    border-color: var(--border-hi);
+    box-shadow: 0 12px 48px rgba(0,0,0,.8), 0 0 22px rgba(0,255,65,.14);
+}
+.slide-sec .photo-stack:hover .p3 {
+    box-shadow: 0 16px 56px rgba(0,0,0,.85), 0 0 34px rgba(0,255,65,.32);
+}
+
+/* image placeholder — same box as .photo, so a real <img class="photo pN"> drops straight in */
+.photo-pending {
+    display: flex; align-items: flex-end; padding: 12px 14px;
+    background:
+        repeating-linear-gradient(-45deg, rgba(0,255,65,.07) 0 2px, transparent 2px 11px),
+        rgb(5, 11, 7);
+    font-family: var(--font-mono); font-size: 10px; letter-spacing: .08em;
+    color: var(--label); text-transform: uppercase;
+}
+.photo-pending::before {
+    content: "NO SIGNAL";
+    position: absolute; inset: 0;
+    display: grid; place-items: center;
+    font-size: 12px; font-weight: 700; letter-spacing: .32em;
+    color: rgba(0, 255, 65, 0.45);
+}
+
+/* terminal window */
+.term {
+    border: 1px solid var(--border-hi);
+    background: rgba(2, 6, 4, 0.82);
+    box-shadow: 0 24px 64px rgba(0,0,0,.6), 0 0 32px rgba(0,255,65,.08);
+    backdrop-filter: blur(6px);
+    font-family: var(--font-mono);
+}
+.term-bar {
+    display: flex; align-items: center; gap: 6px;
+    padding: 9px 14px; border-bottom: 1px solid var(--border);
+    font-size: 11px; letter-spacing: .04em; color: var(--muted);
+}
+.term-bar i    { width: 9px; height: 9px; border-radius: 50%; border: 1px solid var(--border-hi); }
+.term-bar span { margin-left: 10px; }
+.term-body {
+    padding: 18px 20px 20px;
+    font-size: 13px; line-height: 1.75; color: var(--foam);
+    overflow-wrap: anywhere;
+}
+.term .ps1    { color: var(--accent); }
+.term .out    { color: var(--muted); }
+.term .ok     { color: var(--accent); }
+.term .warn   { color: var(--sec-amber); }
+.term .gap    { margin-top: 12px; }
+.term .indent { padding-left: 4ch; }
+
+.todo    { list-style: none; color: var(--muted); }
+.todo li { display: grid; grid-template-columns: 3ch 6ch 15ch 1fr; gap: 0 12px; }
+.todo b      { color: var(--sec-amber); font-weight: 500; }
+.todo code   { font: inherit; color: var(--label); }
+.todo strong { color: var(--foam); font-weight: 500; }
+
+.cursor {
+    display: inline-block; width: .6em; height: 1.15em;
+    background: var(--accent); vertical-align: text-bottom;
+    animation: blink 1.05s steps(1) infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
+
+/* typed-out session — replays every time the slide becomes active */
+.term .ln   { opacity: 0; }
+.term .type { display: inline-block; vertical-align: bottom; white-space: pre; clip-path: inset(0 100% 0 0); }
+.slide-sec.active .term .ln   { animation: ln-show 1ms var(--d, 0s) forwards; }
+/* jump-start: a forwards fill can end at progress 0.99999…, which the default jump-end floors to the previous step */
+.slide-sec.active .term .type { animation: type-in calc(var(--n) * 35ms) steps(var(--n), jump-start) calc(var(--d, 0s) + .15s) forwards; }
+@keyframes ln-show { to { opacity: 1; } }
+@keyframes type-in { to { clip-path: inset(0); } }
+
+@media (max-width: 520px) {
+    .term-body   { padding: 14px; font-size: 11.5px; }
+    .todo li     { grid-template-columns: 3ch 1fr; }
+    .todo code   { display: none; }
+    .todo span   { grid-column: 2; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .term .ln, .term .type { opacity: 1; clip-path: none; animation: none !important; }
+    .cursor { animation: none; }
 }
 
 /* ===========================

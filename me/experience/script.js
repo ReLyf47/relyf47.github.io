@@ -6,15 +6,22 @@ const slides  = Array.from(document.querySelectorAll(".slide"));
 const total   = slides.length;
 let current   = 0;
 let animating = false;
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
 /* ==========================================
    THEME
+   surface (white) · deep (ocean) · sec (terminal)
 ========================================== */
 
-function isDeepSlide(i) { return slides[i].classList.contains("slide-deep"); }
+function themeOf(i) {
+    const c = slides[i].classList;
+    return c.contains("slide-sec") ? "sec" : c.contains("slide-deep") ? "deep" : "surface";
+}
 
 function applyTheme(i) {
-    document.body.classList.toggle("is-deep", isDeepSlide(i));
+    const t = themeOf(i);
+    document.body.classList.toggle("is-deep", t === "deep");
+    document.body.classList.toggle("is-sec",  t === "sec");
 }
 
 /* ==========================================
@@ -280,12 +287,122 @@ function runDiveTransition(diving, onMidpoint, onDone) {
 }
 
 /* ==========================================
-   SLIDE ENGINE
+   TERMINAL TRANSITION (SECULAB)
+   TTY takeover: log lines flood the screen
+   row by row, a prompt flashes, then rows
+   glitch out to reveal the new slide.
+   Shares the overlay canvas with the water.
 ========================================== */
 
-function crossesBoundary(from, to) {
-    return isDeepSlide(from) !== isDeepSlide(to);
+const TTY_LINES = [
+    "[  OK  ] Started Journal Service.",
+    "[  OK  ] Reached target Network.",
+    "[  OK  ] Mounted /home/seculab.",
+    "[  OK  ] Started OpenSSH Daemon.",
+    "[  OK  ] Loaded AppArmor profiles (enforce).",
+    "[  OK  ] Started fail2ban.service.",
+    "[ WARN ] iptables: default policy DROP on INPUT",
+    "[ WARN ] unattended-upgrades: 3 packages held back",
+    "sshd[2026]: Accepted publickey for relyf from 10.0.0.47",
+    "sudo: relyf : TTY=pts/0 ; PWD=/home/relyf ; COMMAND=/bin/bash",
+    "audit: type=1400 apparmor=\"ALLOWED\" profile=\"study-group\"",
+    "kernel: nf_conntrack: default automatic helper assignment off",
+    "gpg: Good signature from \"SECULAB <lab@seculab>\"",
+    "sha256sum: roles.todo: OK",
+];
+
+function runTerminalTransition(entering, onMidpoint, onDone) {
+    const W    = waterCanvas.width;
+    const H    = waterCanvas.height;
+    const LH   = 18;                     // row height (px)
+    const ROWS = Math.ceil(H / LH);
+    const rows = Array.from({ length: ROWS }, () => ({
+        text:   TTY_LINES[Math.floor(Math.random() * TTY_LINES.length)],
+        cut:    Math.random(),           // when this row dissolves during the reveal
+        jitter: Math.random() < 0.12 ? (Math.random() - 0.5) * 40 : 0,
+    }));
+    const [cmd, status] = entering
+        ? ["$ ssh relyf@seculab", "ACCESS GRANTED"]
+        : ["$ logout", "CONNECTION CLOSED"];
+
+    // timing (ms) — same rhythm as the water splash
+    const T_IN   = 380;
+    const T_HOLD = 160;
+    const T_OUT  = 360;
+    const TOTAL  = T_IN + T_HOLD + T_OUT;
+
+    waterOverlay.style.opacity = "1";
+    waterOverlay.classList.add("active");
+    if (waveAnim) cancelAnimationFrame(waveAnim);
+    let t0 = null;
+    let swapped = false;
+
+    function frame(ts) {
+        if (!t0) t0 = ts;
+        const ms    = ts - t0;
+        const shown = Math.ceil(easeOut3(clamp(ms / T_IN, 0, 1)) * ROWS);
+        const gone  = easeIn3(clamp((ms - T_IN - T_HOLD) / T_OUT, 0, 1));
+
+        wCtx.clearRect(0, 0, W, H);
+        wCtx.font = "500 12px 'JetBrains Mono', monospace";
+        wCtx.textBaseline = "middle";
+        wCtx.lineWidth = 1;
+
+        // rows fill downward when entering, upward when leaving
+        for (let i = 0; i < shown; i++) {
+            const r = rows[i];
+            if (gone > r.cut) continue;
+            const y = (entering ? i : ROWS - 1 - i) * LH;
+            wCtx.fillStyle = "rgb(2, 6, 4)";
+            wCtx.fillRect(0, y, W, LH + 1);
+            wCtx.fillStyle = r.text.startsWith("[ WARN") ? "rgba(255,176,0,.85)" : "rgba(0,255,65,.72)";
+            wCtx.fillText(r.text, 24 + r.jitter, y + LH / 2);
+        }
+
+        // bright scan line on the leading edge
+        if (shown < ROWS) {
+            wCtx.fillStyle = "rgba(0,255,65,.9)";
+            wCtx.fillRect(0, (entering ? shown : ROWS - shown) * LH - 1, W, 2);
+        }
+
+        // prompt box while the screen is covered
+        if (ms >= T_IN && gone < 0.5) {
+            const bw = Math.min(380, W - 40), bh = 84;
+            const bx = (W - bw) / 2, by = (H - bh) / 2;
+            wCtx.globalAlpha = 1 - gone * 2;
+            wCtx.fillStyle = "#000";
+            wCtx.fillRect(bx, by, bw, bh);
+            wCtx.strokeStyle = "rgba(0,255,65,.8)";
+            wCtx.strokeRect(bx + .5, by + .5, bw - 1, bh - 1);
+            wCtx.fillStyle = "rgb(215,255,224)";
+            wCtx.fillText(cmd, bx + 20, by + 28);
+            wCtx.font = "700 18px 'JetBrains Mono', monospace";
+            wCtx.fillStyle = "rgb(0,255,65)";
+            wCtx.fillText(status, bx + 20, by + 56);
+            wCtx.globalAlpha = 1;
+        }
+
+        if (!swapped && ms >= T_IN + T_HOLD * 0.35) {
+            swapped = true;
+            onMidpoint();
+        }
+
+        if (ms < TOTAL) {
+            waveAnim = requestAnimationFrame(frame);
+        } else {
+            wCtx.clearRect(0, 0, W, H);
+            waterOverlay.style.opacity = "0";
+            waterOverlay.classList.remove("active");
+            onDone();
+        }
+    }
+
+    waveAnim = requestAnimationFrame(frame);
 }
+
+/* ==========================================
+   SLIDE ENGINE
+========================================== */
 
 function swapSlides(from, to, direction) {
     slides[from].classList.add(direction === "down" ? "exit-up" : "exit-down");
@@ -304,21 +421,21 @@ function goTo(index, direction) {
 
     animating = true;
 
-    const useWater = crossesBoundary(current, index);
-
-    if (useWater) {
-        runDiveTransition(
-            isDeepSlide(index),   // true = diving in, false = resurfacing
-            () => {
-                applyTheme(index);
-                swapSlides(current, index, direction);
-            },
-            () => { animating = false; }
-        );
-    } else {
+    const from = themeOf(current);
+    const to   = themeOf(index);
+    const swap = () => {
         applyTheme(index);
         swapSlides(current, index, direction);
-        setTimeout(() => { animating = false; }, 800);
+    };
+    const done = () => { animating = false; };
+
+    if (from === to || reduceMotion.matches) {
+        swap();
+        setTimeout(done, 800);
+    } else if (from === "sec" || to === "sec") {
+        runTerminalTransition(to === "sec", swap, done);   // anything touching SECULAB: TTY takeover
+    } else {
+        runDiveTransition(to === "deep", swap, done);      // surface ↔ ocean: water splash
     }
 }
 
@@ -426,20 +543,9 @@ drawParts();
 ========================================== */
 
 const glow = document.createElement("div");
-glow.style.cssText = `
-    position:fixed;z-index:1;pointer-events:none;
-    width:480px;height:480px;border-radius:50%;
-    background:radial-gradient(circle,rgba(0,229,255,.07),transparent 70%);
-    transform:translate(-50%,-50%);
-    transition:left .1s linear,top .1s linear,opacity .8s ease;
-    opacity:0;
-`;
+glow.id = "cursor-glow";   // colour + visibility per theme live in style.css
 document.body.appendChild(glow);
 window.addEventListener("mousemove", e => { glow.style.left = e.clientX+"px"; glow.style.top = e.clientY+"px"; });
-
-new MutationObserver(() => {
-    glow.style.opacity = document.body.classList.contains("is-deep") ? "1" : "0";
-}).observe(document.body, { attributes: true, attributeFilter: ["class"] });
 
 /* ==========================================
    DYNAMIC BACK BUTTON
