@@ -514,6 +514,7 @@ body.is-sec .nav-back:hover  { color: var(--sec-text); }
     .nav-inner   { padding:0 20px; }
 }
 @media (max-width: 520px) {
+    .surface-title { font-size: clamp(2.6rem, 13vw, 4rem); }
     .roles-grid { grid-template-columns:1fr; }
     .nav-dots   { display:none; }
 }

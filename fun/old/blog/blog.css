@@ -69,3 +69,10 @@ img {
     font-family: havelock;
 	src: url('../../../resources/havelock.otf') format('opentype');
 }
+
+/* phones: vw-sized text is unreadable at this width */
+@media only screen and (max-width: 767px) {
+    body { font-size: 15px; padding: 12px; }
+    .card, .card2 { font-size: 1.1rem; padding: 14px; }
+    .card3 { font-size: 1rem; }
+}

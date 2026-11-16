@@ -67,3 +67,14 @@ body.theme-p5 .wipe-c { background:#ff0022; }
     position:absolute; right:37%; bottom:0;
     height:95%; width:auto; z-index:2;
 }
+
+/* ── PHONES: shrink the desktop composition instead of reflowing it ── */
+@media (max-width: 700px) {
+    body .p3-menu { left:auto; right:4vw; zoom:.6; }
+    body .p5-menu { left:50%; zoom:.7; }
+    body .p5-panel { zoom:.7; }
+    body .p3-hud, body .p3-wallet, body .p5-wallet { zoom:.75; }
+    body .p3-nameplate { font-size:64px; }
+    body .p5-cmd-wm { font-size:52px; }
+    .wipe-wrap { overflow:hidden; }
+}

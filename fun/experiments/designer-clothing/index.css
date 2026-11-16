@@ -865,3 +865,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: non
   .index-table .meta { display: none; }
   .btn { padding: 14px 22px; font-size: 10px; }
 }
+/* phones: tighter index-table headers so the table fits the screen */
+@media (max-width: 640px) {
+  .index-table thead th { padding: 14px 8px; letter-spacing: 0.15em; }
+}

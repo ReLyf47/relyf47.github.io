@@ -3710,3 +3710,10 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+/* phones: cards may shrink below 360px so they fit narrow screens */
+@media (max-width: 440px) {
+  .nav-rating-pills { max-width: 100%; overflow-x: auto; scrollbar-width: none; }
+  .booth-grid { grid-template-columns: minmax(0, 1fr); }
+  .booth-card { min-width: 0; }
+}

@@ -944,3 +944,23 @@ strong a {
     background-size: cover; 
     background-position: center center; 
 }
+
+/* phones: keep dashboard cards inside the screen */
+@media(max-width:768px){
+    .dashboard-grid > *{ min-width:0; }
+    .dashboard-card{ padding:1.25rem; }
+    .stat-row{ gap:1rem; }
+    .stat-row strong{ text-align:right; overflow-wrap:anywhere; }
+    .terminal-card pre{ white-space:pre-wrap; overflow-wrap:anywhere; }
+    /* the wrapped fixed nav is tall on phones: compact it and clear it */
+    .navbar{ padding:12px 16px; gap:.5rem; }
+    .logo{ font-size:1.5rem; }
+    .nav-links{ gap:.35rem 1rem; font-size:.85rem; }
+    #hero{ padding-top:8.5rem; }
+}
+
+/* phones: boot terminal padding + long boot lines fit the screen */
+@media(max-width:600px){
+    .boot-terminal{ padding:1.1rem; }
+    .boot-terminal pre{ white-space:pre-wrap; overflow-wrap:anywhere; font-size:.8rem; }
+}

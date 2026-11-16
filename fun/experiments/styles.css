@@ -1914,6 +1914,19 @@ body[data-theme="comifuro"] {
   }
 }
 
+/* prologue on phones: drop the discipline column so the directory fits */
+@media (max-width: 600px) {
+  .hero-curatorial-block { gap: 0.9rem; }
+  .curatorial-label { font-size: 0.6rem; gap: 0.5rem; flex-wrap: wrap; }
+  .hero-intro-text { font-size: 0.9rem; }
+  .dir-header { display: none; }
+  .dir-row { grid-template-columns: 64px 1fr 60px; padding: 0.7rem 0.25rem; }
+  .dir-row .row-medium { display: none; }
+  .hero-enter-action { margin-top: 0.4rem; }
+  .scroll-instruction { display: none; }
+  .watermark-num { display: none; }
+}
+
 /* ── 14. REDUCED MOTION ── */
 @media (prefers-reduced-motion: reduce) {
   .limits-rings i,
